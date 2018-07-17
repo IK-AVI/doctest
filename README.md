@@ -4,7 +4,7 @@ blablablablablablablablablablablablablablablablablablablablablablablablablablabl
 
 ## Sections
 
-+ [BeoLiving Intelligence Guides](bli-guides/MAIN.md)
-+ [Driver help files](bli-help-files/drivers/MAIN.md)
++ [BeoLiving Intelligence Guides](bli-guides/main.md)
++ [Driver help files](bli-help-files/drivers/main.md)
 
 
