@@ -4,11 +4,11 @@ blablablablablablablablablablablablablablablablablablablablablablablablablablabl
 
 ## Table of contents
 
-+ [Un-boxing BeoLiving Intelligence](bli-unboxing)
++ [Un-boxing BeoLiving Intelligence](bli-unboxing.md)
 + [BeoLiving Intelligence User Guide](bli-user-guide.md)
-+ [BeoLiving Intelligence Pro User Guide](bli-pro-user-guide)
-+ [BeoLiving Intelligence Link 3rd Party Cloud Service Guide](bli-link-third-party-service)
-+ [BeoLiving Intelligence Recovery mode Guide](bli-recovery-mode-guide)
-+ [BeoLiving Intelligence Service Troubleshooting Guide](bli-service-troubleshooting)
-+ [BeoLiving Intelligence Troubleshooting Guide](bli-troubleshooting)
-+ [BeoLiving Intelligence FAQ](bli-faq)
++ [BeoLiving Intelligence Pro User Guide](bli-pro-user-guide.md)
++ [BeoLiving Intelligence Link 3rd Party Cloud Service Guide](bli-link-third-party-service.md)
++ [BeoLiving Intelligence Recovery mode Guide](bli-recovery-mode-guide.md)
++ [BeoLiving Intelligence Service Troubleshooting Guide](bli-service-troubleshooting.md)
++ [BeoLiving Intelligence Troubleshooting Guide](bli-troubleshooting.md)
++ [BeoLiving Intelligence FAQ](bli-faq.md)
