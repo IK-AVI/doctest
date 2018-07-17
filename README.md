@@ -1,6 +1,6 @@
 # Welcome to Khimo Documentation site
 
-blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+This site contains all existing documentation related to our products: Usage and configuration guides, troubleshooting guides and FAQ.
 
 ## Sections
 
