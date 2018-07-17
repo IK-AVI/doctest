@@ -1,7 +1,6 @@
 # BeoLiving Intelligence Home Automation System Drivers
 
-BeoLiving Intelligence 
-Decir que soporta los sistemas HA mas usados. Y que refiere a la configuracion y uso adecuado de cada sistema a partir del BLI.
+BeoLiving Intelligence supports most used Home Automation systems in the market. Here you will find BeoLiving Intelligence configuration and usage for each supported Home Automation system. 
 
 ## Driver's List
 
