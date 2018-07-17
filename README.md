@@ -5,6 +5,6 @@ This site contains all existing documentation related to our products: Usage and
 ## Sections
 
 + [BeoLiving Intelligence Guides](bli-guides/main.md)
-+ [Driver help files](bli-help-files/drivers/main.md)
++ [Driver Help Files](bli-help-files/drivers/main.md)
 
 
