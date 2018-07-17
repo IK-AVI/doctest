@@ -1,6 +1,6 @@
 # BeoLiving Intelligence Guides
 
-This section has all guides you must-do read for a completely and adequate usage of BeoLiving Intelligence.
+This section has all guides you must-do read for a completely and adequate usage of BeoLiving Intelligence. Guides are showed in an specific order for better understanding.
 
 ## Table of contents
 
