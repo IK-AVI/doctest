@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Home Page!
+hero_text: Home Page!
 ---
+## Intro
 This site contains all existing documentation related to our main product _BeoLiving Intellingece_: Usage and configuration guides, troubleshooting guides and FAQ.
 
 ## Sections
