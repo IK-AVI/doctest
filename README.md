@@ -1,4 +1,4 @@
-# Welcome to BeoLiving Intelligence Documentation site
+# Welcome to BeoLiving Intelligence 
 
 This site contains all existing documentation related to our main product _BeoLiving Intellingece_: Usage and configuration guides, troubleshooting guides and FAQ.
 
