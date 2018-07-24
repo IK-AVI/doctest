@@ -1,6 +1,6 @@
 # System Drivers | PRO
 
-BeoLiving Intelligencem, when updated to PRO, supports the most used Smart Home systems in the market. Here you will find BeoLiving Intelligence configuration and usage for some of the supported systems:
+BeoLiving Intelligence, when updated to PRO, supports the most used Smart Home systems in the market. Here you will find BeoLiving Intelligence configuration and usage for some of the supported systems:
 
 ### Driver's List
 
