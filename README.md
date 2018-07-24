@@ -1,7 +1,7 @@
 ---
-hero_text: Home Page!
+title: Home Page!
 ---
-## Intro
+# Intro
 This site contains all existing documentation related to our main product _BeoLiving Intellingece_: Usage and configuration guides, troubleshooting guides and FAQ.
 
 ## Sections
