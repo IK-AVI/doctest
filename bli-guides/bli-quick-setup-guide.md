@@ -31,7 +31,7 @@ The next steps show how to quickly set your BeoLiving Intelligence up and ready 
 + Go to the store in your smart device and download and install the BeoLiving App.
 + Open the BeoLiving App and when your BeoLiving Intelligence is ready a pop-up will appear. If more than one appears, you can identify them by the serial number located on the bottom of the BeoLiving Intelligence.
 + Once in the pop-up window press "Request access" and follow the instructions provided.
-![Setting_up_3](pictures/bli-quick-setup-guide/Setting_up_3.PNG=100x20)
+![Setting_up_3](pictures/bli-quick-setup-guide/Setting_up_3.PNG =100x20)
 + After that, return to the BeoLiving App main screen and your BeoLiving Intelligence should appear.
 ![Setting_up_4](/pictures/bli-quick-setup-guide/Setting_up_4.png)
 
