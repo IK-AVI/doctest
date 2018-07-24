@@ -39,11 +39,25 @@ The next steps show how to quickly set your BeoLiving Intelligence up and ready 
 + Open the _BeoLiving App_ and when your _BeoLiving Intelligence_ is ready a pop-up will appear. If more than one appears, you can identify them 
 by the serial number located on the bottom of the _BeoLiving Intelligence_.
 + Once in the pop-up window press "_Request access_" and follow the instructions provided.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Setting_up_3.PNG" alt="drawing" width="300px"/>
+</p>
+
 + After that, return to the _BeoLiving App_ main screen and your _BeoLiving Intelligence_ should appear.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Setting_up_4.PNG" alt="drawing" width="300px"/>
+</p>
 
 #### Adding Bang & Olufsen products
 
 + In the main screen of the _BeoLiving App_ select your _BeoLiving Intelligence_ and click on "Add products". A list of the supported products that are on the same network will appear.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Adding_1.2.PNG" alt="drawing" width="300px"/>
+</p>
+
 + Before adding a product, at least one zone (a virtual room where the product will be placed) must be created. Click on "Create zone" and create one.
 + In the list select the product you want to add and click on "Assign to zone". Assign the product to the zone you just created.
 + Return to the _BeoLiving Intelligence_ main screen and you should see the zone with the icon of the product added.
