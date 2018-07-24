@@ -1,20 +1,14 @@
 # BeoLiving Intelligence PRO User Guide
 
-## Revision History
-
-|    Date      | Author       | Comments             |
-|--------------|--------------|----------------------|
-| [2018-06-11] | Aldo Vignone | First version        |    
-
 ## Introduction
 
-The scope of this guide comprise an introduction to _BeoLiving Intelligence_ in _PRO_ mode, a detailed description of its web interface used for configuration/programming your setup and "How to´s" of different features. _BeoLiving Intelligence PRO_ has allof its capabilities unblocked and this guide will let you exploit your Home Automation controller to its maximum.
+The scope of this guide comprise an introduction to _BeoLiving Intelligence_ in _PRO_ mode, a detailed description of its web interface used for configuration/programming your setup and "How to´s" of different features. _BeoLiving Intelligence PRO_ has all of its capabilities unblocked and this guide will let you exploit your Home Automation controller to its maximum.
 
 Before reading this guide, it's recommended reading "_Un-Boxing BeoLiving Intelligence_" and "_BeoLiving Intelligence User Guide_" for better understanding of some concepts and useful information, not included in this guide.
 
-_BeoLiving Intelligence PRO_ firmware upgrade, enable the unique capability of integrate Bang & Olufsen Network Link systems (audio and video products) and most popular Home Automation systems as Nest, Philips Hue, KNX, Lutron, among others, creating versatile solutions and a great experience for _BeoLiving Intelligence_ users. Also, _PRO_ firmware allows remote control of your entire configuration through _BeoLiving App_.
+_BeoLiving Intelligence PRO_ firmware upgrade enables the unique capability of integrating Bang & Olufsen Network Link systems (audio and video products) with some of the most popular Home Automation systems such as Nest, Philips Hue, KNX, Lutron, among others, creating versatile solutions and a great experience for _BeoLiving Intelligence_ users.
 
-_BeoLiving Intelligence PRO_ web interface it's the most important tool for configuration and programming of your installation. Certain degree of configuration could be made through BeoLiving App but it's targeted for user use.
+_BeoLiving Intelligence PRO_ web interface is the most important tool for configuration and programming your installation. Certain degree of configuration could be made through BeoLiving App but it's targeted for user use.
 
 ## Terminology
 
@@ -34,7 +28,7 @@ TODO: Diagram
 
 ## Home Automation systems supported
 
-In _BLI PRO_ exist two types of drivers for home automation systems:
+In _BLI PRO_ exists two types of drivers for home automation systems:
 
 + Native driver: Comes included in your _BLI PRO_ firmware.
 + Cloud driver: Driver ready to be downloaded to your _BLI PRO_ from our Cloud driver repository.
@@ -50,7 +44,7 @@ Table: List of Home Automation systems supported by BLI PRO
 
 Setup interface is the most important tool for configuration/programming of your _BLI PRO_. The following sections will guide you through the entire web interface configuration tool.  
 
-In _BLI PRO_ exist a special user _admin_ meant for installer/technician usage. By default, _admin_ password is an unknown random hash due to security purposes. To make use of Setup interface, password for _admin_ user must be resetted by activating the Setup button function (2). After successful button function input, _admin_ password will be _"admin"_ during the next 5 mintues (also for security purposes) and after logging you will be asked to change it.
+In _BLI PRO_ exists a special user _admin_ meant for installer/technician usage. By default, _admin_ password is an unknown random hash due to security purposes. To make use of the Setup interface, password for _admin_ user must be resetted by activating the Setup button function (2). After successful button function input, _admin_ password will be _"admin"_ during the next 5 mintues (also for security purposes) and after logging in you will be asked to change it.
 
 ### Project info
 
@@ -71,7 +65,7 @@ _BLI PRO_ has access to the Internet. Else date and time can be set manually.
 
 ![Date & Time](pictures/pro-guide/setup-date-time.png)
 
-#### Date & Time settings 
+##### Date & Time settings 
 
 + _Date_: Settings for year, month and day are entered and then press Set.
 + _Time_: Settings for hours, minutes and seconds are entered and then press Set.
@@ -86,16 +80,16 @@ Seconds are only used to round the minute-value.
 Positive values are for North and East.
 Negative values are for South and West.
 
-##### Integration Protocols
+#### Integration Protocols
 
 Home Integration protocol allow other devices to interact with BeoLiving Intelligence. This protocol is used by mobile applications or by other 
 home automation controllers.
 
-Home Integration protocol provides two way control of all resource types. This protocol can be enabled on the local network, with mandatory 
+Home Integration protocol provides two-way control of all resource types. This protocol can be enabled on the local network, with mandatory 
 authentication. You should provide a TCP port, which defaults to 9100. Port numbers below 1024 are reserved for standard TCP services, so use 
 values above this range.
 
-### Network
+#### Network
 
 Network page contains network connectivity configuration of _BLI_.
 
@@ -110,9 +104,9 @@ The following options are:
 + _DNS Server_: _DNS Server_ network address in LAN.
 + _Gateway_: Gateway address in LAN.
 
-The next settings must be applied by pressing the _Apply_ button.
+The settings must be applied by pressing the _Apply_ button.
 
-### System modes
+#### System modes
 
 _BLI PRO_ can have any number of System modes, which can be used to enable or disable the execution of macros, as follows:
 
@@ -121,33 +115,33 @@ _BLI PRO_ can have any number of System modes, which can be used to enable or di
 + A macro can have any number of modes, and a mode can be set to any number of macros.
 + A macro with no mode set will behave normally.
 + If a macro has one or more modes set, then it will be triggered by events only if one of those modes is active.
-+ Typical example of system modes: Vacation and Normal. You can set up a button to toggle between normal and vacation modes. Macros for setting thermostats, or forcontrolling lighting and shades may be assigned individually to each mode.
++ Typical example of system modes: Vacation and Normal. You can set up a button to toggle between normal and vacation modes. Macros for setting thermostats, or for controlling lighting and shades may be assigned individually to each mode.
 
-### Units
+#### Units
 
 The system temperature units can be configured to be Fahrenheit or Celsius, affecting all the clients connected to the _BLI PRO_. For example, if the current temperature unit is Fahrenheit, then all the thermostats will report the temperature in these units to all connected clients.
 
 This setting only affects what is displayed on _BLI PRO_ user interfaces. It does not affect the units displayed on the actual thermostats.
 
-## Zones
+### Zones
 
 ![Zones](pictures/pro-guide/zones.png)
 
 Everything in _BLI_ is organized into zones. Zones represent rooms or other locations in the home such as kitchen, hallway, garden, garage, etc.
 In order to accomodate for big installations, zones themselves are organized into areas. Examples of areas are: upstairs and downstairs, guest house, barbecue.
 
-### Areas & Zones
+#### Areas & Zones
 
 Areas are indicated by text on a grey background in the left column. Zones that are subdividing the areas are indicated by text on a white 
 background in the left column.
 
-### Adding areas and zones
+#### Adding areas and zones
 
 Areas are added using the "_Add new area_" button. When adding an area, a name for this can be stated. An area can be deleted by activating the 
 **x**-sign in the greyed area-boxes and renamed by activating the edition-sign next to **x**-sign. Zones are added to the areas by activating the 
 **+**-sign in the greyed area-boxes. 
 
-### Zone settings
+#### Zone settings
 
 + _Name_: Name of zone. In _BLI_ a zone can be one or more rooms in the house or even part of a room, e.g. : living room, kitchen, bedroom. The 
 Name is stated as desired.
@@ -156,7 +150,7 @@ Name is stated as desired.
 + _Delete_: _Zone_ selected from the structure can be deleted by activating the _Delete_ button. Systems and resources in a zone that shall be 
 deleted must be rearranged or removed.
 
-### Main area
+#### Main area
 
 _Main_ area has two special zones: 
 
@@ -166,7 +160,7 @@ to the ‘Global’ zone. The _global_ zone cannot be deleted and cannot be assi
 + _unassigned resources_: placeholder zone for automatically discovered B&O products. _BLI_ discover and adds all products found in his network.
 Is up to the installer to move those products into their respective _Area/Zone_.
 
-## Systems
+### Systems
 
 The systems settings is for setting-up systems connected to _BLI PRO_. BeoLink systems and Home Automation systems are ‘systems’.
 
@@ -179,21 +173,20 @@ In this section, only _Native drivers_ will be included. Go to *[External driver
 
 ![Systems](pictures/pro-guide/systems.png)
 
-### System settings
+#### System settings
 
-Select **+**-sign to add a new home automation system from the drop down list and press _Add system_ button. A System may be added in a specific _Area/Zone_ when it only serves functions there, else if a system serves more zones it may be added to the _Main/global_ zone. Any of the supported 
+Select **+**-sign to add a new home automation system from the drop down list and press _Add system_ button. A System may be added in a specific _Area/Zone_ if only serves functions there, else if a system serves more zones it may be added to the _Main/global_ zone. Any of the supported 
 systems can be added, except internal systems, which only appear once in the installation, such as _BeoLink_ and _Virtual Resources_ that are 
 added by default. When selecting a system added to one zone, it is possible to select another zone in the Zone drop down list, by which the system is moved to that zone. A system can also be renamed and the configuration and connection settings can also be changed. Systems are assigned to 
 zones by the installer, but they are invisible in the user interfaces. Assigning a System to a specific zone could be used by the installer to 
 locate system hardware at the installation for example.
 
-### Connection settings
+#### Connection settings
 
 Connection settings depend on each system. Examples of Connection settings are: Connection type, Login, Password, Host, Port, Check server 
-certificate, etc. For specific details on different systems please refer to the on-line help. The values can be changed matching the settings 
-used in the installation. Press _Apply_ button to confirm settings.
+certificate, etc. For specific details on different systems please refer to the on-line help. The default values must be changed according to the settings used in the installation. Press _Apply_ button to confirm settings.
 
-### System status icons
+#### System status icons
 
 For each system installed, a text string icon is shown in the bottom of the screen. The status of each system is indicated by a colour of the 
 background of the text string icon. 
@@ -210,7 +203,7 @@ Table: System status
 This gives a quick status indication on each system. Moving the mouse pointer to each icon displays a pop-up message. If a system cannot connect,
  the system logs should be checked for information about the problem.
 
-## Resources
+### Resources
 
 Resources are provided from the systems installed:
 
@@ -221,7 +214,7 @@ Resources are provided from the systems installed:
 In the Resources page the resources related to the installed Home Automation system and related buttons (i.e. the components it comprises) can
 be fetched by using the Capture function or made manually. The Import resources function is importing preprogrammed resources.
 
-### BeoLink resources
+#### BeoLink resources
 
 ![BeoLink resources](pictures/pro-guide/resources-beolink.png)
 
@@ -231,12 +224,9 @@ The resources have the following parameters:
 + _Name_: Enter a name to ease identification of the resources.
 + _Type_: Select type from the drop down list. The only available resource type is _Network Link product_.
 + _Address_: Unique identification of a resource. The format depends on the system. For _NL_ products is the serial number.
-+ _Capture_: An easy way to add resources is to use the capture function. This function is recommended to be used as often as possible. Press 
-Capture and then activate various components by which  _BLI PRO_ records these activities as resources. _NL_ product sources are captured and 
-named automatically. Resource selected from the capture list are added automatically to the table of defined resources. The capture functionality 
-is supported by most systems.
++ _Force Discovery_: Forces the product discovery in case it could not be done automatically.
 
-### Home Automation system resources
+#### Home Automation system resources
 
 ![KNX resources](pictures/pro-guide/resources-other.png)
 
@@ -250,10 +240,10 @@ can extend the standard button to provide extra features (see this in the drop d
 such common set of features are shared by the most supported systems.
 + _Address_: Unique identification of a resource. The format depends on the _HA_ system - using various number scheme.
 + _Capture_: Same as [_BeoLink resources_](#beolink-resources).
-+ _Import ressources_: Most _HA_ systems can save a list of resource settings, that by using the _Import resources_ button can be imported in 
++ _Import resources_: Most _HA_ systems can save a list of resource settings, that by using the _Import resources_ button can be imported in 
 another installation.
 
-### Virtual resources
+#### Virtual resources
 
 An example of a virtual resource is a button on the user interface (_BLApp_, TV overlay menu, _WEBPANEL_) e.g. a virtual button for cinema 
 scene, or a boolean variable to indicate that a specific condition has been reached. Virtual Resources makes possible to define buttons and 
@@ -263,10 +253,10 @@ virtual resource, with events and commands in the systems.
 
 ![Virtual resources](pictures/pro-guide/resources-virtual.png)
 
-Addressing of Virtual Resources is a unique number and if isn't setted manually, _BLI PRO_ generates automatically an un-used address for that 
+The address of a Virtual Resource is a unique number and if isn't setted manually, _BLI PRO_ generates automatically an un-used address for that 
 resource. 
 
-## Macros {#macros}
+### Macros {#macros}
 
 The interaction between the devices connected to the _BLI_ is defined by means of _Macros_. A macro consists of a set of events and commands. 
 When any of the events that are defined in a macro occur (e.g. a key press on a keypad; a Control Command on a Bang & Olufsen remote control etc.)
@@ -274,31 +264,31 @@ When any of the events that are defined in a macro occur (e.g. a key press on a 
 
 ![Macros](pictures/pro-guide/macros.png)
 
-A macro is also assigned to _Area/Zone_ to which it belongs even if it handles activity outside the zone. Having macros assigned to zones helps, 
+A macro is also assigned to an _Area/Zone_ to which it belongs even if it handles activity outside the zone. Having macros assigned to zones helps 
 when setting up user interfaces. The left column shows all _Macros_ contained in each _Area/Zone_. To add a macro in a specific _Area/Zone_ press 
 **+**-sign button in the column entry. 
 
-For each macro, next buttons are availabe:
+For each macro, the next buttons are availabe:
 
 + _Add event_: used to add an _Event_ to _Macro_. The two buttons (see above) that can be used to set the cinema scene. See 
 _[Resource Event](#resource-event)_ section.
-+ _Capture_: when the _Capture_ button is pressed, all system/resource events fired from that moment will be displayed in a way for being added. 
++ _Capture_: when the _Capture_ button is pressed, all system/resource events fired from that moment will be displayed so that they can be added.
 Example of events captured could be: the press of a virtual or phisical button, the source selection in a A/V renderer device.
 + _Add command_: used to define the commands to _Macro_. See _[Resource Command](#resource-command)_ section.
 + _Clone_: creates an exact copy of the _Macro_ adding "_- Clone n_" as subfix to the cloned _Macro_ name, where _n_ is the number of clones made.
-+ _Remove_:deletes _Macro_.
++ _Remove_: deletes _Macro_.
 + _Fire_: fires/triggers _Macro_.
 + _Convert to code_: switches _Macro_ commands configuration into a _Lua_ editor, turning existant _Macro_ commands into _Lua_ code. _Lua_ 
 commands help is showed after pressing _Show Help_ button. Pressing _Convert to table_ will convert _Lua_ commands into table format.
 + _Cut/Copy/Paste_: when selecting an event/command (pressing left side of event/command), _Cut/Copy/Paste_ buttons become available to use. Their 
 purpose, as the meaning of their names illustrate, are for _Cut/Copy/Paste_ _Events_ or _Commands_ on the same _Macro_ or between _Macros_.     
 
-### Resource Event {#resource-event}
+#### Resource Event {#resource-event}
 
 When pressing the _Add event_ button, the window expands, and fields for the _Resource Event_ are shown and are filled in by making selections 
 from the drop down lists with each entry field. The illustration is an example only, and drop down lists may vary depending on the choices made.
 
-#### Defining Events 
+##### Defining Events 
 
 The list of events (for triggering a macro) can be filled in manually or selected from captured events.
 
@@ -309,7 +299,7 @@ more information.
 + _Resource_: Resource events match a specific event on a specific resource.
 + _System_: System events include calendar and astronomical clock events and system connectivity events.
 
-### Resource command {#resource-command}
+#### Resource command {#resource-command}
 
 When pressing the _Add command_ button, the window expands and fields for the Resource command are shown and are filled in by making selections 
 from the drop down lists with each entry field. The illustration is an example only, and drop down lists may vary depending on the choices made.
@@ -364,10 +354,10 @@ If commands and events are defined for a resource, and the resource is deleted o
 orphan (without an associated resource). Orphan events and commands will still be available, and refer to the original addressing of the resource.
 The macro screen will signal the presence of orphan commands or events by colour coding and text in the macro header.
 
-### Generic programming
+#### Generic programming
 
 Standard events and commands apply to a single specific resource. _Generic programming_ makes it possible to refer to a whole set of resources at 
-once. It is possible to specify:
+once. E.g.: it is possible to specify:
 
 + A single command to mute all products called "_BeoPlay V1_".
 + An event specification that matches any button pressed that is called "_Light On_".
@@ -384,23 +374,23 @@ important to be consistent when naming resources. It is also important to avoid 
 
 #### Command coding
 
-Command coding commands are also represented by a code. The main difference is that there is a new type of selector for matching the same area or
+Commands are also represented by a code. The main difference is that there is a new type of selector for matching the same area or
 zone as of the generating event. A command code starting with _$area/$zone/AV renderer/TV_ will act on all audio and video renderers named "_TV_" 
 on the same area where the event generated and a command code starting with "_*/*/AV renderer/TV_" can be used to work with all TVs in the house.
 
-## Interfaces
+### Interfaces
 
-This menu is for setting up users, user rights and setting up the user interfaces generated by _BLI PRO_. It is possible to configure 
+This menu is for setting up users, their rights and interfaces generated by _BLI PRO_. It is possible to configure 
 the following features:
  
-+ Users that can access the system and restrictions.
++ Users that can access the system and access restrictions.
 + Sources and features of A/V products.
 + Access to IP cameras in the house.
 + Resources and macros that appear in a zone.
 + Virtual resources that provide a friendly way of interacting with some systems.
 + Lists with favourite TV channels and radio stations.
 
-The resources to be accessed via the user interfaces are configured in this section of the Interfaces page. The user interfaces are:
+The resources to be accessed via the user interfaces are configured in this page. The user interfaces are:
 
 + _BLApp_
 + Overlay menus in the TVs and the Webpanel accessed from a browser.
@@ -410,24 +400,24 @@ when activating **Configuration > Save revision**.
 
 ![Interfaces](pictures/pro-guide/interfaces.png)
 
-### Users - admin
+#### Users - admin
 
 The user named _admin_ is a user that exists per default and is meant for the technician/installer, who has access for setting-up _BLI PRO_
 and is allowed to access all zones via browser or _BLApp_.
 
-#### Change password for admin user
+###### Change password for admin user
 
-It is possible to change the password only. As said beforePer default, _admin_ password is a hash and could be setted to "_admin_" by activating the Setup 
+It is possible to change the password only. As said before per default, _admin_ password is a hash and could be setted to "_admin_" by activating the Setup 
 button function (2). This password will last 5 minutes (just for security purposes) being possible to set a new one. 
 Press the _admin_ entry in the left column to change password (see figure above).
 
-### Users - new user
+#### Users - new user
 
 To add a new user press **+**-sign in header **Users** of left column.
 
 ![Interfaces](pictures/pro-guide/interfaces.png)
 
-#### User properties
+###### User properties
 
 Configure the User properties by entering a name in the Name field and password in the Password field and select options according to the 
 following:
@@ -437,18 +427,18 @@ installation or a ‘superuser’ who is responsible for managing user access.
 + _Edition of user macros_: when selected, the user is allowed to create and edit macros from _BLApp_.  
 + _Controller_: should normally be selected. Allows the user to access _BLI_ via _BLApp_. When disabled, the only access is via the _Webpanel_.
 
-#### Select zone access for user
+##### Select zone access for user
 
 Finally, choices should be made for _Select zone access for user_. There can be selected _All zone access_ or individual zones from the list 
 presented.
 
-### B&O products
+#### B&O products
 
 For A/V products there are some basic options and a source list that can be presented to the user.
 
-Selecting any product, next sections are displayed.
+When selecting any product, the next sections are displayed.
 
-#### Network Link product: area/zone/product
+##### Network Link product: area/zone/product
 
 - _Name_: Possible to rename the product.
 - _Address_: The serial number of the product.
@@ -470,16 +460,16 @@ The information provided in the _Sources in product_  section for each source is
 - _Favourites list_: This makes it possible to select a favourite list defined in the *[Favourites](#favourites)* section.
 - _Hidden_: Selects if source must be hidden in all user interfaces or not.
 
-### Cameras
+#### Cameras
 
 In this section the configuration for several network cameras can be added. To add a camera, press the **+**-sign in the **Cameras** entry of the 
 left column.
 
-#### Remove a camera
+##### Remove a camera
 
 If a camera is to be removed from the list, choose the camera in the left column and press the _Remove_ button.
 
-#### Camera access
+##### Camera access
 
 _BLI PRO_ has a simple and strong capability integration with most CCTV systems or IP Cameras found in the market.
 
@@ -494,42 +484,44 @@ the _URL_ + _Server Port_ e.g. rtsp://bigserver.com:8001) and _Base URL_ must be
 - _Username_ and _Password_: The optional _Username_ and _Password_ fields may be used for basic HTTP authentication to access the camera from the
  user interfaces.
 
-#### Camera resources path
+##### Camera resources path
 
-##### Video & Images
+###### Video & Images
 
 At least one of resources path for obtaining _Video & Images_ both in high and low resolution or RTSP stream must be provided, e.g. mjpg/video.cgi
 for high resolution video. All the commands will be appended to the correspondent base URL.
 
-##### Pan, Tilt and Zoom commands
+###### Pan, Tilt and Zoom commands
 
 If your camera is able to control lens direction and zoom, _Pan_, _Tilt_ and _Zoom_ paths could be specified and controlled through all user 
 interfaces.
 
-By pressing the _Raw edit_ button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to 
-copy/paste, edit in the favourite text editor. It is possible to copy and paste the text when setting up other similar cameras and for each of 
+By pressing the _Raw edit_ button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to copy and paste the text when setting up other similar cameras and for each of 
 these to adapt to the actual camera, e.g. adjust to the correct IP-address.
 
-### Zone setup
+#### Zone setup
 
 In this section of the _Interfaces_ page, for each zone it is possible to reorder, rename, and hide/show the resources as they will be shown in 
 the user interfaces.
 
-#### Resources for area/zone
+##### Resources for area/zone
 
 For the resource to be moved in the list, place the cursor over the left button (three horizontal lines), then click and hold the left-mouse 
-button and then drag the resource until the line-marking is where the resource should be paced in order and let go the mouse button.
+button and then drag the resource until the line-marking is where the resource should be paced in order and release the mouse button.
 
 - _Name_: Possibility to rename the resource.
 - _Type_: The type of the resource is stated.
-- _Hidden_: Set if resource must be shown in user interface.
+- _Hidden_: Set if the resource must be shown in user interface.
 - _Options/Hints_: For macros and buttons that are visible on the user interfaces the following options are available:
-  - _Confirm_: When a checkmark is set in the checkbox and when a button pressed or a macro is triggered the action needs confirmation on a
+  - _Confirm_: If this option is enabled, after a button press or after a macro is triggered the action will need confirmation on a
   hand held device, e.g. pressing a Yes button to avoid unintended activation before the desired function is executed. This could be when an
   action should not take place unintended, e.g. activating ‘Vacation mode’.
   - _Compact_: When enabled the button in the user interface will be shown in a half-width button. I.e. there is room for two buttons per line.
-  - _On camera view_: With ‘On camera’ enabled the half-width button will be shown next to the IP camera images in that zone on the user
-  interface.
+  - _On camera view_: With ‘On camera’ enabled, when using _WebPanel_ the half-width button will be shown next to the IP camera images in that zone on the user. When _BLApp_ is used, the button will be shown in the _Cameras_ section of _BLApp_.
+  - _On scenes view_: When enabled, the button will be shown in the _Scenes_ section of _BLApp_
+  - _On dimmer view_: When enabled, the button will be shown in the _Lights_ section of _BLApp_.
+  - _On shade view_: When enabled, the button will be shown in the _Shade_ section of _BLApp_.
+  - _On thermostat view_: When enabled, the button will be shown in the _Thermostat_ section of _BLApp_.
 
 #### Favourite Lists
 
@@ -595,7 +587,7 @@ On the upper-right side of _Monitor_´s page, it´s located a filter tool to fac
 
 ### Resource states
 
-_Resource states_ shows a table of all resources in the installation and their current states. For each row, you could find resource name at first
+_Resource states_ shows a table of all resources in the installation and their current states. For each row, you could find the resource name at first
 column and all states in the second one. 
 
 ![Resource states](pictures/pro-guide/resource-states.png)
@@ -644,7 +636,7 @@ For performing an online update to the _BLI_ Firmware you must ensure that LAN n
 
 ![Firmware update](pictures/pro-guide/firmware.png)
 
-+ _Check for latest version_: After pressed, the lastest official Firmware version will be displayed, if available.
++ _Check for the latest version_: After pressed, the lastest official Firmware version will be displayed, if available.
 + _Start online update_: If a new Firmware version is available for download, pressing this button will start the Firmware download and installation process.
 + _Automatic updates_: Enable/Disable automatic _BLI_ Firmware updates. If this option is selected, then the _BLI_ firmware will be automatically kept up to date.
 
@@ -665,7 +657,7 @@ contains many of them in his configuration.
 
 ![Programming report](pictures/pro-guide/programming-report.png)
 
-Left column contains each pair of _Area/Zone_ that contains at least one resource or system. For each resource or system in column, next 
+Left column contains each pair of _Area/Zone_ that contains at least one resource or system. For each resource or system in a column, the next 
 information will be displayed:
 
 ##### Macros being fired by this resource|system
@@ -708,15 +700,15 @@ The table showing external drivers available/installed displays:
 + _Installed version_: Version of external driver currently installed.
 + _Action_: _Install_ if external driver installation is desired or _Remove_ to remove it from the current configuration.
 
-##### Install as custom driver using file
+##### Install a custom driver using file
 
 Same functionality offered in *[Custom driver editor](#driver-editor)* page. 
 
 ## Configuration
 
 _Configuration_ page contains tools related to _BLI_ configuration, for e.g. download current configuration into a local file, upload _BLI_ 
-configuration from a local file or create snapshot of your current configuration in case modification will be made and have the possibility to 
-rollback your configuration. Next, the different tools of _Configuration_ page are described.
+configuration from a local file or create snapshot of your current configuration in case a modification will be made and you want the possibility to 
+rollback your configuration. Below, the different tools of _Configuration_ page are described.
 
 ### Save revision
 
@@ -729,8 +721,8 @@ configuration is saved internally in the _BLI_ when the _Save_ button is pressed
 Up to ten revisions of the configuration can be saved. If a manually Save revision is not made the recent autosaved file will be the recent saved 
 configuration.
 
-When configuration of the _BLI_ takes place and the operator has not saved the configuration by a manual _Save revision_ action, the
-configuration will be saved every 5th minute if configuration activities are ongoing - since last time autosave took place. If configurations are 
+When a configuration of the _BLI_ takes place and the operator has not saved it by a manual _Save revision_ action, the
+configuration will be saved every 5 minutes if configuration activities are ongoing - since last time autosave took place. If configurations are 
 made and left unsaved and the _BLI_ is idle for more than 30 seconds, autosave will also take place. These files are added to the 
 *[Revision history](#revision-history)* list and marked with the tag: _‘Auto save’_. 
 
@@ -752,10 +744,10 @@ become active immediately and substitute the current configuration.
 
 ### Download to file {#download-to-file}
 
-Used to save revision of the configuration to a computer. By selecting **Configuration > Download** to file the current configuration will be down
-loaded to a computer. It is recommended to use this method to take a copy of the configuration on a computer or save to another storage media when
- an installation is finished. It can be useful to have such a configuration file as a reference if a problem should occur or as a back-up if the 
-_BLI_ should be defective.
+Used to save revision of the configuration to a computer. By selecting **Configuration > Download** to file the current configuration will be downloaded 
+to a computer. It is recommended to use this method to take a copy of the configuration on a computer or save to another storage media when
+ an installation is finished. It can be useful to have such configuration file as a reference if a problem occurs or as a back-up if the 
+_BLI_ becomes defective.
 
 ### Revision history {#revision-history}
 

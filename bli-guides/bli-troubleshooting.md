@@ -1,11 +1,5 @@
 # BeoLiving Intelligence Troubleshooting Guide
 
-## Revision History
-
-|    Date      | Author       | Comments             |
-|--------------|--------------|----------------------|
-| [2018-07-03] | Aldo Vignone | First version        |    
-
 ## Introduction
 
 The scope of this guide comprise a troubleshooting guide for installers in case of inappropriate behavior or malfunction of 
