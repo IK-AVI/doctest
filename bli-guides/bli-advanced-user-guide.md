@@ -2,18 +2,29 @@
 
 ## Introduction
 
-The scope of this guide includes an introduction to BeoLiving Intelligence functionalities, how to find and access it within the network and an explanation regarding different sections of its web interface. BeoLiving Intelligence comes out of the box with a big limitation in all the functionalities it could offer. To use your BeoLiving Intelligence in its full capabilities, it's necessary to pay for a Firmware upgrade that automatically will make your BeoLiving Intelligence change to _PRO_ mode (see section *[Upgrade to PRO](#upgrade-pro)* for futher information). For usage and configuration reference of BeoLiving Intelligence _PRO_ refer to _BeoLiving Intelligence PRO User Guide_. 
+The scope of this guide includes an introduction to _BeoLiving Intelligence_ functionalities, how to find and access it within the network and an 
+explanation regarding different sections of its web interface. _BeoLiving Intelligence_ comes out of the box with a big limitation in all the 
+functionalities it could offer. To use your _BeoLiving Intelligence_ in its full capabilities, it's necessary to pay for a Firmware upgrade that 
+automatically will make your _BeoLiving Intelligence_ change to _PRO_ mode (see section *[Upgrade to PRO](#upgrade-pro)* for futher information). 
+For usage and configuration reference of _BeoLiving Intelligence PRO_ refer to [_BeoLiving Intelligence PRO User Guide_](bli-pro-user-guide.md). 
 
-BeoLiving Intelligence has the unique capability of integrating Bang & Olufsen Network Link systems (audio and video products) with several Home Automation systems. However to fully support integration with all available Home Automation systems you need to upgrade your BeoLiving Intelligence to _PRO_.
+_BeoLiving Intelligence_ has the unique capability of integrating _Bang & Olufsen_ NetworkLink systems (audio and video products) with several 
+Home Automation systems. However to fully support integration with all available Home Automation systems you need to upgrade your _BeoLiving 
+Intelligence_ to _PRO_.
 
-The Bang & Olufsen Network Link systems comprises audio and video products. Most important Home Automation systems are also supported and can be configured by using either an Ethernet connection or RS232 protocol connection. This enables enables smooth control and operation of the installation as a whole.
+The _Bang & Olufsen_ NetworkLink systems comprises audio and video products. Most important Home Automation systems are also supported and can be 
+configured by using either an Ethernet connection or RS232 protocol connection. This enables enables smooth control and operation of the 
+installation as a whole.
 
-Most of BeoLiving Intelligence configuration and usage it's done through the BeoLiving App. This Smart Device application lets you customize your installation and control all devices in it. BeoLiving Intelligence also provides a web interface, which out of the box provides Network settings and User access control management, and after converting your controller to BeoLiving Intelligence _PRO_ it becomes the most important tool for installation, configuration and programming. 
+Most of _BeoLiving Intelligence_ configuration and usage it's done through the _BeoLiving App_. This Smart Device application lets you customize 
+your installation and control all devices in it. _BeoLiving Intelligence_ also provides a web interface, which out of the box provides Network 
+settings and User access control management, and after converting your controller to _BeoLiving Intelligence PRO_ it becomes the most important 
+tool for installation, configuration and programming. 
 
 _BeoLiving Intelligence_ provides support in two ways:
 
-- Hassle free integration of Bang & Olufsen Network Link A/V systems with other control systems, without extra boxes.
-- Control of the entire home via either a Bang & Olufsen remote control, the BeoLiving App or the overlay menus on a Bang & Olufsen TV.
+- Hassle free integration of _Bang & Olufsen_ NetworkLink A/V systems with other control systems, without extra boxes.
+- Control of the entire home via either a _Bang & Olufsen_ remote control, the _BeoLiving App_ or the overlay menus on a _Bang & Olufsen_ TV.
 
 
 ## Terminology
@@ -40,7 +51,8 @@ The following methods to discover _BLI_ IP are suggestions (this doesn't mean th
 
 ### Set static IP address mode
 
-To assing a static IP-address to _BLI_ (according to the network plan determined in the building) it must first be connected in DHCP mode to the router, and the static IP-address is then configured through it's web-interface (as described in **[Network](#network-conf)** section).
+To assing a static IP-address to _BLI_ (according to the network plan determined in the building) it must first be connected in DHCP mode to the 
+router, and the static IP-address is then configured through it's web-interface (as described in [*Network*](#network-conf) section).
 
 ### Direct access
 
@@ -51,8 +63,8 @@ This method can also be used if the IP address is forgotten or if is not possibl
 
 _BLI_ has a button accessible in the to which provides several functions during normal operation:
 
-- Function 1: Temporary enable link to third party cloud services. See further information in _Link to 3rd party Cloud Services Guide_.
-- Function 2: Set _admin_ password to _"admin"_ during the next 5 minutes. See further information in *[Setup interface](#setup-interface)* section.
+- Function 1: Temporary enable link to third party cloud services. See further information in [_Link to 3rd party Cloud Services Guide_](bli-link-third-party-service.md).
+- Function 2: Set _admin_ password to _"admin"_ during the next 5 minutes. See further information in [*Setup interface*](#setup-interface) section.
 - Function 3: Set network settings to fixed IP (192.168.1.10).
 - Function 4: Set network settings to use DHCP.
 - Function 5: Erase all configuration and settings.
@@ -62,7 +74,7 @@ To select a function, press and hold the setup button. This will cycle through a
 Release the button when you arrive to the desired function number and the LED will start to blink, press the setup button again in order to 
 confirm the function execution.
 
-Apart from being used to confirm input function, a single press during normal operation is used to fire System event´s (refer to _BeoLiving Intelligence PRO User Guide_).
+Apart from being used to confirm input function, a single press during normal operation is used to fire System event´s (refer to [_BeoLiving Intelligence PRO User Guide_](bli-pro-user-guide.md)).
 
 ## Web interface usage
 
@@ -75,7 +87,7 @@ The initial page after accessing the _BLI_ via web browser shows two buttons: _W
 
 ### Setup interface {#setup-interface}
 
-The Setup web interface for a _BLI_ does not offer a high degree of customization. In fact, this interface should be used in exceptional cases as for example: Upgrade your _BASIC_ _BLI_ to _PRO_ (see section *[Upgrade to PRO](#upgrade-pro)* for further information). On the other hand, the Setup web interface is the most important tool for configuring and programming after upgrading the _BLI_ license to _BLI PRO_.
+The Setup web interface for a _BLI_ does not offer a high degree of customization. In fact, this interface should be used in exceptional cases as for example: Upgrade your _BASIC_ _BLI_ to _PRO_ (see section [*Upgrade to PRO*](#upgrade-pro) for further information). On the other hand, the Setup web interface is the most important tool for configuring and programming after upgrading the _BLI_ license to _BLI PRO_.
 
 An installer can access the _BLI_ setup interface with the _admin_ user. To reinforce security, _admin_ password is by default unknown. If for some reason it is necessary to make use of the Setup web interface, the _admin_ password can be reset by activating the Setup button function (2). After the button function input, _admin_ password will be _"admin"_ for the next 5 minutes, and after logging in you will be immediately asked to modify it.
 
@@ -91,10 +103,10 @@ After payment process finishes, your _BLI_ will start the upgrade process immedi
 
 #### Project info
 
-The Project information page is used to state information regarding the project BeoLiving Intelligence is part of. This information could be useful in any later service situation.
+The Project information page is used to state information regarding the project _BeoLiving Intelligence_ is part of. This information could be useful in any later service situation.
 
 + _Project name_: Name for the project.
-+ _Display name_: Name of the _BLI_ that will be shown in all the controller interfaces, such as BeoLiving App and Webpanel. Examples of display name are: the family name or the street address of the house.
++ _Display name_: Name of the _BLI_ that will be shown in all the controller interfaces, such as _BeoLiving App_ and _WEBPANEL_. Examples of display name are: the family name or the street address of the house.
 + _Installer name_: Reference name of the installer/company in charge of this project.
 + _Installer contact_: Any type of contact information to reach the installer/company in charge of this project for future questions or comments.
 
