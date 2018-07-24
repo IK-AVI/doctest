@@ -1,5 +1,4 @@
 ---
-layout: page
 hero_text: Home Page!
 ---
 ## Intro
