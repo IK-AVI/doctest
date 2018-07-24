@@ -33,7 +33,7 @@ The next steps show how to quickly set your BeoLiving Intelligence up and ready 
 + Once in the pop-up window press "Request access" and follow the instructions provided.
 ![Setting_up_3](pictures/bli-quick-setup-guide/Setting_up_3.PNG)
 + After that, return to the BeoLiving App main screen and your BeoLiving Intelligence should appear.
-<img src="pictures/bli-quick-setup-guide/Setting_up_4.PNG" alt="drawing" width="200px"/>
+<img align="center" src="pictures/bli-quick-setup-guide/Setting_up_4.PNG" alt="drawing" width="200px"/>
 
 #### Adding Bang & Olufsen products
 
