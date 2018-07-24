@@ -1,17 +1,11 @@
 # BeoLiving Intelligence Service Troubleshooting Guide
 
-## Revision History
-
-|    Date      | Author       | Comments             |
-|--------------|--------------|----------------------|
-| [2018-07-03] | Aldo Vignone | First version        |    
-
 ## Introduction
 
 The scope of this document comprise a troubleshooting guide for service in case of inappropriate behavior or malfunction of 
 _BeoLiving Intelligence_.
 
-_BeoLiving Intelligence_ have five complementary methods in case of malfunction of your equipment:
+_BeoLiving Intelligence_ has five complementary methods in case of malfunction of your equipment:
 
 + [Service report](#service-report)
 + [ECON pendrive](#econ-pendrive)
@@ -34,7 +28,7 @@ In this section, a form that should be completed and the _Download_ button to sa
 
 Steps to follow are:
 
-+ Copy/Paste the form into an email to _support@khimo.com_. 
++ Copy/Paste the form into an email to _support@khimo.com_.
 + Complete the form in the most detailed way in order to help us to resolve quickly and effectively the issue.
 + Attach the _Service report_ before send.
 
@@ -42,8 +36,8 @@ Our team will study your case and will reach you as soon as possible with instru
 
 ## "ECON" pendrive {#econ-pendrive} 
 
-This method provides a better understanding of what´s going on inside _BeoLiving Intelligence_ compared with _Service report_ and consist in 
-download a big amount of information of _BeoLiving Intelligence_ state (including tracebacks of all internal processes) into a pendrive. 
+This method provides a better understanding of what´s going on inside _BeoLiving Intelligence_ compared with _Service report_ and consists in 
+downloading a big amount of information of _BeoLiving Intelligence_ state (including tracebacks of all internal processes) into a pendrive. 
 Requirements the pendrive used must fulfill are:
 
 + FAT32 format.
@@ -63,8 +57,8 @@ occured in your controller.
  
 ## Erase all configuration and settings {#erase-configuration}
 
-An alternative, having a back up of your current _BeoLiving Intelligence_ configuration, it´s to erase all configuration and settings of your 
-controller. This could solve immediately conflicts between your current configuration and firmware, but with the risk of lost previous 
+An alternative, having a back up of your current _BeoLiving Intelligence_ configuration, is to erase all configuration and settings of your 
+controller. This could immediately solve conflicts between your current configuration and firmware, but with the risk of losing the previous 
 configuration if being not careful. Same as for [System button reset](#system-reset) method, this method must be used in case _BeoLiving 
 Intelligence_ is not able to restore normal operation by itself.
 
@@ -77,4 +71,4 @@ to it´s USB port containing the _recovery.zip_ file provided by _Khimo_. This w
 _BeoLiving Intelligence_. This method must be used as last alternative to restore proper operation.
 
 Send us an email to _support@khimo.com_ requesting _BeoLiving Intelligence Recovery Mode Guide_ and _recovery.zip_ file. All information shared by
- us is confidantial and must not be distributed. 
+ us is confidential and must not be distributed. 

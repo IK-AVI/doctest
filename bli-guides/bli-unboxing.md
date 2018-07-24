@@ -1,16 +1,12 @@
 # Un-boxing BeoLiving Intelligence
 
-|    Date      | Author       | Comments             |
-|--------------|--------------|----------------------|
-| [2018-05-29] | Aldo Vignone | First version        |    
-
-## What´s in the Box
+## What´s in the box
 
 After opening the box of BeoLiving Intelligence you will find:
 
 + BeoLiving Intelligence hardware.
 + Wall bracket for BeoLiving Intelligence.
-+ AC Power Supply.
++ AC power supply.
 + Quick setup guide.
 
 ## Connection Panel
@@ -20,32 +16,21 @@ Located on the back of the BeoLiving Intelligence:
 + *Power*: Powers the BeoLiving Intelligence. 
 + *USB Port*: Used for service purpouses.
 + *System Reset Button*: After being pressed during 8 seconds, a system reset will occur.
-+ *RJ 45 Connector*: Used to attach an Ethernet cable to connect to a local network (*PoE* capable). 
++ *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
 
 ![Ports](pictures/ports.png)
 
-## First run
-
-By default, BLI comes configured in DHCP mode. This means it gets its IP address from the router it is connected to. To configure static IP address, please refer to _"BeoLiving Intelligence User Guide"_.
-
-Follow the next steps to let your BeoLiving Intelligence running:
-
-1. Connect BLI to your LAN through his RJ45 ethernet port.
-2. Power your BLI using the AC Power supply or PoE.
-3. Wait until User LED stay solid on Green (this indicates normal operation).
-4. Start experiencing what your BeoLiving Intelligence can do with BeoLiving App.
 
 ## User Led and Button
 
-+ *User LED*: The User LED is used to signalize present state of BeoLiving Intelligence from the use of colours and ON-OFF patterns combination. Colours could be Green, Red or Yellow and patterns Solid, Flash and Quick Flash. For more information about different BLI LED states refer to [*Led States*](#led-states) section.
++ *User LED*: The User LED is used to signalize the present state of BeoLiving Intelligence from the use of colours and ON-OFF patterns combination. Colours could be Green, Red or Yellow and the patterns could be Solid, Flash and Quick Flash. For more information about different BLI LED states refer to [*Led States*](#led-states) section.
 + *User Button*: This button is intended for user confirmation and button functions input. For more information refer to _Button Functions_ section in _BeoLiving Intelligence User Guide_.
 
 ![Ports](pictures/bli.png)
 
 ## Led States
 
-BeoLiving Intelligence box has a LED which is used to display system status
-and feedback for user input.
+Below is shown all the possible User LED states with their respective meaning.
 
 | Activity                       | LED state                  |
 |--------------------------------|----------------------------|
@@ -58,3 +43,14 @@ and feedback for user input.
 | Boot                           | Transition Red / Yellow    |
 
 Table: BLI states versus LED state
+
+## First run
+
+By default, BLI comes configured in DHCP mode. This means it gets its IP address from the router it is connected to. To configure a static IP address, please refer to _"BeoLiving Intelligence User Guide"_.
+
+Follow the next steps to let your BeoLiving Intelligence running:
+
+1. Connect BLI to your LAN through his RJ45 ethernet port.
+2. Power your BLI using the AC power supply or by using PoE.
+3. Wait until the User LED stay solid on Green (this indicates normal operation).
+4. Install the BeoLiving App in your phone/tablet and start experiencing what your BeoLiving Intelligence can do.
