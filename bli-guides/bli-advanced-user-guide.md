@@ -1,4 +1,4 @@
-# BeoLiving Intelligence User Guide
+# BeoLiving Intelligence Advanced User Guide
 
 ## Introduction
 
@@ -68,7 +68,7 @@ Apart from being used to confirm input function, a single press during normal op
 
 The initial page after accessing the _BLI_ via web browser shows two buttons: _WEBPANEL_ and _SETUP_.
 
-![Start page](pictures/bli-user-guide/init-page.png)
+![Start page](pictures/bli-advanced-user-guide/init-page.png)
 
 + _WEBPANEL_: This interface offers full home automation control of your setup.
 + _SETUP_: This interface is used for configuring/programming your _BLI_ setup.
@@ -81,7 +81,7 @@ An installer can access the _BLI_ setup interface with the _admin_ user. To rein
 
 #### Upgrade to PRO {#upgrade-pro}
 
-![Basic](pictures/bli-user-guide/basic.png)
+![Basic](pictures/bli-advanced-user-guide/basic.png)
 
 At the top menu bar, BASIC access page could be found. This page contains information regarding your _BLI_ and _Licensing information_.
 In _Product information_, _License type_ shows the current license of your _BLI_ and for _BLI's_ with _BASIC_ license _Click to upgrade_ link 
@@ -100,7 +100,7 @@ The Project information page is used to state information regarding the project 
 
 #### Users
 
-![Users](pictures/bli-user-guide/users.png)
+![Users](pictures/bli-advanced-user-guide/users.png)
 
 The Users page shows in the left column every user that can access the _BLI_. New users can be added by _admin_ by pressing the "plus" button.
 
@@ -116,7 +116,7 @@ In this section, select the zones the user has access to. All zones of the insta
 
 The Network page contains the network connectivity configuration of _BLI_.
 
-![Network configuration](pictures/bli-user-guide/network.png)
+![Network configuration](pictures/bli-advanced-user-guide/network.png)
 
 The configurable setting are:
 
@@ -144,7 +144,7 @@ Press the _Choose File_ to select your local _BLI_ firmware file. Automatically 
 
 For performing an online update to the _BLI_ Firmware you must ensure that LAN network has Internet connection.
 
-![Firmware update](pictures/bli-user-guide/firmware.png)
+![Firmware update](pictures/bli-advanced-user-guide/firmware.png)
 
 + _Check for latest version_: After pressed, the lastest official Firmware version will be displayed, if available.
 + _Start online update_: If a new Firmware version is available for download, pressing this button will start the Firmware download and installation process.
@@ -156,6 +156,6 @@ When any hardware or software error is experienced it is possible to create a se
 
 You must fill the form showed in that page. This information is essential to reproduce and fix any issue you are experiencing.
 
-![Service report](pictures/bli-user-guide/service-report.png)
+![Service report](pictures/bli-advanced-user-guide/service-report.png)
 
 Service reports are created and downloaded when the _Download_ button is clicked.
