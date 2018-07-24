@@ -3,7 +3,7 @@ author: Khimo
 email: support@khimo.com
 description: > # this means to ignore newlines until "twitter_username:"
   In this site will will keep updated documentation on how to use the BeoLiving
-  Intelligence controller and the BeoLiving App.
+  Intelligence controller and the BeoLiving App. [](https://ik-avi.github.io/doctest/)
 # social links
 twitter_username: khimo_remoto
 github_username:  khimo
@@ -35,6 +35,7 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
+ - readme.md
  - bli-guides/main.md
 
 # Build settings
