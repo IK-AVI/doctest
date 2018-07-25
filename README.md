@@ -11,7 +11,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
   </div>
 
  <div style="float:right">
-  <input type="image" src="icons/guides.png" height="150px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
+  <input type="image" src="icons/systems.png" height="150px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
  </div>
 
 
