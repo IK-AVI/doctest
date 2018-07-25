@@ -4,9 +4,9 @@
   {%- include head.html -%}
 
   <body>
-    {% include toc.html html=content %}
     {%- include header.html -%}
-
+    
+    {% include toc.html html=content %}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
