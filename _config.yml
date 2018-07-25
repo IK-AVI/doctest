@@ -35,7 +35,7 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
  - readme.md
- - bli-guides/main.md
+ - bli-guides/index.md
 
 # Build settings
 theme: minima

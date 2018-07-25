@@ -1,4 +1,8 @@
-# BeoLiving Intelligence Advanced User Guide
+---
+layout: pagetoc
+---
+
+#BeoLiving Intelligence Advanced User Guide
 
 ## Introduction
 
