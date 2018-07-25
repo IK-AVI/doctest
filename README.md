@@ -6,7 +6,7 @@ This site contains all existing documentation related to our main product _BeoLi
 
 ## Sections
 
-+ [BeoLiving Intelligence Guides](bli-guides/main.md)
++ [BeoLiving Intelligence Guides](bli-guides/index.md)
 + [Driver Help Files](bli-help-files/drivers/main.md)
 + [Instructive Videos](videos/main.md)
 
