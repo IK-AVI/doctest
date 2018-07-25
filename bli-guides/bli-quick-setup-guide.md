@@ -64,7 +64,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 <img src="pictures/bli-quick-setup-guide/Adding_2.PNG" alt="drawing" width="300px"/>
 </p>
 
-+ In the list select the product you want to add and click on "Assign to zone". Assign the product to the zone you just created.
++ Select the product you want to add from the list and click on "Assign to zone". Assign the product to the zone you just created.
 
 <p align="center">
 <img src="pictures/bli-quick-setup-guide/Adding_3.PNG" alt="drawing" width="300px"/>
