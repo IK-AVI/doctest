@@ -120,13 +120,12 @@ _BeoLiving Intelligence_ Scenes are the way you can control several products at 
 
 
 + After selecting all the products you want to control and configuring their actions press "Done".
++ To fire a scene just press the name of it, or you can click on the clock icon to schedule it for certain time or day.
 
 <p align="center">
 <img src="pictures/bli-quick-setup-guide/Scene_5.PNG" alt="drawing" width="300px"/>
 </p>
 
-
-+ To fire a scene just press the name of it, or you can click on the clock icon to schedule it for certain time or day.
 
 #### Controlling products with your voice
 
