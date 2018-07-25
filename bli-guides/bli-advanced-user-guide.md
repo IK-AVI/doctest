@@ -1,5 +1,5 @@
 ---
-layout:pagetoc
+layout: pagetoc
 ---
 
 #BeoLiving Intelligence Advanced User Guide
