@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Blogging Like a Hacker
 ---
 # Welcome to BeoLiving Intelligence 
