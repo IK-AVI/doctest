@@ -5,8 +5,6 @@ title: Welcome to BeoLiving Intelligence
 This site contains all existing documentation related to our main product _BeoLiving Intellingence_, including multiple guides as quick setup 
 installation, basic and advanced usage, configuration and troubleshooting, system drivers help files and FAQ (Frequently Asked Questions).
 
-If you are new to _BeoLiving Intelligence_ then we recommend you to start with [_BeoLiving Intelligence Quick-Setup guide_](bli-guides/bli-quick-setup-guide.md).   
-
 ## Index
 
 + [BeoLiving Intelligence Guides](bli-guides/index.md)
