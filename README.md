@@ -12,5 +12,5 @@ If you are new to _BeoLiving Intelligence_ then we recommend you to start with [
 + [BeoLiving Intelligence Guides](bli-guides/index.md)
 + [Driver Help Files](bli-help-files/drivers/main.md)
 
-<input type="image" src="icons/guides.png" />
+<input type="image" src="icons/guides.png" onclick="bli-guides/index.md"/>
 
