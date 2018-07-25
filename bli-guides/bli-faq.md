@@ -20,7 +20,7 @@ network used by the _BeoLiving Intelligence_.
 lookup for "\_hipservices.\_tcp." service and the application will discover the IP addresses of the _BeoLiving Intelligence_ in the network.
 - Access to your _LAN_ router and search for the assigned IP to _BeoLiving Intelligence_. 
 
-## How to link Alexa, Google Home, IFTTT with your _BeoLiving Intelligence_?
+## How to link Alexa and IFTTT with your _BeoLiving Intelligence_?
 
 Refer to our specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](****LINK****).
 
@@ -76,7 +76,7 @@ _BeoLiving Intelligence_ has most of his capabilities reduced. Upgrading your _B
 |------------------------------------------------------------------------------------------------|-------|-----------|
 | Control _B&O NetworkLink_ products                                                             | **X** |   **X**   | 
 | Remote access                                                                                  | **X** |   **X**   |
-| Alexa, Google Home, IFTTT integration                                                          | **X** |   **X**   |
+| Alexa, IFTTT integration                                                                       | **X** |   **X**   |
 | Configuration with _BeoLiving App_ (Limited compared with configuration through web interface) | **X** |   **X**   | 
 | Control over _BeoLiving App_                                                                   | **X** |   **X**   |
 | Configuration with web interface                                                               |       |   **X**   |
@@ -97,7 +97,7 @@ Remote access is available in all firmware versions of _BeoLiving Intelligence_.
 ## Can I control my _BeoLiving Intelligence_ with my phone/voice/PC/TV?
 
 _BeoLiving Intelligence_ has multiple ways of user interfaces for control your building. From factory, _BeoLiving Intelligence_ could be controlled only by _BeoLiving App_ and _Voice_ 
-(linking your _BeoLiving Intelligence_ with _Alexa_ or _Google Home_). After upgrading your _BeoLiving Intelligence_ to _BeoLiving Intelligence PRO_, control through _BeoLiving Intelligence_ web interface and _Home 
+(linking your _BeoLiving Intelligence_ with _Alexa_). After upgrading your _BeoLiving Intelligence_ to _BeoLiving Intelligence PRO_, control through _BeoLiving Intelligence_ web interface and _Home 
 Control_ native application of Bang & Olufsen TV's becomes available.
 
 ## If the power goes off, do I lost _BeoLiving Intelligence_ configuration?
