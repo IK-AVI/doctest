@@ -91,7 +91,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 + Once a source is selected, controls will be shown on the main screen. What you control depends on the device and the source you have selected. You can control things such as volume, selecting content, play, pause, etc.
 
 <p align="center">
-<img src="pictures/bli-quick-setup-guide/Control_2.PNG" alt="drawing" width="300px"/>
+<img src="pictures/bli-quick-setup-guide/Control_4.PNG" alt="drawing" width="300px"/>
 </p>
 
 
