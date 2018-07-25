@@ -5,7 +5,7 @@ This section has all guides you must-do read for a completely and adequate usage
 ## Table of contents
 
 1. [Un-boxing BeoLiving Intelligence](bli-unboxing.md) - Description of what's inside BeoLiving Intelligence box, especially BeoLiving Intelligence device.  
-2. [BeoLiving Intelligence User Guide](bli-user-guide.md) - Introduction guide to BeoLiving Intelligence.
+2. [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md) - Introduction guide to BeoLiving Intelligence.
 3. [BeoLiving Intelligence Pro User Guide](bli-pro-user-guide.md) - Advanced BeoLiving Intelligence guide (based in PRO firmware version).
 4. [BeoLiving Intelligence Link 3rd Party Cloud Service Guide](bli-link-third-party-service.md) - How to link BeoLiving Intelligence with Alexa, Google Home and IFTTT.
 5. [BeoLiving Intelligence Troubleshooting Guide](bli-troubleshooting.md) - How to proceed when experiencing malfunction operation of BeoLiving Intelligence.
