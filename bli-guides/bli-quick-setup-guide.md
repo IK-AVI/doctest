@@ -129,12 +129,12 @@ _BeoLiving Intelligence_ Scenes are the way you can control several products at 
 
 #### Controlling products with your voice
 
-Most of the functionalities you can control with the _BeoLiving App_ can also be controlled with your voice if you have a Google Home or an Amazon Alexa (or if you have them in your phone), for instance, you could say "Turn on Deezer on the M5".
-To be able to do so, a linking process must be done first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available commands can be found in the Google smart home app or in the Alexa skill for the _BeoLiving Intelligence_.
+Most of the functionalities you can control with the _BeoLiving App_ can also be controlled with your voice if you have an Amazon Alexa (or if you have it in your phone), for instance, you could say "Turn on Deezer on the M5".
+To be able to do so, a linking process must be done first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available commands can be found in the Alexa skill for the _BeoLiving Intelligence_.
 
 #### Integrating the BeoLiving Intelligence with other services
 
-_BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the integration of different services which in this case can be used for example to send an email for changing the source of a TV, and many other combinations. A linking process very similar to the one for Alexa and Google Home has to be made first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available combinations can be found in the IFTTT page.
+_BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the integration of different services which in this case can be used for example to send an email for changing the source of a TV, and many other combinations. A linking process very similar to the one for Alexa has to be made first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available combinations can be found in the IFTTT page.
 
 ### Advanced usage
 
