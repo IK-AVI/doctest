@@ -1,4 +1,4 @@
-# BeoLiving Intelligence Quick set-up guide
+# BeoLiving Intelligence Quick Setup Guide
 
 ## Introduction
 
@@ -20,7 +20,7 @@ Some of the main features of the _BeoLiving Intelligence_ controller are:
 + Control _Bang & Olufsen_ (NetworkLink type) products through your smart device.
 + Control products from some of the most popular Home Automation brands through your smart device (_PRO_).
 + Control of the products from outside your house.
-+ Voice control of the products using Alexa or Google Home.
++ Voice control of the products using Alexa.
 + Creation of routines that automates the control of several products.
 
 and more...
