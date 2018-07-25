@@ -17,14 +17,13 @@ dedicated home automation systems. Even if you don't own any _Bang & Olufsen_ pr
 
 Some of the main features of the _BeoLiving Intelligence_ controller are:
 
-+ Control _Bang & Olufsen_ (Networklink type) products through your smart device.
-+ Control products from some of the most popular Home Automation brands through your smart device (PRO).
++ Control _Bang & Olufsen_ (NetworkLink type) products through your smart device.
++ Control products from some of the most popular Home Automation brands through your smart device (_PRO_).
 + Control of the products from outside your house.
 + Voice control of the products using Alexa or Google Home.
 + Creation of routines that automates the control of several products.
 
 and more...
-
 
 The following guide provides a quick set-up guide and illustrates basic usage examples.
 
@@ -34,11 +33,17 @@ The next steps show how to quickly set your BeoLiving Intelligence up and ready 
 
 #### Setting up the _BeoLiving Intelligence_
 
-+ Plug in the power and the Ethernet cable to the _BeoLiving Intelligence_.
-+ Go to the store in your smart device and download and install the _BeoLiving App_.
-+ Open the _BeoLiving App_ and when your _BeoLiving Intelligence_ is ready a pop-up will appear. If more than one appears, you can identify them 
+By default, _BeoLiving Intelligence_ comes configured in DHCP mode. This means it gets its IP address from the router it is connected to. To configure a static IP address, please refer to [_BeoLiving Intelligence Advanced User Guide_](bli-advanced-user-guide.md).
+
+Follow the next steps to let your BeoLiving Intelligence running:
+
+1. Connect _BeoLiving Intelligence_ to your LAN through its RJ45 ethernet port.
+2. Power your _BeoLiving Intelligence_ using the AC power supply or by using PoE.
+3. Wait until the User LED _BeoLiving Intelligence_ is in solid green (this indicates normal operation).
+4. Go to the store in your smart device and download and install the _BeoLiving App_.
+5. Open the _BeoLiving App_ and when your _BeoLiving Intelligence_ is ready a pop-up will appear. If more than one appears, you can identify them 
 by the serial number located on the bottom of the _BeoLiving Intelligence_.
-+ Once in the pop-up window press "_Request access_" and follow the instructions provided.
+6. Once in the pop-up window press "_Request access_" and follow the instructions provided.
 
 <p align="center">
 <img src="pictures/bli-quick-setup-guide/Setting_up_3.PNG" alt="drawing" width="300px"/>
@@ -130,7 +135,7 @@ _BeoLiving Intelligence_ Scenes are the way you can control several products at 
 #### Controlling products with your voice
 
 Most of the functionalities you can control with the _BeoLiving App_ can also be controlled with your voice if you have an Amazon Alexa (or if you have it in your phone), for instance, you could say "Turn on Deezer on the M5".
-To be able to do so, a linking process must be done first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available commands can be found in the Alexa skill for the _BeoLiving Intelligence_.
+To be able to do so, a linking process must be done first, please refer to [_BeoLiving Intelligence Link to 3rd Party Cloud Service Guide_](bli-link-third-party-service.md). A complete list of the available commands can be found in the Alexa skill for the _BeoLiving Intelligence_.
 
 #### Integrating the BeoLiving Intelligence with other services
 
@@ -138,6 +143,6 @@ _BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the
 
 ### Advanced usage
 
-_BeoLiving Intelligence_ has a lot more functionalities than the described in this guide, please refer to _[BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md)_ to know all _BeoLiving Intelligence_ has to offer. In that guide, you can also find how to upgrade to _PRO_, which will add even more functionalities to it and enhance your experience.
+_BeoLiving Intelligence_ has a lot more functionalities than the described in this guide, please refer to [_BeoLiving Intelligence Advanced User Guide_](bli-advanced-user-guide.md) to know all _BeoLiving Intelligence_ has to offer. In that guide, you can also find how to upgrade to _PRO_, which will add even more functionalities to it and enhance your experience.
 
 Enjoy your smart home experience with _BeoLiving Intelligence_! 
