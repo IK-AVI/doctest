@@ -6,7 +6,8 @@
   <body>
     {%- include header.html -%}
     
-    {% include toc.html html=content %}
+    {% include toc.html html=content class=centeredTOC %}
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
