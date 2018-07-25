@@ -1,8 +1,10 @@
+# BeoLiving Intelligence PRO User Guide
+
+## Table of contents
+
 ---
 layout: pagetoc
 ---
-
-# BeoLiving Intelligence PRO User Guide
 
 ## Introduction
 
