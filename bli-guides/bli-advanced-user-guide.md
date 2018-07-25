@@ -2,10 +2,11 @@
 
 ## Introduction
 
-The scope of this guide includes an introduction to _BeoLiving Intelligence_ functionalities, how to find and access it within the network and an 
-explanation regarding different sections of its web interface. _BeoLiving Intelligence_ comes out of the box with a big limitation in all the 
-functionalities it could offer. To use your _BeoLiving Intelligence_ in its full capabilities, it's necessary to pay for a Firmware upgrade that 
-automatically will make your _BeoLiving Intelligence_ change to _PRO_ mode (see section *[Upgrade to PRO](#upgrade-pro)* for futher information). 
+The scope of this guide includes a description of all elements that are inside _BeoLiving Intelligence_ box, an introduction to _BeoLiving 
+Intelligence_ functionalities, how to find and access it within the network and an explanation regarding different sections of its web interface. 
+_BeoLiving Intelligence_ comes out of the box with a big limitation in all the functionalities it could offer. To use your _BeoLiving 
+Intelligence_ in its full capabilities, it's necessary to pay for a Firmware upgrade that automatically will make your _BeoLiving Intelligence_ 
+change to _PRO_ mode (see section [*Upgrade to PRO*](#upgrade-pro) for futher information). 
 For usage and configuration reference of _BeoLiving Intelligence PRO_ refer to [_BeoLiving Intelligence PRO User Guide_](bli-pro-user-guide.md). 
 
 _BeoLiving Intelligence_ has the unique capability of integrating _Bang & Olufsen_ NetworkLink systems (audio and video products) with several 
@@ -36,6 +37,51 @@ _BeoLiving Intelligence_ provides support in two ways:
 + _BLApp_: BeoLiving App.
 + _LAN_: Local Area Network.
 + _DHCP_: Dynamic Host Configuration Protocol.
+
+## What's inside the box
+
+After opening the box of _BLI_ you will find:
+
++ _BLI_ hardware.
++ Wall bracket for _BLI_.
++ AC power supply.
++ Quick setup guide.
+
+## _BeoLiving Intelligence_ hardware description
+
+### Connection Panel
+
+Located on the back of the _BLI_:
+
++ *Power*: Powers the _BLI_. 
++ *USB Port*: Used for service purpouses.
++ *System Reset Button*: After being pressed during 8 seconds, a system reset will occur.
++ *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
+
+![Ports](pictures/ports.png)
+
+### User Led and Button
+
++ *User LED*: The User LED is used to signalize the present state of _BLI_ from the use of colours and ON-OFF patterns combination. Colours could be Green, Red or Yellow and the patterns could be Solid, Flash and Quick Flash. For more information about different _BLI_ LED states refer to [*Led States*](#led-states) section.
++ *User Button*: This button is intended for user confirmation and button functions input. For more information refer to _Button Functions_ section in _BeoLiving Intelligence User Guide_.
+
+![Ports](pictures/bli.png)
+
+### Led States
+
+Below is shown all the possible User LED states with their respective meaning.
+
+| Activity                       | LED state                  |
+|--------------------------------|----------------------------|
+| Normal operation               | Constant Green             |
+| Critical error                 | Flash Red / Yellow         |
+| Firmware update                | Quick flash Green          |
+| Loading configuration          | Quick flash Green          |
+| Waiting for User confirmation  | Quick flash Green / Yellow |
+| User confirmation acknowledge  | Constant Yellow            |
+| Boot                           | Transition Red / Yellow    |
+
+Table: BLI states versus LED state
 
 ## Accessing the BeoLiving Intelligence
 
@@ -117,11 +163,13 @@ The Project information page is used to state information regarding the project 
 The Users page shows in the left column every user that can access the _BLI_. New users can be added by _admin_ by pressing the "plus" button.
 
 ##### User properties
+
 + Change user _password_: this can be performed only on users that were created by _admin_.
 + Enable/Disable _User management access_: when selected, the user is allowed to administer users and user-rights. For example, this option should be set only for the owner of the installation.
 + Enable/Disable _Controller_: allows user to have access to _BLI_ via _BLApp_. When disabled, the only access is via _WEBPANEL_.
 
 ##### Select zone access for user
+
 In this section, select the zones the user has access to. All zones of the installation are displayed as checkboxes that enable/disable access to it. _All zone access_ means that the user can control any zone of the installation.
 
 #### Network {#network-conf}
