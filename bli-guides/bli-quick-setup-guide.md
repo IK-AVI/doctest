@@ -76,7 +76,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 <img src="pictures/bli-quick-setup-guide/Adding_4.PNG" alt="drawing" width="300px"/>
 </p>
 
-+ You can add more products to that zone, change the zone a product is in, or create more zones by pressing "Edit products". Note that only one icon per type of product will appear in the zone.
++ You can add more products to that zone, change a product from zone, or create more zones by pressing "Edit products". Note that only one icon per type of product will appear in the zone.
 
 #### Controlling Bang & Olufsen products
 
