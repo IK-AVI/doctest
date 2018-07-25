@@ -1,3 +1,7 @@
+---
+layout: pagetoc
+---
+
 # BeoLiving Intelligence Quick set-up guide
 
 ## Introduction
