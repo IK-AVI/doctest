@@ -7,14 +7,18 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
 
 
 
-<div style="margin:auto; width: 500px; margin-top=50px">
+<div style="margin:auto; width: 500px; margin-top: 100px">
  <div style="float:left">
-  <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
+  <div style="float:center">
+   <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
+   </div>
   <p align="center"><strong>General guides</strong></p>
   </div>
 
  <div style="float:right">
-  <input type="image" src="icons/systems.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
+  <div style="float:center">
+   <input type="image" src="icons/systems.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
+   </div>
  <p align="center"><strong>Systems drivers guides</strong></p>
  </div>
 
