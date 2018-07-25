@@ -59,16 +59,41 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 </p>
 
 + Before adding a product, at least one zone (a virtual room where the product will be placed) must be created. Click on "Create zone" and create one.
-+ In the list select the product you want to add and click on "Assign to zone". Assign the product to the zone you just created.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Adding_2.PNG" alt="drawing" width="300px"/>
+</p>
+
++ Select the product you want to add from the list and click on "Assign to zone". Assign the product to the zone you just created.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Adding_3.PNG" alt="drawing" width="300px"/>
+</p>
+
 + Return to the _BeoLiving Intelligence_ main screen and you should see the zone with the icon of the product added.
-+ You can add more products to that zone, change the zone a product is in, or create more zones by pressing "Edit products". Note that only one icon per type of product will appear in the zone.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Adding_4.PNG" alt="drawing" width="300px"/>
+</p>
+
++ You can add more products to that zone, change a product from zone, or create more zones by pressing "Edit products". Note that only one icon per type of product will appear in the zone.
 
 #### Controlling Bang & Olufsen products
 
 + Select the zone that the product you want to control is in.
 + In the bottom left corner press the "Source" button. A list of all the products in the zone will appear, with their respective available sources.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Control_2.PNG" alt="drawing" width="300px"/>
+</p>
+
 + Select the source in the product you want, e.g.: "Deezer" in an M5 speaker.
 + Once a source is selected, controls will be shown on the main screen. What you control depends on the device and the source you have selected. You can control things such as volume, selecting content, play, pause, etc.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Control_4.PNG" alt="drawing" width="300px"/>
+</p>
+
 
 #### Creating Scenes
 
@@ -76,19 +101,40 @@ _BeoLiving Intelligence_ Scenes are the way you can control several products at 
 
 + Select the zone that the products you want to control are in.
 + In the top left corner press the "Scenes" button, and then press the "+" to create a Scene.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Scene_2.PNG" alt="drawing" width="300px"/>
+</p>
+
 + In the list of available products, press "+" to add it to the Scene, and press the name to configure the action that the product will do when the Scene is executed.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Scene_3.PNG" alt="drawing" width="300px"/>
+</p>
+
 + The configuring of an action is done through a screen that depends on the device selected, for instance, if it's a _Bang & Olufsen_ product it will be similar to a remote control, if it's a light it will be similar to a switch.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Scene_4.PNG" alt="drawing" width="300px"/>
+</p>
+
+
 + After selecting all the products you want to control and configuring their actions press "Done".
-+ To fire a scene just press the name of it, or you can click on the clock icon to schedule it for certain time or days.
++ To fire a scene just press the name of it, or you can click on the clock icon to schedule it for certain time or day.
+
+<p align="center">
+<img src="pictures/bli-quick-setup-guide/Scene_5.PNG" alt="drawing" width="300px"/>
+</p>
+
 
 #### Controlling products with your voice
 
-Most of the functionalities you can control with the _BeoLiving App_ can also be controlled with your voice if you have a Google Home or an Amazon Alexa (or if you have them in your phone), for instance, you could say "Turn on Deezer on the M5".
-To be able to do so, a linking process must be done first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available commands can be found in the Google smart home app or in the Alexa skill for the _BeoLiving Intelligence_.
+Most of the functionalities you can control with the _BeoLiving App_ can also be controlled with your voice if you have an Amazon Alexa (or if you have it in your phone), for instance, you could say "Turn on Deezer on the M5".
+To be able to do so, a linking process must be done first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available commands can be found in the Alexa skill for the _BeoLiving Intelligence_.
 
 #### Integrating the BeoLiving Intelligence with other services
 
-_BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the integration of different services which in this case can be used for example to send an email for changing the source of a TV, and many other combinations. A linking process very similar to the one for Alexa and Google Home has to be made first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available combinations can be found in the IFTTT page.
+_BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the integration of different services which in this case can be used for example to send an email for changing the source of a TV, and many other combinations. A linking process very similar to the one for Alexa has to be made first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available combinations can be found in the IFTTT page.
 
 ### Advanced usage
 
