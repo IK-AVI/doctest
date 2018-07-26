@@ -19,7 +19,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
   <div align="center">
    <input type="image" src="icons/systems.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
    </div>
- <p align="center"><strong>Systems drivers guides</strong></p>
+ <p align="center"><strong>System drivers guides</strong></p>
  </div>
 
 
