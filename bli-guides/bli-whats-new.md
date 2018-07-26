@@ -17,18 +17,18 @@ accessible User Button that makes easier the interaction with it.
 
 Out of the box, _BeoLiving Intelligence_ has free remote access control of the current installation.
 
-## Firmware upgrade to PRO version
+## BeoLiving Intelligence PRO License
 
-After purchasing _BeoLiving Intelligence_, controller capabilities are limited. Only control of Bang & Olufsen NetworkLink products are fully 
+After purchasing _BeoLiving Intelligence_, controller capabilities are limited. Only control of _Bang & Olufsen NetworkLink_ products are fully 
 supported. To obtain full integration with all supported Home Automation systems and all other features that _BeoLiving Intelligence_ offers, a 
-payment to _Khimo.com_ must be done for an automatically firmware upgrade (_PRO_ version) of your controller.
+license payment to _Khimo.com_ must be done for an automatically upgrade of your controller to _PRO_ version.
 
 ## New _BeoLiving App_
 
 _BeoLiving Intelligence_ comes with the new _BeoLiving App_ (successor of the _BeoLink 2_ app) for an extensive, full and easily control of your 
 building controller configuration.
 
-## Easily linking with Alexa, Google Home and IFTTT
+## Easily linking with Alexa and IFTTT
 
 Without any _user_ / _password_ to remember, link with 3rd party cloud services is done scanning a _QR_ code with _BeoLiving App_ or just 
 inserting an alphanumeric hash in it. For legacy purposes, previous linking method is available for _BeoLink Gateway_ users.
@@ -42,8 +42,8 @@ speakers will follow any source/volume change of master speaker automatically.
 
 ## Credentials setting
 
-Also, apart from _Speaker groups_ feature, it's possible to set credentials of different sources as _Deezer_ or _TuneIn_. Credentials setting 
-could be done manually or automatically for each _Bang & Olufsen NetworkLink_ device through _BeoLiving App_. Default credentials for an specific 
-source could be setted and when _BeoLiving Intelligence_ founds a new device that hasn't been setted previously with credentials, it will set them
-automatically. Previously, credentials setting for each source must be done manually for each product through its web interface being a tedious 
-procedure.
+Also, apart from _Speaker groups_ feature, it's possible to set credentials of different sources as _Deezer_ or _TuneIn_ of all products. 
+Credentials setting could be done manually or automatically for each _Bang & Olufsen NetworkLink_ device through _BeoLiving App_. Default 
+credentials for an specific source could be setted and when _BeoLiving Intelligence_ founds a new device that hasn't been setted previously with 
+credentials, it will set them automatically. Previously, credentials setting for each source must be done manually for each product through their 
+web interface being a tedious procedure.
