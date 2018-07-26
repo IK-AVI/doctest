@@ -22,43 +22,41 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
 ## Start now!
 
 <div style="margin:auto; width: 500px; margin-top: 40px">
- <div style="float:center">
-   <div align="center">
-     <input type="image" src="icons/faq.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-faq.html'"/>
+   <div style="float:center">
+      <div align="center">
+         <input type="image" src="icons/faq.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-faq.html'"/>
+      </div>
+      <p align="center"><strong>Quick setup guide</strong></p>
    </div>
-   <p align="center"><strong>Quick setup guide</strong></p>
- </div>
 </div>
  
 ## Advanced
 
 <div style="margin:auto; width: 500px; margin-top: 100px">
-  <div style="float:left">
-   <div align="center">
-    <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
-    </div>
-   <p align="center"><strong>Advanced guide</strong></p>
+   <div style="float:left">
+      <div align="center">
+         <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
+      </div>
+      <p align="center"><strong>Advanced guide</strong></p>
    </div>
-
-  <div style="float:right">
-   <div align="center">
-    <input type="image" src="icons/systems.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
-    </div>
-  <p align="center"><strong>Link to third parties</strong></p>
-  </div>
+   <div style="float:right">
+      <div align="center">
+         <input type="image" src="icons/systems.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
+      </div>
+      <p align="center"><strong>Link to third parties</strong></p>
+   </div>
 </div>
  
 ## Upgrade to pro
   
 <div style="margin:auto; width: 500px; margin-top: 40px">
    <div style="float:center">
-    <div align="center">
-     <input type="image" src="icons/faq.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-faq.html'"/>
-    </div>
-    <p align="center"><strong>PRO</strong></p>
+      <div align="center">
+         <input type="image" src="icons/faq.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-faq.html'"/>
+      </div>
+      <p align="center"><strong>PRO</strong></p>
    </div>
 </div>
-  
   
 ## Troubleshooting
   
