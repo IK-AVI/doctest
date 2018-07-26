@@ -9,20 +9,20 @@ Together with the beautifully sculpted, simple and intuitive, companion _BeoLivi
 directly accessible and configurable at the palm of your hand. Use the _BeoLiving App_ in your phone to easily control your _Bang & Olufsen_ 
 products alongside the most popular Home Automation brands.
 
+The main out-of-the-box features of the _BeoLiving Intelligence_ controller are:
+
++ Control _Bang & Olufsen_ (NetworkLink type) products through your smart device.
++ Control of the products from outside your house.
++ Voice control of the products using Alexa.
++ Support with IFTTT.
++ Creation of routines that automates the control of several products.
+
+
 The _BeoLiving Intelligence_ controller is upgradable to a full professional smart home solution through a one-time paid firmware upgrade (
 _BeoLiving Intelligence PRO_). With this optional upgrade, _BeoLiving Intelligence_ transforms into a controller for all world market brands of 
 dedicated home automation systems. Even if you don’t own any _Bang & Olufsen_ products, your unique home automation and audio/video ecosystem will
  be accessible as one entity through the expertly crafted _BeoLiving App_.
 
-Some of the main features of the _BeoLiving Intelligence_ controller are:
-
-+ Control _Bang & Olufsen_ (NetworkLink type) products through your smart device.
-+ Control products from some of the most popular Home Automation brands through your smart device (_PRO_).
-+ Control of the products from outside your house.
-+ Voice control of the products using Alexa.
-+ Creation of routines that automates the control of several products.
-
-and more…
 
 ## Start now!
 
