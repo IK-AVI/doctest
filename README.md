@@ -1,5 +1,3 @@
-layout: home
-title: Welcome to BeoLiving Intelligence 
 # Welcome to BeoLiving Intelligence documentation site
 
 This site contains all existing documentation related to our main product _BeoLiving Intellingence_, including multiple guides such as quick setup 
