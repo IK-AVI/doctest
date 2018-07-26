@@ -9,12 +9,7 @@ Together with the beautifully sculpted, simple and intuitive, companion _BeoLivi
 directly accessible and configurable at the palm of your hand. Use the _BeoLiving App_ in your phone to easily control your _Bang & Olufsen_ 
 products alongside the most popular Home Automation brands.
 
-The _BeoLiving Intelligence_ controller is upgradable to a full professional smart home solution through a one-time paid license (_BeoLiving 
-Intelligence PRO_). With this optional upgrade license, _BeoLiving Intelligence_ transforms into a controller for all world market brands of 
-dedicated home automation systems. Even if you don’t own any _Bang & Olufsen_ products, your unique home automation and audio/video ecosystem 
-will be accessible as one entity through the expertly crafted _BeoLiving App_.
-
-Some of the main features of the _BeoLiving Intelligence_ controller are:
+The main features of the _BeoLiving Intelligence_ controller are:
 
 + Control _Bang & Olufsen_ (NetworkLink type) products through your smart device.
 + Control of the products from outside your house.
@@ -23,10 +18,18 @@ Some of the main features of the _BeoLiving Intelligence_ controller are:
 + Creation of routines that automates the control of several products.
 
 
-The _BeoLiving Intelligence_ controller is upgradable to a full professional smart home solution through a one-time paid firmware upgrade (
-_BeoLiving Intelligence PRO_). With this optional upgrade, _BeoLiving Intelligence_ transforms into a controller for all world market brands of 
-dedicated home automation systems. Even if you don’t own any _Bang & Olufsen_ products, your unique home automation and audio/video ecosystem will
- be accessible as one entity through the expertly crafted _BeoLiving App_.
+The _BeoLiving Intelligence_ controller is upgradable to a full professional smart home solution through a one-time paid license (_BeoLiving 
+Intelligence PRO_). With this optional upgrade license, _BeoLiving Intelligence_ transforms into a controller for all world market brands of 
+dedicated home automation systems. Even if you don’t own any _Bang & Olufsen_ products, your unique home automation and audio/video ecosystem 
+will be accessible as one entity through the expertly crafted _BeoLiving App_.
+
+The main additions of the _BeoLiving Intelligence PRO_ upgrade are:
+
++ Control products from some of the most popular Home Automation brands through your smart device.
++ Web interface for configuration, with more customization such as area and zone creations, and more.
++ Control your products through the web interface.
++ Control your products through Bang & Olufsen TVs.
++ Customization of the BeoLiving App.
 
 
 ## Start now!
