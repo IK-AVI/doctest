@@ -30,7 +30,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
    </div>
  </div>
  
- ## Advanced
+## Advanced
 
  <div style="margin:auto; width: 500px; margin-top: 100px">
   <div style="float:left">
@@ -48,7 +48,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
   </div>
  </div>
  
-  ## Upgrade to pro
+## Upgrade to pro
   
   <div style="margin:auto; width: 500px; margin-top: 40px">
    <div style="float:center">
@@ -60,7 +60,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
  </div>
   
   
-  ## Troubleshooting
+## Troubleshooting
   
   <div style="display:flex; flex-direction: column">
 
