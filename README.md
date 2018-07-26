@@ -5,7 +5,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
 
 
 
-<div style="display:flex; align-items: center;  flex-direction: row">
+<div style="display:flex; flex-direction: column">
 
  <div style="margin:auto; width: 500px; margin-top: 100px">
   <div style="float:left">
@@ -24,10 +24,10 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
  </div>
   
   
-  <div style="margin:auto; width: 500px; margin-top: 100px">
+  <div style="margin:auto; width: 500px; margin-top: 40px">
    <div style="float:center">
     <div align="center">
-     <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
+     <input type="image" src="icons/faq.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-faq.html'"/>
     </div>
     <p align="center"><strong>FAQ</strong></p>
    </div>
