@@ -12,13 +12,13 @@ By default, _BeoLiving Intelligence_ comes configured in DHCP mode. This means i
 
 Follow the next steps to let your BeoLiving Intelligence running:
 
-1. Connect _BeoLiving Intelligence_ to your LAN through its RJ45 ethernet port.
-2. Power your _BeoLiving Intelligence_ using the AC power supply or by using PoE.
-3. Wait until the User LED _BeoLiving Intelligence_ is in solid green (this indicates normal operation).
-4. Go to the store in your smart device and download and install the _BeoLiving App_.
-5. Open the _BeoLiving App_ and when your _BeoLiving Intelligence_ is ready a pop-up will appear. If more than one appears, you can identify them 
++ Connect _BeoLiving Intelligence_ to your LAN through its RJ45 ethernet port.
++ Power your _BeoLiving Intelligence_ using the AC power supply or by using PoE.
++ Wait until the User LED _BeoLiving Intelligence_ is in solid green (this indicates normal operation).
++ Go to the store in your smart device and download and install the _BeoLiving App_.
++ Open the _BeoLiving App_ and when your _BeoLiving Intelligence_ is ready a pop-up will appear. If more than one appears, you can identify them 
 by the serial number located on the bottom of the _BeoLiving Intelligence_.
-6. Once in the pop-up window press "_Request access_" and follow the instructions provided.
++ Once in the pop-up window press "_Request access_" and follow the instructions provided.
 
 <p align="center">
 <img src="pictures/bli-quick-setup-guide/Setting_up_3.PNG" alt="drawing" width="300px"/>
