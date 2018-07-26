@@ -21,6 +21,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
     </div>
   <p align="center"><strong>System drivers guides</strong></p>
   </div>
+ </div>
   
   
   <div style="margin:auto; width: 500px; margin-top: 100px">
@@ -30,6 +31,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
     </div>
     <p align="center"><strong>FAQ</strong></p>
    </div>
+ </div>
   
 </div>
   
