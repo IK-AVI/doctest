@@ -4,38 +4,9 @@ layout: pagetoc
 
 # BeoLiving Intelligence Quick Setup Guide
 
-## Introduction
+_BeoLiving Intelligence_ is a Plug & Play home automation controller. The next steps show how to quickly set your _BeoLiving Intelligence_ up and ready for basic use. Illustrations of basic usage examples are shown.
 
-A focus on making life easier and more enjoyable for the homeowner has given rise to _BeoLiving Intelligence_, the first Plug & Play smart home 
-controller for _Bang & Olufsen_ products. _BeoLiving Intelligence_ is the new creation resulting from the _Bang & Olufsen_ and _Khimo_ partnership
- which dates back to 2006, a collaboration that brought to market such iconic products as _BeoLink Gateway_. _BeoLiving Intelligence_ expands the way _Bang & Olufsen_ products can work together, as well as allowing them to interact with many other brands of consumer electronic devices.
-
-Together with the beautifully sculpted, simple and intuitive, companion _BeoLiving App_, all the magic that _BeoLiving Intelligence_ allows is 
-directly accessible and configurable at the palm of your hand. Use the _BeoLiving App_ in your phone to easily control your _Bang & Olufsen_ 
-products alongside the most popular Home Automation brands.
-
-The _BeoLiving Intelligence_ controller is upgradable to a full professional smart home solution through a one-time paid firmware upgrade 
-(_BeoLiving Intelligence PRO_). With this optional upgrade, _BeoLiving Intelligence_ transforms into a controller for all world market brands of 
-dedicated home automation systems. Even if you don't own any _Bang & Olufsen_ products, your unique home automation and audio/video ecosystem will
- be accessible as one entity through the expertly crafted _BeoLiving App_.
-
-Some of the main features of the _BeoLiving Intelligence_ controller are:
-
-+ Control _Bang & Olufsen_ (NetworkLink type) products through your smart device.
-+ Control products from some of the most popular Home Automation brands through your smart device (_PRO_).
-+ Control of the products from outside your house.
-+ Voice control of the products using Alexa.
-+ Creation of routines that automates the control of several products.
-
-and more...
-
-The following guide provides a quick set-up guide and illustrates basic usage examples.
-
-### Quick set-up guide and basic usage
-
-The next steps show how to quickly set your BeoLiving Intelligence up and ready for basic use.
-
-#### Setting up the _BeoLiving Intelligence_
+## Setting up the _BeoLiving Intelligence_
 
 By default, _BeoLiving Intelligence_ comes configured in DHCP mode. This means it gets its IP address from the router it is connected to. To configure a static IP address, please refer to [_BeoLiving Intelligence Advanced User Guide_](bli-advanced-user-guide.md).
 
@@ -59,7 +30,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 <img src="pictures/bli-quick-setup-guide/Setting_up_4.PNG" alt="drawing" width="300px"/>
 </p>
 
-#### Adding Bang & Olufsen products
+### Adding Bang & Olufsen products
 
 + In the main screen of the _BeoLiving App_ select your _BeoLiving Intelligence_ and click on "Add products". A list of the supported products that are on the same network will appear.
 
@@ -87,7 +58,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 
 + You can add more products to that zone, change a product from zone, or create more zones by pressing "Edit products". Note that only one icon per type of product will appear in the zone.
 
-#### Controlling Bang & Olufsen products
+### Controlling Bang & Olufsen products
 
 + Select the zone that the product you want to control is in.
 + In the bottom left corner press the "Source" button. A list of all the products in the zone will appear, with their respective available sources.
@@ -104,7 +75,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 </p>
 
 
-#### Creating Scenes
+### Creating Scenes
 
 _BeoLiving Intelligence_ Scenes are the way you can control several products at the same time. For example, you can create a Scene that sets the source of a speaker on Deezer while at the same time sets a TV on youtube. Each time you execute the Scene those commands will be executed on your _BeoLiving Intelligence_, and what's more, you can schedule the Scene to execute at a given time or periodically, e.g.: turn on the lights and close the shades each Tuesday at 10 o'clock. To set a Scene, follow the next steps:
 
@@ -136,16 +107,16 @@ _BeoLiving Intelligence_ Scenes are the way you can control several products at 
 </p>
 
 
-#### Controlling products with your voice
+### Controlling products with your voice
 
 Most of the functionalities you can control with the _BeoLiving App_ can also be controlled with your voice if you have an Amazon Alexa (or if you have it in your phone), for instance, you could say "Turn on Deezer on the M5".
-To be able to do so, a linking process must be done first, please refer to [_BeoLiving Intelligence Link to 3rd Party Cloud Service Guide_](bli-link-third-party-service.md). A complete list of the available commands can be found in the Alexa skill for the _BeoLiving Intelligence_.
+To be able to do so, a linking process must be done first, please refer to [_BeoLiving Intelligence Link to Third Party Cloud Service Guide_](bli-link-third-party-service.md). A complete list of the available commands can be found in the Alexa skill for the _BeoLiving Intelligence_.
 
-#### Integrating the BeoLiving Intelligence with other services
+### Integrating the BeoLiving Intelligence with other services
 
-_BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the integration of different services which in this case can be used for example to send an email for changing the source of a TV, and many other combinations. A linking process very similar to the one for Alexa has to be made first, please refer to _[BeoLiving Intelligence Link to 3rd Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available combinations can be found in the IFTTT page.
+_BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the integration of different services which in this case can be used for example to send an email for changing the source of a TV, and many other combinations. A linking process very similar to the one for Alexa has to be made first, please refer to _[BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available combinations can be found in the IFTTT page.
 
-### Advanced usage
+## Advanced usage
 
 _BeoLiving Intelligence_ has a lot more functionalities than the described in this guide, please refer to [_BeoLiving Intelligence Advanced User Guide_](bli-advanced-user-guide.md) to know all _BeoLiving Intelligence_ has to offer. In that guide, you can also find how to upgrade to _PRO_, which will add even more functionalities to it and enhance your experience.
 
