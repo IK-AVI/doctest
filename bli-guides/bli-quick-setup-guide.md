@@ -30,7 +30,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 <img src="pictures/bli-quick-setup-guide/Setting_up_4.PNG" alt="drawing" width="300px"/>
 </p>
 
-### Adding Bang & Olufsen products
+## Adding Bang & Olufsen products
 
 + In the main screen of the _BeoLiving App_ select your _BeoLiving Intelligence_ and click on "Add products". A list of the supported products that are on the same network will appear.
 
@@ -58,7 +58,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 
 + You can add more products to that zone, change a product from zone, or create more zones by pressing "Edit products". Note that only one icon per type of product will appear in the zone.
 
-### Controlling Bang & Olufsen products
+## Controlling Bang & Olufsen products
 
 + Select the zone that the product you want to control is in.
 + In the bottom left corner press the "Source" button. A list of all the products in the zone will appear, with their respective available sources.
@@ -75,7 +75,7 @@ by the serial number located on the bottom of the _BeoLiving Intelligence_.
 </p>
 
 
-### Creating Scenes
+## Creating Scenes
 
 _BeoLiving Intelligence_ Scenes are the way you can control several products at the same time. For example, you can create a Scene that sets the source of a speaker on Deezer while at the same time sets a TV on youtube. Each time you execute the Scene those commands will be executed on your _BeoLiving Intelligence_, and what's more, you can schedule the Scene to execute at a given time or periodically, e.g.: turn on the lights and close the shades each Tuesday at 10 o'clock. To set a Scene, follow the next steps:
 
@@ -107,12 +107,12 @@ _BeoLiving Intelligence_ Scenes are the way you can control several products at 
 </p>
 
 
-### Controlling products with your voice
+## Controlling products with your voice
 
 Most of the functionalities you can control with the _BeoLiving App_ can also be controlled with your voice if you have an Amazon Alexa (or if you have it in your phone), for instance, you could say "Turn on Deezer on the M5".
 To be able to do so, a linking process must be done first, please refer to [_BeoLiving Intelligence Link to Third Party Cloud Service Guide_](bli-link-third-party-service.md). A complete list of the available commands can be found in the Alexa skill for the _BeoLiving Intelligence_.
 
-### Integrating the BeoLiving Intelligence with other services
+## Integrating the BeoLiving Intelligence with other services
 
 _BeoLiving Intelligence_ supports IFTTT. IFTTT is a web utility that enables the integration of different services which in this case can be used for example to send an email for changing the source of a TV, and many other combinations. A linking process very similar to the one for Alexa has to be made first, please refer to _[BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.md)_. A complete list of the available combinations can be found in the IFTTT page.
 
