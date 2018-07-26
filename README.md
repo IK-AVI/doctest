@@ -5,19 +5,34 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
 
 
 
-<div style="margin:auto; width: 500px; margin-top: 100px">
- <div style="float:left">
-  <div align="center">
-   <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
-   </div>
-  <p align="center"><strong>General guides</strong></p>
-  </div>
+<div style="display:flex; align-items: center">
 
- <div style="float:right">
-  <div align="center">
-   <input type="image" src="icons/systems.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
+ <div style="margin:auto; width: 500px; margin-top: 100px">
+  <div style="float:left">
+   <div align="center">
+    <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
+    </div>
+   <p align="center"><strong>General guides</strong></p>
    </div>
- <p align="center"><strong>System drivers guides</strong></p>
- </div>
+
+  <div style="float:right">
+   <div align="center">
+    <input type="image" src="icons/systems.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'"/>
+    </div>
+  <p align="center"><strong>System drivers guides</strong></p>
+  </div>
+  
+  
+  <div style="margin:auto; width: 500px; margin-top: 100px">
+   <div style="float:center">
+    <div align="center">
+     <input type="image" src="icons/guides.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/'"/>
+    </div>
+    <p align="center"><strong>FAQ</strong></p>
+   </div>
+  
+</div>
+  
+  
 
 
