@@ -12,11 +12,10 @@ products alongside the most popular Home Automation brands.
 The main features of the _BeoLiving Intelligence_ controller are:
 
 + Control _Bang & Olufsen_ (NetworkLink type) products through your smart device.
-+ Control of the products from outside your house.
-+ Voice control of the products using Alexa.
++ Remote access of your installation.
++ Voice control of your installation through Alexa.
 + Support with IFTTT.
 + Creation of routines that automates the control of several products.
-
 
 The _BeoLiving Intelligence_ controller is upgradable to a full professional smart home solution through a one-time paid license (_BeoLiving 
 Intelligence PRO_). With this optional upgrade license, _BeoLiving Intelligence_ transforms into a controller for all world market brands of 
@@ -25,12 +24,11 @@ will be accessible as one entity through the expertly crafted _BeoLiving App_.
 
 The main additions of the _BeoLiving Intelligence PRO_ upgrade are:
 
-+ Control products from some of the most popular Home Automation brands through your smart device.
-+ Web interface for configuration, with more customization such as area and zone creations, and more.
-+ Control your products through the web interface.
-+ Control your products through Bang & Olufsen TVs.
-+ Customization of the BeoLiving App.
-
++ Integration with most popular Home Automation brands.
++ Web interface advanced configuration, with more customization such as area/zone creations, scenes and more.
++ Control your products through its web interface.
++ Control your products through _Bang & Olufsen_ TVs.
++ Customization of the _BeoLiving App_.
 
 ## Start now!
 
