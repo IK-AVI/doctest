@@ -21,14 +21,14 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
 
 ## Start now!
 
-  <div style="margin:auto; width: 500px; margin-top: 40px">
-   <div style="float:center">
-    <div align="center">
+<div style="margin:auto; width: 500px; margin-top: 40px">
+ <div style="float:center">
+   <div align="center">
      <input type="image" src="icons/faq.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-faq.html'"/>
-    </div>
-    <p align="center"><strong>Quick setup guide</strong></p>
    </div>
+   <p align="center"><strong>Quick setup guide</strong></p>
  </div>
+</div>
  
 ## Advanced
 
