@@ -26,7 +26,7 @@ and more…
 
 ## Start now!
 
-Follow this guide to quickly set up your BeoLiving Intelligence and know the basics to start using it:
+Follow this guide to quickly set up your BeoLiving Intelligence and know the basics to start using it.
 
 <div style="margin:auto; width: 500px; margin-top: 40px">
    <div style="float:center">
@@ -39,7 +39,7 @@ Follow this guide to quickly set up your BeoLiving Intelligence and know the bas
  
 ## Advanced
 
-If you already have some basic knowledge of the usage of BeoLiving Intelligence, read the _Advanced user guide_ to learn more advanced faetures
+If you already have some basic knowledge of the usage of BeoLiving Intelligence, read the _Advanced user guide_ to learn more advanced features. If you want to learn how to link your BeoLiving Intelligence with one of the available third parties, refer to the _Link to third parties guide_.
 
 <div style="margin:auto; width: 500px; display: flex; justify-content: space-evenly; margin-top: 40px">
    <div>
@@ -52,17 +52,13 @@ If you already have some basic knowledge of the usage of BeoLiving Intelligence,
       <div align="center">
          <input src="icons/thirdparties.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-link-third-party-service.html'" type="image" height="100px">
       </div>
-      <p align="center"><strong>Link to third parties</strong></p>
+      <p align="center"><strong>Link to third parties guide</strong></p>
    </div>
 </div>
  
 ## PRO
 
-Bli has a pro mode ...
-Main differences:
-+ 1
-+ 2
-...
+If you want your BeoLiving Intelligence to be in its full capabilities upgrade it to PRO and learn the new features by following the _PRO user guide_. Refer to the _System drivers guide_ if you want to information about a specific supported driver.
 
 <div style="margin:auto; width: 500px; display: flex; justify-content: space-evenly; margin-top: 40px">
    <div>
@@ -83,7 +79,7 @@ Main differences:
   
 ## Troubleshooting
 
-If you have any doubts or bli broke...
+Have a question? You can find the answers for the most common questions in our _Frequently Asked Question_ document. If you are experience troubles refer to our _troubleshooting_ guide
 
 <div style="display:flex; flex-direction: column; margin-top: 40px"> 
 
