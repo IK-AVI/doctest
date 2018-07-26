@@ -5,7 +5,7 @@ installation, basic and advanced usage, configuration and troubleshooting, syste
 
 
 
-<div style="display:flex; align-items: center">
+<div style="display:flex; align-items: center; justify-content: center">
 
  <div style="margin:auto; width: 500px; margin-top: 100px">
   <div style="float:left">
