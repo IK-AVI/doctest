@@ -8,11 +8,11 @@ The BeoLiving Intelligence controller is upgradable to a full professional smart
 
 Some of the main features of the BeoLiving Intelligence controller are:
 
-    Control Bang & Olufsen (NetworkLink type) products through your smart device.
-    Control products from some of the most popular Home Automation brands through your smart device (PRO).
-    Control of the products from outside your house.
-    Voice control of the products using Alexa.
-    Creation of routines that automates the control of several products.
+   + Control Bang & Olufsen (NetworkLink type) products through your smart device.
+   + Control products from some of the most popular Home Automation brands through your smart device (PRO).
+   + Control of the products from outside your house.
+   + Voice control of the products using Alexa.
+   + Creation of routines that automates the control of several products.
 
 and more…
 
