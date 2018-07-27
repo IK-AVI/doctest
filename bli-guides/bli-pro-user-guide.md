@@ -452,7 +452,7 @@ when activating **Configuration > Save revision**.
 The user named _admin_ is a user that exists per default and is meant for the technician/installer, who has access for setting-up _BLI PRO_
 and is allowed to access all zones via browser or _BLApp_.
 
-###### Change password for admin user
+##### Change password for admin user
 
 It is possible to change the password only. As said before per default, _admin_ password is a hash and could be setted to "_admin_" by activating the Setup 
 button function (2). This password will last 5 minutes (just for security purposes) being possible to set a new one. 
@@ -464,7 +464,7 @@ To add a new user press **+**-sign in header **Users** of left column.
 
 ![Interfaces](pictures/pro-guide/interfaces.png)
 
-###### User properties
+##### User properties
 
 Configure the User properties by entering a name in the Name field and password in the Password field and select options according to the 
 following:
@@ -707,21 +707,21 @@ contains many of them in his configuration.
 Left column contains each pair of _Area/Zone_ that contains at least one resource or system. For each resource or system in a column, the next 
 information will be displayed:
 
-##### Macros being fired by this resource|system
+##### Macros being fired by this resource/system
 
-The table contains a row for each Macro where an event of resource|system is involved.
+The table contains a row for each Macro where an event of resource/system is involved.
 
-+ _Macros_: Name of all macros that have this resource|system as an event.
-+ _Events on area/zone/name_: Events of resource|system in this macro.
++ _Macros_: Name of all macros that have this resource/system as an event.
++ _Events on area/zone/name_: Events of resource/system in this macro.
 + _Commands_: Commands of this macro.
 
-##### Macros that execute commands by this resource|system
+##### Macros that execute commands by this resource/system
 
-The table contains a row for each Macro where a command on resource|system is involved.
+The table contains a row for each Macro where a command on resource/system is involved.
 
-+ _Macros_: Name of all macros that have that executes a command on resource|system.
++ _Macros_: Name of all macros that have that executes a command on resource/system.
 + _Events_: Events this macro.
-+ _Commands on area/zone/name_: Commands on resource|system in this macro. 
++ _Commands on area/zone/name_: Commands on resource/system in this macro. 
 
 #### Custom driver editor {#driver-editor}
 

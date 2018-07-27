@@ -2,7 +2,7 @@
 layout: pagetoc
 ---
 
-#BeoLiving Intelligence Advanced User Guide
+# BeoLiving Intelligence Advanced User Guide
 
 ## Introduction
 
