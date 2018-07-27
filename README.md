@@ -37,7 +37,7 @@ Follow this guide to quickly set up your BeoLiving Intelligence and know the bas
 <div style="margin:auto; width: 500px; margin-top: 40px">
    <div style="float:center">
       <div align="center">
-         <input type="image" src="icons/quickstart.png" height="100px" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-quick-setup-guide.html'"/>
+         <input type="image" src="icons/quickstart.png" height="100px" onclick="location.href='bli-guides/bli-quick-setup-guide.html'"/>
       </div>
       <p align="center"><strong>Quick setup guide</strong></p>
    </div>
@@ -50,13 +50,13 @@ If you already have some basic knowledge of the usage of BeoLiving Intelligence,
 <div style="margin:auto; width: 500px; display: flex; justify-content: space-evenly; margin-top: 40px">
    <div>
       <div align="center">
-         <input src="icons/guides.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-advanced-user-guide.html'" type="image" height="100px">
+         <input src="icons/guides.png" onclick="location.href='bli-guides/bli-advanced-user-guide.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>Advanced user guide</strong></p>
    </div>
    <div>
       <div align="center">
-         <input src="icons/thirdparties.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-link-third-party-service.html'" type="image" height="100px">
+         <input src="icons/thirdparties.png" onclick="location.href='bli-guides/bli-link-third-party-service.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>Link to third parties guide</strong></p>
    </div>
@@ -69,13 +69,13 @@ If you want your BeoLiving Intelligence to be in its full capabilities upgrade i
 <div style="margin:auto; width: 500px; display: flex; justify-content: space-evenly; margin-top: 40px">
    <div>
       <div align="center">
-         <input src="icons/guides.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-pro-user-guide.html'" type="image" height="100px">
+         <input src="icons/guides.png" onclick="location.href='bli-guides/bli-pro-user-guide.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>PRO user guide</strong></p>
    </div>
    <div>
       <div align="center">
-         <input src="icons/systems.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-help-files/drivers/main.html'" type="image" height="100px">
+         <input src="icons/systems.png" onclick="location.href='bli-help-files/drivers/main.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>System drivers guide</strong></p>
    </div>
@@ -92,13 +92,13 @@ Have a question? You can find the answers for the most common questions in our _
  <div style="margin:auto; width: 500px; display: flex; justify-content: space-evenly;">
    <div>
       <div align="center">
-         <input src="icons/faq.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-faq.html'" type="image" height="100px">
+         <input src="icons/faq.png" onclick="location.href='bli-guides/bli-faq.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>FAQ</strong></p>
    </div>
    <div>
       <div align="center">
-         <input src="icons/troubleshooting.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-service-troubleshooting.html'" type="image" height="100px">
+         <input src="icons/troubleshooting.png" onclick="location.href='bli-guides/bli-service-troubleshooting.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>Service troubleshooting</strong></p>
    </div>
@@ -107,13 +107,13 @@ Have a question? You can find the answers for the most common questions in our _
 <div style="margin:auto; width: 500px; display: flex; justify-content: space-evenly;">
    <div>
       <div align="center">
-         <input src="icons/troubleshooting.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-troubleshooting.html'" type="image" height="100px">
+         <input src="icons/troubleshooting.png" onclick="location.href='bli-guides/bli-troubleshooting.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>Troubleshooting</strong></p>
    </div>
    <div>
       <div align="center">
-         <input src="icons/recovery.png" onclick="location.href='https://ik-avi.github.io/doctest/bli-guides/bli-recovery-mode-guide.html'" type="image" height="100px">
+         <input src="icons/recovery.png" onclick="location.href='bli-guides/bli-recovery-mode-guide.html'" type="image" height="100px">
       </div>
       <p align="center"><strong>Recovery mode guide</strong></p>
    </div>
