@@ -409,7 +409,7 @@ when activating **Configuration > Save revision**.
 The user named _admin_ is a user that exists per default and is meant for the technician/installer, who has access for setting-up _BLI PRO_
 and is allowed to access all zones via browser or _BLApp_.
 
-###### Change password for admin user
+##### Change password for admin user
 
 It is possible to change the password only. As said before per default, _admin_ password is a hash and could be setted to "_admin_" by activating the Setup 
 button function (2). This password will last 5 minutes (just for security purposes) being possible to set a new one. 
@@ -421,7 +421,7 @@ To add a new user press **+**-sign in header **Users** of left column.
 
 ![Interfaces](pictures/pro-guide/interfaces.png)
 
-###### User properties
+##### User properties
 
 Configure the User properties by entering a name in the Name field and password in the Password field and select options according to the 
 following:
