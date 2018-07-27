@@ -64,7 +64,7 @@ If you already have some basic knowledge of the usage of BeoLiving Intelligence,
  
 ## PRO
 
-If you want your BeoLiving Intelligence to be in its full capabilities upgrade it to PRO and learn the new features by following the _PRO user guide_. Refer to the _System drivers guide_ if you want to information about a specific supported driver.
+If you want your BeoLiving Intelligence to be in its full capabilities upgrade it to PRO and learn the new features by following the _PRO user guide_. Refer to the _System drivers guide_ if you want information about a specific supported driver.
 
 <div style="margin:auto; width: 500px; display: flex; justify-content: space-evenly; margin-top: 40px">
    <div>
