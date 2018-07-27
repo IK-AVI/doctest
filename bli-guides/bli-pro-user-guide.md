@@ -37,12 +37,55 @@ In _BLI PRO_ exists two types of drivers for home automation systems:
 + Native driver: Comes included in your _BLI PRO_ firmware.
 + Cloud driver: Driver ready to be downloaded to your _BLI PRO_ from our Cloud driver repository.
 
-Cloud drivers list increase quickly, so for an updated driver list please visit: "_www.khimo.com/systems_(?)".
+Cloud drivers list increase quickly and some of them are contributed by our community. May some of them are not tested deeply, so please write
+ us at _support@khimo.com_ in case of bugs/malfunction detected of any system driver or simply just to contribute with a new driver.
 
-| Home Automation system         | Ethernet connection | RS232 connection | RS485 connection |
-|--------------------------------|---------------------|------------------|------------------|
-
-Table: List of Home Automation systems supported by BLI PRO
+| Home Automation system                                             | Ethernet connection | RS232 connection | RS485 connection | Cloud driver |
+|--------------------------------------------------------------------|---------------------|------------------|------------------|--------------|
+| 2N Helios                                                          |          +          |                  |                  |       +      | 
+| Clipsal                                                            |          +          |                  |                  |              |
+| Conson Concept XP (converter from RS485 to RS232 is needed)        |                     |                  |         +        |              |
+| Custom Strings                                                     |          +          |        +         |                  |              |
+| Custom HTTP                                                        |          +          |                  |                  |              | 
+| DigitalSTROM                                                       |          +          |                  |                  |       +      |
+| DoorBird                                                           |          +          |                  |                  |       +      |
+| Dooya                                                              |          +          |                  |                  |       +      |
+| Dynalite                                                           |                     |        +         |                  |              |
+| ecobee Thermostat                                                  |          +          |                  |                  |              | 
+| FC3500 Thermostat                                                  |          +          |                  |                  |       +      |
+| Global Cache iTach IP2CC                                           |          +          |                  |                  |              | 
+| Global Cache iTach IP2IR                                           |          +          |                  |                  |              | 
+| Global Cache iTach IP2SL                                           |          +          |                  |                  |              | 
+| Honeywell Vista128BPT                                              |                     |        +         |                  |       +      |
+| iTach Flex Relay & Sensor                                          |          +          |                  |                  |       +      |
+| iTach Flex Infrared                                                |          +          |                  |                  |       +      |
+| iTach Flex Serial                                                  |          +          |                  |                  |       +      |
+| KNX (EIB KNX, Busch Jaeger)                                        |          +          |                  |                  |              | 
+| KNX (FT 1.2, PEI-IOmode)                                           |                     |        +         |                  |              |
+| KNXnet (IP tunneling)                                              |          +          |                  |                  |              | 
+| Legrand Bticino                                                    |          +          |                  |                  |              |
+| LK IHC (Intelligent House Control, Viewer models only, LexControl) |          +          |                  |                  |              |
+| Lutron: Grafik Eye (GRX), Grafik QS (QSE), Radio RA                |          +          |        +         |                  |              | 
+| Lutron: Home Works QS, Home Works Radio Ra2                        |          +          |        +         |                  |              |
+| Lutron Home Works Interactive                                      |          +          |        +         |                  |              |
+| Nest                                                               |          +          |                  |                  |              | 
+| Open Weather                                                       |          +          |                  |                  |              | 
+| Phillips Hue                                                       |          +          |                  |                  |              |
+| QMotion QIS Shades                                                 |          +          |        +         |                  |       +      |
+| Rako                                                               |          +          |                  |                  |       +      |
+| Smart House                                                        |          +          |                  |                  |              |
+| Smart House-SH2                                                    |          +          |                  |                  |              | 
+| Tekmar                                                             |          +          |                  |                  |              | 
+| TP-Link Smart Plug                                                 |          +          |                  |                  |       +      |
+| Twitter                                                            |          +          |                  |                  |              | 
+| Vantage                                                            |          +          |                  |                  |              | 
+| Velux                                                              |          +          |                  |                  |              |
+| Velux KLF200                                                       |          +          |                  |                  |       +      |
+| Vitrea                                                             |          +          |                  |                  |       +      |
+| WeMo Coffee Maker                                                  |          +          |                  |                  |       +      |
+| WeMo Insight Switch                                                |          +          |                  |                  |       +      |
+| WeMo Air Purifier                                                  |          +          |                  |                  |       +      |
+| WeMo Slow Cooker                                                   |          +          |                  |                  |       +      |
 
 ## Set up the BeoLiving Intelligence PRO
 
