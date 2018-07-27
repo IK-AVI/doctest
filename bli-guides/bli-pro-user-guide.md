@@ -664,21 +664,21 @@ contains many of them in his configuration.
 Left column contains each pair of _Area/Zone_ that contains at least one resource or system. For each resource or system in a column, the next 
 information will be displayed:
 
-##### Macros being fired by this resource|system
+##### Macros being fired by this resource/system
 
-The table contains a row for each Macro where an event of resource|system is involved.
+The table contains a row for each Macro where an event of resource/system is involved.
 
-+ _Macros_: Name of all macros that have this resource|system as an event.
-+ _Events on area/zone/name_: Events of resource|system in this macro.
++ _Macros_: Name of all macros that have this resource/system as an event.
++ _Events on area/zone/name_: Events of resource/system in this macro.
 + _Commands_: Commands of this macro.
 
-##### Macros that execute commands by this resource|system
+##### Macros that execute commands by this resource/system
 
-The table contains a row for each Macro where a command on resource|system is involved.
+The table contains a row for each Macro where a command on resource/system is involved.
 
-+ _Macros_: Name of all macros that have that executes a command on resource|system.
++ _Macros_: Name of all macros that have that executes a command on resource/system.
 + _Events_: Events this macro.
-+ _Commands on area/zone/name_: Commands on resource|system in this macro. 
++ _Commands on area/zone/name_: Commands on resource/system in this macro. 
 
 #### Custom driver editor {#driver-editor}
 
