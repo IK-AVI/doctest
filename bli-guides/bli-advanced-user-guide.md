@@ -113,7 +113,7 @@ This method can also be used if the IP address is forgotten or if is not possibl
 
 _BLI_ has a button accessible in the to which provides several functions during normal operation:
 
-- Function 1: Temporary enable link to third party cloud services. See further information in [_Link to 3rd party Cloud Services Guide_](bli-link-third-party-service.md).
+- Function 1: Reserved.
 - Function 2: Set _admin_ password to _"admin"_ during the next 5 minutes. See further information in [*Setup interface*](#setup-interface) section.
 - Function 3: Set network settings to fixed IP (192.168.1.10).
 - Function 4: Set network settings to use DHCP.
