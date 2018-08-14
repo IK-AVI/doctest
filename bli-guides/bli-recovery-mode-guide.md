@@ -17,5 +17,4 @@ from your external mass storage. Steps to follow are:
 4. Wait until LED color is red. 
 5. Press User button until LED color changes to yellow.
 
-_BeoLiving Intelligence_ will boot from the pendrive and will start downloading latest stable firmware version after having previously saved the configuration and 
-settings into the pendrive and erased from _BeoLiving Intelligence_.
+_BeoLiving Intelligence_ will boot from the pendrive and will start downloading latest stable firmware version after having previously saved the configuration and settings into the pendrive and erased from _BeoLiving Intelligence_.

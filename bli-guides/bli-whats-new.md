@@ -1,27 +1,23 @@
 # BeoLiving Intelligence What's New
 
-The scope of this document refers to what's new in _BeoLiving Intelligence_ compared with his predecessor: the _BeoLink Gateway_. 
+The _BeoLiving Intelligence_ use _the core_ of the _BeoLink Gateway_ but it is designed for a _wider_ audience. In it standard version it has the following futures:
+ - Fully configurable from the BeoLiving App
+ - Allows control of all the B&O products
+ - Allows the creation of automation scenes
+ - Handles basic _Bang & Olufsen_ products configuration
+ - Enables voice control using _Alexa_
+ - Integrates with _IFTTT_
+ - Handles Deezer and TuneIn credentials for all your B&O products
+ - Allows the creation of _Bang & Olufsen_ products groups, making them to work as one
+ - Password less system, you will not need to remember any password!
 
-## The new size
+On top of all that, at any point, it could be upgraded to _PRO_ to get a full professional home automation controller. Once updated it will
+also have free remote access to control and monitor your home or building.
 
-_BeoLiving Intelligence_ comes in a smaller size but 4 times faster in its processing speed compared with _BeoLink Gateway_. Its compact size 
-makes easier its installation and saves space.  
+## The hardware
 
-## User friendly
-
-_BeoLiving Intelligence_ has an improved User Led that reflects more easily _BeoLiving Intelligence_ state. This Led is more accurate and state 
-specific compared with previous User Led and gives a better understanding of what's going on in your building controller. Also, contains a more 
-accessible User Button that makes easier the interaction with it.
-
-## Free remote access
-
-Out of the box, _BeoLiving Intelligence_ has free remote access control of the current installation.
-
-## BeoLiving Intelligence PRO License
-
-After purchasing _BeoLiving Intelligence_, controller capabilities are limited. Only control of _Bang & Olufsen NetworkLink_ products are fully 
-supported. To obtain full integration with all supported Home Automation systems and all other features that _BeoLiving Intelligence_ offers, a 
-license payment to _Khimo.com_ must be done for an automatically upgrade of your controller to _PRO_ version.
+_BeoLiving Intelligence_ comes in a small but powerful hardware that is 4 times faster in its processing speed compared with _BeoLink
+Gateway_. Its compact size makes easier its installation and saves space.  
 
 ## New _BeoLiving App_
 
@@ -30,20 +26,19 @@ building controller configuration.
 
 ## Easily linking with Alexa and IFTTT
 
-Without any _user_ / _password_ to remember, link with 3rd party cloud services is done scanning a _QR_ code with _BeoLiving App_ or just 
-inserting an alphanumeric hash in it. For legacy purposes, previous linking method is available for _BeoLink Gateway_ users.
+Without any _user_ or _password_ to remember, link with third party cloud services is done by following some simple steps to pair your _BeoLiving Intelligence_ with the service provider.
+For legacy purposes, previous linking method is available for _BeoLink Gateway_ users.
 
-## Speaker groups
+## Bang & Olufsen products groups
 
-_BeoLiving Intelligence_ and _BeoLiving App_ introduce a new feature called _Speaker groups_. This consist in join _B&O NetworkLink_ products when
- you want them to behave as one. E.g.: In big rooms with multiple speakers its wanted that all speakers reproduce the same song or playlist at the
- same time. In a speaker group, exist a master speaker that will be the source and volume reference of the group and the rest of the group 
-speakers will follow any source/volume change of master speaker automatically.
+_BeoLiving Intelligence_ and _BeoLiving App_ introduce a new feature called _Products' groups_. This feature allows to statically link _Bang & Olufsen NetworkLink_'s products so them always behave as one. _E.g._: In big rooms with multiple products its wanted that all products reproduce the
+same song or playlist at the same time. In a products' group, exist a master product that will be the source and volume reference of the
+group and the rest of the grouped products will follow any source/volume change of master automatically and the _BeoLiving App_ will only
+show the master.
 
 ## Credentials setting
 
-Also, apart from _Speaker groups_ feature, it's possible to set credentials of different sources as _Deezer_ or _TuneIn_ of all products. 
+It's possible to set the credentials for some content providers as _Deezer_ or _TuneIn_ on all products directly from the _BeoLiving App_.
 Credentials setting could be done manually or automatically for each _Bang & Olufsen NetworkLink_ device through _BeoLiving App_. Default 
-credentials for an specific source could be setted and when _BeoLiving Intelligence_ founds a new device that hasn't been setted previously with 
-credentials, it will set them automatically. Previously, credentials setting for each source must be done manually for each product through their 
-web interface being a tedious procedure.
+credentials for a specific content provider could be setted and when _BeoLiving Intelligence_ founds a new device that hasn't been setted 
+previously with credentials, it will set them automatically. Previously, credentials setting for each content provider must be done manually for each product through their web interface being a tedious procedure.

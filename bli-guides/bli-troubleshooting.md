@@ -19,8 +19,7 @@ to reproduce any issue or malfunction and understand the setup of the installati
 + _BeoLiving Intelligence_ logs of the last days of operation.
 + All _BeoLiving Intelligence_ configuration files of the _Revision history_, including active configuration.
 
-_Service report_ section could be found in _BeoLiving Intelligence_ web interface at the _Top bar_ and in _BeoLiving Intelligence PRO_ at **Tools 
-> Service reports**. 
+_Service report_ section could be found in _BeoLiving Intelligence_ web interface at the _Top bar_ and in _BeoLiving Intelligence PRO_ at **Tools > Service reports**. 
 
 In this section, a form that should be completed and the _Download_ button to save locally a _Service report_ are found.   
 
@@ -36,7 +35,7 @@ Our team will study your case and will reach you as soon as possible with instru
 
 At the back side of _BeoLiving Intelligence_, between Ethernet port and USB port, it´s located the system reset button. After 8 seconds being 
 pressed, _BeoLiving Intelligence_ will reboot. This method must be used in case _BeoLiving Intelligence_ is not able to restore it´s proper 
-operation by it´s own. After normal operation is restored, *[Service report](#service-report)* method must be done to let us check what issue 
+operation by it´s own. After normal operation is restored, [Service report](#service-report) method must be done to let us check what issue 
 occured in your controller.
 
 ## Erase all configuration and settings {#erase-configuration}
