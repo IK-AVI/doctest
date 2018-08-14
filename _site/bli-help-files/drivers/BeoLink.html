@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>BeoLink</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="beolink">BeoLink</h1>
+
+<p>The BeoLink system provides interaction with NetworkLink products.</p>
+
+<p>This system is included by default in BeoLiving Intelligence, and cannot be
+removed.</p>
+
+<h2 id="networklink-products">NetworkLink products</h2>
+
+<p>NetworkLink products are identified by their serial number. BeoLiving Intelligence will automatically add all available products to the table of
+NetworkLink products.</p>
+
+<h2 id="beolink-events">BeoLink Events</h2>
+
+<p>NetworkLink products generate <code class="highlighter-rouge">LIGHT</code> and <code class="highlighter-rouge">CONTROL</code> BeoLink events after reception of B&amp;O remote control commands.</p>
+
+<p>When an <em>all product standby</em> is performed on BeoLink, an event called
+<code class="highlighter-rouge">ALL STANDBY</code> is also generated on BeoLiving Intelligence. This event has no
+parameters.</p>
+
+<h2 id="continue-and-key_release-functionality">CONTINUE and KEY_RELEASE functionality</h2>
+
+<p>Continue functionality refers to the way the products and terminals
+report a key-press being held for some seconds, i.e. not immediately
+released.</p>
+
+<p>When a key is pressed and held, the products will report a key press
+event followed by a single <code class="highlighter-rouge">CONTINUE</code> event. When the key is released, a
+<code class="highlighter-rouge">KEY_RELEASE</code> event will be generated.</p>
+
+<p>Several keys of B&amp;O terminals support continuous key
+presses which are reported in different ways:</p>
+
+<ul>
+  <li>The 4 colour keys, <code class="highlighter-rouge">STEP_UP</code>, <code class="highlighter-rouge">STEP_DOWN</code>, <code class="highlighter-rouge">WIND</code> and <code class="highlighter-rouge">REWIND</code> each report
+a specific <code class="highlighter-rouge">CONTINUE</code> event (e.g. <code class="highlighter-rouge">Continue STEP_UP</code>).</li>
+  <li>Other keys send a generic <code class="highlighter-rouge">CONTINUE</code> event.</li>
+  <li>Other keys (such as digits) have no continue functionality.</li>
+</ul>
+
+<p>You can use the monitoring tools in order to check for continue
+functionality on a specific key.</p>
+
+<p>BeoLiving Intelligence will keep track of which was the original key-press
+that lead to a <code class="highlighter-rouge">CONTINUE</code> - <code class="highlighter-rouge">KEY_RELEASE</code> sequence, so that you may
+trigger different macros depending on which key was released.</p>
+
+<p>This is done via the extra fields when defining a BeoLink event.</p>
+
+<p>The typical usage is for a <code class="highlighter-rouge">CONTINUE</code> event to start a home-automation
+action like dimming the lights. The <code class="highlighter-rouge">KEY_RELEASE</code> will stop dimming.</p>
+
+<p>For example, in order to execute a macro when the <code class="highlighter-rouge">GO</code> key is released,
+you should define a BeoLink event for the corresponding zone, and for
+the <code class="highlighter-rouge">KEY_RELEASE</code> event. Then choose to also match against the original
+command, and select <code class="highlighter-rouge">GO</code> from the original command list.</p>
+
+<h2 id="beolink-commands">BeoLink Commands</h2>
+
+<p>Commands to products can emulate terminal commands from  Beo4/Beo5 or BeoRemote One.</p>
+
+<p>The available options are:</p>
+
+<ul>
+  <li>All Standby</li>
+  <li>Cinema mode</li>
+  <li>Master volume adjust</li>
+  <li>Master volume level</li>
+  <li>Picture mute</li>
+  <li>Picture mode</li>
+  <li>Playqueue add Deezer playlist</li>
+  <li>Playqueue add TuneIn station</li>
+  <li>Playqueue add URL</li>
+  <li>Playqueue clean</li>
+  <li>Recall profile</li>
+  <li>Save profile</li>
+  <li>Select channel</li>
+  <li>Select source</li>
+  <li>Send command</li>
+  <li>Send digit</li>
+  <li>Sound mode</li>
+  <li>Speaker group</li>
+  <li>Stand position</li>
+  <li>Standby</li>
+  <li>Volume adjust</li>
+  <li>Volume level</li>
+</ul>
+
+<p><em>All Standby</em> has no parameters. This command will send all Masterlink
+ and NetworkLink products into standby mode.</p>
+
+<p><em>Master volume adjust</em> and <em>Master volume level</em> enable controlling
+the volume of several products at once via Multiroom. The command
+is sent to a product and all the other products which are streaming
+from the same master change their volume the same way. Use
+<em>Master volume adjust</em> for relative control (step up or step down
+or mute) and <em>Master volume level</em> for absolute control.</p>
+
+<p><em>Playqueue add Deezer playlist</em> adds a <em>Deezer playlist</em> specified by <em>Deezer playlist Id</em>.</p>
+
+<p><em>Playqueue add TuneIn station</em> adds a <em>TuneIn station</em> specified by <em>Station name</em> or <em>Station Id</em>.</p>
+
+<p><em>Playqueue add URL</em> adds an auido file to the <em>Playqueue</em> specified by a <em>URL</em>.</p>
+
+<p><em>Playqueue clean</em> is self explanatory.</p>
+
+<p><em>Recall profile</em> activates an existing profile.</p>
+
+<p><em>Save profile</em> persists an existing profile.</p>
+
+<p><em>Select channel</em> is used to select a source and channel. If the source has
+a favourite list defined the delay between the channel digits is taken from it,
+otherwise a delay of 300 milliseconds is used.</p>
+
+<p><em>Select source</em> instructs a product to play a source via the multiroom
+feature. The source can be originated from another product.</p>
+
+<p><em>Send command</em> enables sending miscelaneous commands related to
+things like cursor control, menu acces, flow control, etc..</p>
+
+<p><em>Send digit</em> allows sending and individual digit to the product.</p>
+
+<p><em>Speaker group</em> allows selecting speaker groups.</p>
+
+<p><em>Sound mode</em>, <em>Stand position</em>, <em>Picture mode</em>, <em>Picture mute</em> and <em>Cinema mode</em>
+ commands are self explanatory. The available options are
+product dependent so the product must be online in order to be able
+to see them. The command <em>Stand position</em> in particular is only available
+ in products with a stand.</p>
+
+<p><em>Standby</em> is self exaplanatory.</p>
+
+<p><em>Volume adjust</em> permits to adjust volume relative to the current volume.</p>
+
+<p><em>Volume level</em> enables absolute volume control. The argument is an
+integer value from 0 to 90.</p>
+
+<h2 id="pause-between-commands">Pause between commands</h2>
+
+<p>Some products may fail to power up and immediately accept further
+commands (for example, a source selection followed by a program
+selection). This may also happen when controlling an external source
+such as a set-top box, which cannot handle a fast succession of
+commands.</p>
+
+<p>In these cases, adding a small delay between commands will most likely
+solve the issue.</p>
+
+<h2 id="cursor-navigation-vs-old-beo4-navigation">Cursor navigation vs. old Beo4 navigation</h2>
+
+<p>BeoLink products supporting Beo4 <em>navigation button</em> commands can be
+configured for using either the new commands (<code class="highlighter-rouge">UP</code>, <code class="highlighter-rouge">DOWN</code>, <code class="highlighter-rouge">LEFT</code>, <code class="highlighter-rouge">RIGHT</code>,
+<code class="highlighter-rouge">SELECT</code> and <code class="highlighter-rouge">BACK</code>), or the legacy alternatives (<code class="highlighter-rouge">STEP_UP</code>, <code class="highlighter-rouge">STEP_DOWN</code>,
+<code class="highlighter-rouge">WIND</code>, <code class="highlighter-rouge">REWIND</code>, <code class="highlighter-rouge">PLAY</code> and <code class="highlighter-rouge">EXIT</code>).</p>
+
+<p>You should keep this in mind if constructing macros that simulate menu navigation.</p>
+
+<p>Mobile applications also need to know in which of these modes the
+product is configured in order to send the right commands.</p>
+
+<p>This configuration is done via the <em>Interfaces</em> screen on BeoLink
+Gateway. If the option is checked, BeoLink Gateway will tell the
+mobile application that the product is controlled via the Beo4
+navigation button commands <code class="highlighter-rouge">UP</code>, <code class="highlighter-rouge">DOWN</code>, <code class="highlighter-rouge">LEFT</code>, <code class="highlighter-rouge">RIGHT</code>, <code class="highlighter-rouge">SELECT</code> and
+<code class="highlighter-rouge">BACK</code>. Otherwise it will instruct the mobile application to use the
+legacy commands.</p>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

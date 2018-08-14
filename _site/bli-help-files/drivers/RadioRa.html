@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Lutron Radio RA</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="lutron-radio-ra">Lutron Radio RA</h1>
+
+<h2 id="connection-to-a-radio-ra-system">Connection to a Radio RA system</h2>
+
+<p>Communications with Radio RA is done via the Radio RA RS232 interface.
+Use a full RS232 cable between Radio RA and BeoLiving Intelligence. <em>Hardware flow control
+is used</em>, so a 3-wire connection will not work.</p>
+
+<p>Alternatively, you can use an Ethernet to RS232 interface and connect
+via BeoLiving Intelligence network port. In this case, it is important to configure the
+Ethernet to RS232 interface to use hardware flow control, 9600 bps, no
+parity, 1 stop bit.</p>
+
+<p>The only connection setting available is the TCP port number and IP
+address in case connecting via Ethernet.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>The supported resource  types are:</p>
+
+<ul>
+  <li><strong>Master Button LED</strong>: LED on a Master Control.</li>
+  <li><strong>Phantom Button Dimmer</strong>: a light dimmer.</li>
+  <li><strong>Phantom Button Shade</strong>: a single shade.</li>
+  <li><strong>Phantom Button Switch</strong>: a light switch.</li>
+  <li><strong>Phantom Button Toggle</strong>: a single button.</li>
+  <li><strong>Phantom LED</strong>: programmable LED.</li>
+</ul>
+
+<h2 id="resource-address-format">Resource address format</h2>
+
+<p>Most resource addresses in Radio RA are based on Master Control
+Number, Zone Number and Button Number.</p>
+
+<p>Master Control Number is a number between 1 and 12, which is displayed
+in the Radio RA RS232 interface when Master Control is used. Zone
+Number is a number between 1 and 32. Button Number is a number between
+1 and 17; where 16 and 17 are normally “all on” and “all off” respectively.</p>
+
+<p>The address depends on the resource type:</p>
+
+<ul>
+  <li><em>Master Button LED</em>: Master Control Number and a LED number separated by a colon <code class="highlighter-rouge">:</code>. The LED number ranges from 1 to 15.</li>
+  <li><em>Phantom Button Dimmer</em>: Zone Number.</li>
+  <li><em>Phantom Button Shade</em>: Button Number excluding 16 and 17.</li>
+  <li><em>Phantom Button Switch</em>: Button Number.</li>
+  <li><em>Phantom Button Toggle</em>: Button Number.</li>
+  <li><em>Phantom LED</em>: Button Number excluding 16 and 17.</li>
+</ul>
+
+<h2 id="commands">Commands</h2>
+<ul>
+  <li>Master Button LED
+    <ul>
+      <li><strong>SET</strong>: Set the LED state (0 means OFF and 1 ON)</li>
+    </ul>
+  </li>
+  <li>Phantom Button Dimmer
+    <ul>
+      <li><strong>SET</strong>: Set the dimmer level, in percentage.</li>
+    </ul>
+  </li>
+  <li>Phantom Button Shade
+    <ul>
+      <li><strong>RAISE</strong></li>
+      <li><strong>LOWER</strong></li>
+      <li><strong>STOP</strong></li>
+    </ul>
+  </li>
+  <li>Phantom Button Switch
+    <ul>
+      <li><strong>TOGGLE</strong></li>
+      <li><strong>SET</strong></li>
+    </ul>
+  </li>
+  <li>Phantom Button Toggle
+    <ul>
+      <li><strong>PRESS</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="resource-state">Resource State</h2>
+<ul>
+  <li>Master Button LED
+    <ul>
+      <li><strong>STATE</strong>: The state of the LED (0 means OFF and 1 ON)</li>
+    </ul>
+  </li>
+  <li>Phantom LED
+    <ul>
+      <li><strong>STATE</strong>: The state of the LED (0 means OFF and 1 ON)</li>
+    </ul>
+  </li>
+</ul>
+
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

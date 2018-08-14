@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Virtual Resources</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="virtual-resources">Virtual Resources</h1>
+
+<p>Virtual resources are an abstraction that lets you define buttons for
+systems that do not implement these directly.</p>
+
+<p>Also, <strong>BeoLiving App currently uses virtual buttons</strong> for displaying
+scene buttons. It does not yet support displaying all available
+resources on each zone.</p>
+
+<p><strong>Virtual resources have no functionality by themselves</strong>; you must
+define macros to link user actions on a virtual resource, with actual
+events and commands on the systems. See the example below.</p>
+
+<p>Future releases of BeoLiving Intelligence will also support virtual thermostats.</p>
+
+<h2 id="end-user-experience">End user experience</h2>
+
+<p>Virtual resources can appear as a single functional entity on user
+interfaces, hiding the fact that internally the resource is
+implemented by putting together a set of macros for all the needed
+actions on the button.</p>
+
+<h2 id="addressing">Addressing</h2>
+
+<p>Virtual resources have an address which is a unique number. This
+number is used by external controllers and applications to identify
+this resource.</p>
+
+<h2 id="example-knx-button">Example: KNX button</h2>
+
+<p>You have a KNX system, which communicates with BeoLiving Intelligence via
+changes to group addresses.</p>
+
+<p>There is a boolean group address <code class="highlighter-rouge">1/2/3</code> which acts on the ceiling
+fan, and you want to show it as a button on the user interfaces.</p>
+
+<p>The steps are:</p>
+
+<ol>
+  <li>Create a virtual resource of type button, called <code class="highlighter-rouge">Fan</code>, with
+address <code class="highlighter-rouge">1</code>.</li>
+  <li>Create a KNX resource of type boolean on group address <code class="highlighter-rouge">1/2/3</code>, and
+call it <code class="highlighter-rouge">KnxFan</code>.</li>
+  <li>Create a macro called <code class="highlighter-rouge">Fan ON</code> with event <code class="highlighter-rouge">Fan PRESS</code>, and command
+<code class="highlighter-rouge">Set KnxFan to 1</code>.</li>
+  <li>Create another macro called <code class="highlighter-rouge">Fan OFF</code> with event <code class="highlighter-rouge">Fan RELEASE</code>, and
+command <code class="highlighter-rouge">Set KnxFan to 0</code>.</li>
+</ol>
+
+<p>Now you have a button that looks and behaves like a button on the user
+interfaces, but internally acts on a boolean KNX group address.</p>
+
+<h2 id="example-lutron-shades">Example: LUTRON Shades</h2>
+
+<p>You have LUTRON buttons that can raise, lower and stop a shade, let’s call them <code class="highlighter-rouge">RaiseBtn</code>, <code class="highlighter-rouge">LowerBtn</code> and <code class="highlighter-rouge">StopBtn</code> respectively.
+It is possible to create a Virtual Shade and use it to trigger the PRESS command of the LUTRON buttons.</p>
+
+<p>The steps are:</p>
+
+<ol>
+  <li>Create a virtual resource of type Shade, called <code class="highlighter-rouge">MyShade</code>.</li>
+  <li>Create a macro called <code class="highlighter-rouge">Raise Shade</code> with event <code class="highlighter-rouge">MyShade RAISE_REQUIRED</code>, and command <code class="highlighter-rouge">RaiseBtn PRESS</code>.</li>
+  <li>Create a macro called <code class="highlighter-rouge">Lower Shade</code> with event <code class="highlighter-rouge">MyShade LOWER_REQUIRED</code>, and command <code class="highlighter-rouge">LowerBtn PRESS</code>.</li>
+  <li>Create a macro called <code class="highlighter-rouge">Stop Shade</code> with event <code class="highlighter-rouge">MyShade STOP_REQUIRED</code>, and command <code class="highlighter-rouge">StopBtn PRESS</code>.</li>
+</ol>
+
+<p>Now you have a resource that looks like a shade in the user interfaces, but acts triggering the Lutron buttons.</p>
+
+<h2 id="example-virtual-dimmers">Example: Virtual Dimmers</h2>
+<p>Whenever the <code class="highlighter-rouge">SET</code> command is executed on a Virtual Dimmer, the <code class="highlighter-rouge">SET_REQUIRED</code> event will be fired with the same <code class="highlighter-rouge">LEVEL</code> value of the <code class="highlighter-rouge">SET</code> command (the level of the dimmer will not change).
+You can use the <code class="highlighter-rouge">SET_REQUIRED</code> event to trigger the commands you need to set the value of your dimmer, for example executing <code class="highlighter-rouge">PRESS</code> command on some button.
+Then you can set the level of the virtual dimmer using the <code class="highlighter-rouge">SET_VIRTUAL</code> command which takes a <code class="highlighter-rouge">LEVEL</code> value.</p>
+
+<p>The steps are:</p>
+
+<ol>
+  <li>Create a Virtual Dimmer called <code class="highlighter-rouge">MyVirtualDimmer</code></li>
+  <li>Create a macro called <code class="highlighter-rouge">Set Virtual Dimmer</code> with event <code class="highlighter-rouge">MyVirtualDimmer SET_REQUIRED</code> and the following command:
+```lua
+function(event, engine)
+  —-
+  – Do what you have to do to set the level
+  —-</li>
+</ol>
+
+<p>— Set the Virtual Dimmer level
+  engine.fire(event.area()..”/”..event.zone()..”/DIMMER/”..event.name()..”/SET_VIRTUAL?LEVEL=”..event.get(“LEVEL”))
+end
+```</p>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

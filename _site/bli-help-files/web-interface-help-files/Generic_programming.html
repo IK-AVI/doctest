@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Generic programming</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="generic-programming">Generic programming</h1>
+
+<p>Standard events and commands apply to a single specific resource.</p>
+
+<p>Generic programming allows referencing a whole set of resources at
+once.</p>
+
+<p>For example, you can specify:</p>
+
+<ul>
+  <li>A single command to <em>mute all products called BeoVision</em>.</li>
+  <li>An event specification that matches <em>any button pressed that is
+called LightsON</em>.</li>
+  <li>An event that matches <em>multi tap on any button in the kid’s bedroom</em></li>
+</ul>
+
+<p>This has many benefits:</p>
+
+<ul>
+  <li>A single macro can now substitute a lot of macros previously
+tailored for individual resources.</li>
+  <li>The list of events and commands on a macro can be drastically
+reduced.</li>
+  <li>More importantly, it encourages a consistent setup throughout the
+installation.</li>
+</ul>
+
+<p>A few examples below illustrate the use of generic programming.</p>
+
+<p><strong>Note on name changes:</strong> Generic events and commands are matched
+  against all possible resources every time an event occurs or a
+  command is executed. So, if on a working configuration the installer
+  changes the name of a resource, that resource may no longer match
+  an existing generic event or command. So be consistent with naming
+  of resources, and careful not to break functionality by renaming
+  resources.</p>
+
+<h2 id="example-1-consistent-lighting-in-all-zones">Example 1: Consistent lighting in all zones</h2>
+
+<p>It is extremely important for the user experience to be as consistent
+as possible throughout the whole installation, so that the user knows
+what to expect without having to memorize lots of different features
+or functions.</p>
+
+<p>A typical example is wall keypads and lighting control.</p>
+
+<p>Normally, you would try to set up all keypads in the home with, for
+example:</p>
+
+<ul>
+  <li>The top key for turning the lights on to a default scene.</li>
+  <li>The bottom key for turning the lights off.</li>
+</ul>
+
+<p>This way, the user can walk into any room and have the lights on
+without remembering what each button does.</p>
+
+<p>Other keys in the keypad may then be assigned for more specific
+functions, described by the key labels.</p>
+
+<p>For this example, assume that the house has one or more lighting
+control systems, with keypads on all zones, and every zone either
+supports lighting scene selection, or direct control of a dimmer.</p>
+
+<p>The following steps will get a consistent functionality for turning
+lights on with the topmost key in all keypads.</p>
+
+<ol>
+  <li>Define resources for the top button of all keypads at room
+entrances. Call them all by the same name <code class="highlighter-rouge">Lights ON</code>.</li>
+  <li>If a zone, such as a corridor, needs a second such button on
+another keypad, call it <code class="highlighter-rouge">Lights ON 2</code> since you are not allowed to
+repeat names within a zone.</li>
+  <li>For zones with scene control, set up a scene for the default
+lighting and assign a resource called <code class="highlighter-rouge">Scene ON</code>.</li>
+  <li>For zones with direct dimmer control, assign a resource for the
+main lighting fixture and call it <code class="highlighter-rouge">Main dimmer</code>.</li>
+  <li>On the macro screen, add a new macro called <code class="highlighter-rouge">Generic lights ON</code>.
+Assign it to the special zone called <code class="highlighter-rouge">global</code>, since it applies to
+many zones.</li>
+  <li>Add a generic event that matches <code class="highlighter-rouge">any area</code>, <code class="highlighter-rouge">any zone</code>, <code class="highlighter-rouge">BUTTON</code>
+named <code class="highlighter-rouge">Lights ON</code>, action <code class="highlighter-rouge">PRESS</code>.</li>
+  <li>Add more events if you used buttons named <code class="highlighter-rouge">Lights ON 2</code>.</li>
+  <li>Now add a generic command for <code class="highlighter-rouge">area that fired</code>, <code class="highlighter-rouge">zone that
+fired</code>, <code class="highlighter-rouge">BUTTON</code> named <code class="highlighter-rouge">Scene ON</code>, action <code class="highlighter-rouge">PRESS</code>.</li>
+  <li>Add another command for <code class="highlighter-rouge">area that fired</code>, <code class="highlighter-rouge">zone that fired</code>,
+<code class="highlighter-rouge">DIMMER</code> named <code class="highlighter-rouge">Main dimmer</code>, action <code class="highlighter-rouge">SET LEVEL 85%</code>.</li>
+</ol>
+
+<p>Notes:</p>
+
+<ul>
+  <li>Events and commands that don’t match are silently ignored. For
+example, rooms with dimmer control won’t complain that there is no
+scene button available.</li>
+  <li>The generic options <code class="highlighter-rouge">area that fired</code> and <code class="highlighter-rouge">zone that fired</code> will
+only match the area and zone where the event was produced. In this
+case, you will only affect lighting on the same room where the key
+was pressed.</li>
+  <li>On the list of events and commands for the macro, you will see a
+special encoded description. In the case of generic events and
+commands, you will notice the use of <code class="highlighter-rouge">*</code> to mean <em>any</em>, and the
+codes <code class="highlighter-rouge">$area</code> and <code class="highlighter-rouge">$zone</code> as placeholders for the actual area and
+zone where the event occurred.</li>
+</ul>
+
+<h2 id="example-2-all-area-off">Example 2: All area off</h2>
+
+<p>The residence has 3 areas: <code class="highlighter-rouge">Main house</code>, <code class="highlighter-rouge">Pool</code> and <code class="highlighter-rouge">Guest house</code>.</p>
+
+<p>Pressing a button on Beo5/6 will switch off all lighting and A/V
+products in whole area.</p>
+
+<p>Assume a button has been set up on Beo5 for this purpose, that sends
+<code class="highlighter-rouge">CONTROL 20</code>.</p>
+
+<p>The installation is as follows:</p>
+
+<ul>
+  <li>Video products in all zones are named <code class="highlighter-rouge">BeoVision</code>, and audio
+products are named <code class="highlighter-rouge">BeoSound</code>.</li>
+  <li>All zones have a lighting scene button called <code class="highlighter-rouge">OffScene</code>.</li>
+</ul>
+
+<p>The macro is as follows.</p>
+
+<p>Events:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">CONTROL 20</code> on any video product (encoded as <code class="highlighter-rouge">$area/$zone/AV
+Renderer/BeoVision/Control ? Action=Press &amp; Command=FUNCTION_20</code>).</li>
+  <li><code class="highlighter-rouge">CONTROL 20</code> on any audio prdouct (encoded as <code class="highlighter-rouge">$area/$zone/AV
+Renderer/BeoSound/Control ? Action=Press &amp; Command=FUNCTION_20</code>).</li>
+</ol>
+
+<p>Commands:</p>
+
+<ol>
+  <li>Set all video products in the same area, any zone, called “BeoVision” to standby
+(encoded as <code class="highlighter-rouge">$area/*/AV Renderer/BeoVision/Standby</code>)</li>
+  <li>Set volume of all audio/video products in the same area, any zone, to standby
+(encoded as <code class="highlighter-rouge">$area/*/AV Renderer/*/Volume level=30</code>)</li>
+  <li>Turn off all lighting by calling the OFF scene (encoded like <code class="highlighter-rouge">$area/*/BUTTON/OffScene/PRESS</code>)</li>
+</ol>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

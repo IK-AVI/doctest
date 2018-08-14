@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top"  data-spy="scroll" data-target="#toc" data-offset="0"  >
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>BeoLiving Intelligence Alexa's skill Guide</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <nav id="toc" class="sticky-top" style="top: 60px">
+          </nav>
+        </div>
+
+        <div id="pagecontent" class="col-sm-9 pagecontent">
+          <h2 id="introduction">Introduction</h2>
+
+<p>The scope of this guide comprise a full description of all available voice commands and devices you can control between <em>Alexa</em> and <em>BeoLiving 
+Intelligence</em>. To enable this feature, remote connection must be enabled in your <em>BeoLiving Intelligence</em> (more information at <a href="/bli-guides/bli-quick-setup-guide.html">BeoLiving Intelligence Quick Setup guide</a>) and  <em>Alexa</em>’s skill “<em>BeoLiving Intelligence skill by Khimo</em>” must be enabled through <em>Alexa App</em> (refer to <a href="/bli-guides/bli-link-third-party-service.html">BeoLiving Intelligence Link to Third Party Cloud Service Guide</a>).</p>
+
+<p><strong>This feature is not upgrade dependent</strong>, so is available in any <em>BeoLiving Intelligence</em> version. If you have not upgraded your <em>BeoLiving 
+Intelligence</em> to <em>PRO</em>, then all devices apart from <em>Bang &amp; Olufsen</em> devices could not be controlled through <em>Alexa</em>.</p>
+
+<h2 id="terminology">Terminology</h2>
+
+<ul>
+  <li><em>BeoLiving Intelligence</em>: Controller with same capabilities as it comes from out of the box.</li>
+  <li><em>BeoLiving Intelligence PRO</em>: Controller with fully capabilities that could offer after upgrading to <em>PRO</em>.</li>
+  <li><em>BLI</em>: Alias for BeoLiving Intelligence.</li>
+  <li><em>BLI PRO</em>: Alias for BeoLiving Intelligence PRO.</li>
+  <li><em>BLApp</em>: BeoLiving App.</li>
+</ul>
+
+<h2 id="discovery">Discovery</h2>
+
+<p>First step after linking <em>Alexa</em> with your <em>BLI</em> is to discover all devices in your configuration. Automatic discovery of all supported devices is
+ done after say “<em>Alexa, discover my smart home devices</em>”. <em>Alexa</em> will get your <em>BLI</em> configuration and save a reference to all supported 
+devices.</p>
+
+<h2 id="device-name-reference">Device name reference</h2>
+
+<p>In the discovery process, <em>Alexa</em> creates a name reference to each device between its zone and name as “<em>(BLI device zone name)</em> + 
+<em>(BLI device name)</em>”. For example, to turn on the kitchen light (defined in the zone “Kitchen” and named as “Light” in your <em>BLI</em> configuration) 
+you must say “<em>Alexa, turn on kitchen light</em>”.</p>
+
+<h2 id="commands">Commands</h2>
+
+<p>Supported commands for each device depends in its capabilities. For example, a monochromatic dimmer will not support a set color command.</p>
+
+<h3 id="lightsdimmers">Lights/Dimmers</h3>
+
+<ul>
+  <li>Turn on/off:
+    <ul>
+      <li>“<em>Alexa, turn on/off (LIGHT-NAME)</em>”</li>
+      <li><em>Description</em>:Turns on/off light</li>
+    </ul>
+  </li>
+  <li>Set brightness:
+    <ul>
+      <li>“<em>Alexa, dim (LIGHT-NAME) ##%</em>”</li>
+      <li><em>Description</em>: Sets brightness level</li>
+    </ul>
+  </li>
+  <li>Relative brightness adjust:
+    <ul>
+      <li>“<em>Alexa, increase/decrease (LIGHT-NAME) by ##%</em>”</li>
+      <li><em>Description</em>: Increases/decreases relatively shade level</li>
+    </ul>
+  </li>
+  <li>Set color:
+    <ul>
+      <li>“<em>Alexa, set the (LIGHT-NAME) to (COLOR)</em>”</li>
+      <li><em>Description</em>: Sets light color</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="shades">Shades</h2>
+
+<ul>
+  <li>Turn on/off:
+    <ul>
+      <li>“<em>Alexa, turn on/off (SHADE-NAME)</em>”</li>
+      <li><em>Description</em>: Raises/Lowers shade.</li>
+    </ul>
+  </li>
+  <li>Set level:
+    <ul>
+      <li>“<em>Alexa, dim (SHADE-NAME) ##%</em>”</li>
+      <li><em>Description</em>: Sets shade level</li>
+    </ul>
+  </li>
+  <li>Relative level adjust:
+    <ul>
+      <li>“<em>Alexa, increase/decrease (SHADE-NAME) by ##%</em>”</li>
+      <li><em>Description</em>: Increases/decreases relatively shade level</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="scenesmacros">Scenes/Macros</h2>
+
+<ul>
+  <li>Activate/Deactivate scene:
+    <ul>
+      <li>“<em>Alexa, activate/deactivate (SCENE-NAME)</em>”</li>
+      <li><em>Description</em>: Fires or stops macro</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="themostats">Themostats</h2>
+
+<ul>
+  <li>Turn off:
+    <ul>
+      <li>“<em>Alexa, turn off (THERMOSTAT-NAME)</em>”</li>
+      <li><em>Description</em>: Sets thermostat into Off mode</li>
+    </ul>
+  </li>
+  <li>Set thermostat setpoint:
+    <ul>
+      <li>“<em>Alexa, set (THERMOSTAT-NAME) to (TEMPERATURE)</em>”</li>
+      <li><em>Description</em>: Sets thermostat setpoint to an specific temperature.</li>
+      <li><em>Rules</em>:
+        <ul>
+          <li>In case the thermostat has two setpoints (THERMOSTAT_2SP <em>BLI</em> resource type) and being in “<em>Auto</em>” mode, upper setpoint (Cool setpoint) 
+and lower setpoint (Heat setpoint) will be setted +/- 2 degrees of (TEMPERATURE).</li>
+          <li>In <em>Eco</em> mode, thermostat setpoints can not be setted.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Relative temperature setpoint adjust:
+    <ul>
+      <li>“<em>Alexa, increase/decrease temperature of (THERMOSTAT-NAME)</em>”</li>
+      <li><em>Description</em>: Increase/decrease thermostat setpoints by a constant value.</li>
+      <li><em>Rules</em>:
+        <ul>
+          <li>Same rules than “Set thermostat setpoint”</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Set thermostat mode:
+    <ul>
+      <li>“<em>Alexa, set (THERMOSTAT-NAME) to (MODE)</em>”</li>
+      <li><em>Description</em>: Changes thermostat mode</li>
+      <li><em>Rules</em>: MODE could be any of: “Heat”, “Cool”, “Off”, “Eco” and “Auto”</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="bang--olfusen-networklink-devices">Bang &amp; Olfusen NetworkLink devices</h2>
+
+<ul>
+  <li>Turn on/off:
+    <ul>
+      <li>“<em>Alexa, turn on/off (DEVICE-NAME)</em>”</li>
+      <li><em>Description</em>: Turns on device into an specific source or sets into Standby</li>
+      <li><em>Rules</em>: When turning on, selected source can not be predicted. Will be the same for each device.</li>
+    </ul>
+  </li>
+  <li>Change channel by number:
+    <ul>
+      <li>“<em>Alexa, change channel to (CHANNEL-NUMBER) on (DEVICE-NAME)</em>”</li>
+      <li><em>Description</em>: Changes channel by number in current source</li>
+    </ul>
+  </li>
+  <li>Change channel by name:
+    <ul>
+      <li>“<em>Alexa, change channel to (CHANNEL-NAME) on (DEVICE-NAME)</em>”</li>
+      <li><em>Description</em>: Changes channel by name in current source</li>
+      <li><em>Rules</em>: Search for (CHANNEL-NAME) into all favourite lists assigned to device sources. Current source will have priority for a match.</li>
+    </ul>
+  </li>
+  <li>Skip channels:
+    <ul>
+      <li>“<em>Alexa, channel up/down on (DEVICE-NAME)</em>”</li>
+      <li><em>Description</em>: Changes to next or previous channel in current source</li>
+    </ul>
+  </li>
+  <li>Set volume:
+    <ul>
+      <li>“<em>Alexa, set the volume of (DEVICE-NAME) to (VOLUME)</em>”</li>
+      <li><em>Description</em>: Sets volume level to (VOLUME)</li>
+      <li><em>Rules</em>: Desired volume must be between 0 and 90</li>
+    </ul>
+  </li>
+  <li>Relative volume adjust:
+    <ul>
+      <li>“<em>Alexa, turn the volume up/down on (DEVICE-NAME) by (VOLUME-DELTA)</em>”</li>
+      <li><em>Description</em>: Increase or decrease device volume by (VOLUME-DELTA)</li>
+    </ul>
+  </li>
+  <li>Mute/Unmute:
+    <ul>
+      <li>“<em>Alexa, mute/unmute (DEVICE-NAME)</em>”</li>
+      <li><em>Description</em>: Mute/Unmute device</li>
+    </ul>
+  </li>
+  <li>Select source(input):
+    <ul>
+      <li>“<em>Alexa, change the input to (SOURCE-NAME) on (DEVICE-NAME)</em>”</li>
+      <li><em>Description</em>: Selects source on device. In <em>Alexa’s</em> language, “sources” are equivalent to “inputs”. Possible sources are all enabled sources
+on device and manual sources added in <em>BLI</em> <em>Interfaces</em> page (only being <em>PRO</em>).</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="how-to-change-discovered-device-name">How to change discovered device name</h2>
+
+<p>Sometimes, Alexa’s identifier device name could not be a suitable name to be used. Depending if it’s an uncommon or rare name, Alexa will 
+not understand and complete the instruction, being necessary to edit Alexa’s device name.</p>
+
+<p>The ways to edit the Alexa’s identifier device name are:</p>
+<ul>
+  <li>change the resource name at <em>BLI</em> configuration (through <em>BLApp</em> or web interface, being <em>PRO</em>) and re-discover all devices.</li>
+  <li>edition through <em>Alexa App</em> for all devices that are not <em>AV renderer</em> <em>BLI’s</em> resource type. This is a known limitation of <em>Alexa App</em>.</li>
+</ul>
+
+<h2 id="workarounds-when-select-input-fails">Workarounds when select input fails</h2>
+
+<p>Source (input) names for each device could not be shared to or saved by <em>Alexa</em>. The skill will try to match the source (input) that <em>Alexa</em> 
+understood with device sources. She understands possible popular sources like “<em>YouTube</em>” or “<em>Android TV</em>” most of the time, but using custom and
+ rare names will cause to confuse her or to not find any match with the desired source to select, provoking to not accomplish the desired control 
+instruction.</p>
+
+<p>When its impossible for <em>Alexa</em> to select an specific source, try:</p>
+
+<ul>
+  <li>Change source name through <em>Interfaces</em> page at <em>BLI</em> web interface (only being <em>PRO</em>). Then re-discover devices.</li>
+  <li>Create a macro in <em>BLI</em> that selects the source in the device and call “<em>Alexa, activate (SCENE-NAME)</em>”. To start using the macro with <em>Alexa</em>, 
+call for a device discovery.</li>
+</ul>
+
+          </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+    <script> 
+      $(function() {
+        var navSelector = '#toc';
+        var $myNav = $(navSelector);
+        Toc.init($myNav);
+        $('body').scrollspy({
+          target: navSelector
+        });
+      });
+    </script> 
+
+  </body>
+
+</html>

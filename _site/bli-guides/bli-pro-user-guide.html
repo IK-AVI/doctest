@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top"  data-spy="scroll" data-target="#toc" data-offset="0"  >
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>BeoLiving Intelligence PRO User Guide</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <nav id="toc" class="sticky-top" style="top: 60px">
+          </nav>
+        </div>
+
+        <div id="pagecontent" class="col-sm-9 pagecontent">
+          <h2 id="introduction">Introduction</h2>
+
+<p>The scope of this guide comprise an introduction to <em>BeoLiving Intelligence</em> in <em>PRO</em> mode, a detailed description of its web interface used for configuration/programming your setup and “How to’s” of different features. <em>BeoLiving Intelligence PRO</em> has all of its capabilities unblocked and this guide will let you exploit your Home Automation controller to its maximum.</p>
+
+<p>Before reading this guide, it’s recommended reading <a href="/bli-guides/bli-quick-setup-guide.html">BeoLiving Intelligence Quick Setup Guide</a> and <a href="/bli-guides/bli-advanced-user-guide.html">BeoLiving Intelligence Advanced User Guide</a> for better understanding of some concepts and useful information, not included in this guide.</p>
+
+<p><em>BeoLiving Intelligence PRO</em> upgrade enables the unique capability of integrating Bang &amp; Olufsen Network Link systems (audio and video products) with some of the most popular Home Automation systems such as Nest, Philips Hue, KNX, Lutron, among others, creating versatile solutions and a great experience for <em>BeoLiving Intelligence</em> users.</p>
+
+<p><em>BeoLiving Intelligence PRO</em> web interface is the most important tool for configuration and programming your installation. Certain degree of configuration could be made through BeoLiving App but it’s targeted for user use.</p>
+
+<h2 id="terminology">Terminology</h2>
+
+<ul>
+  <li><em>BeoLiving Intelligence</em>: Controller with same capabilities as it comes from out of the box.</li>
+  <li><em>BeoLiving Intelligence PRO</em>: Controller with fully capabilities that could offer after buyable Firmware upgrade.</li>
+  <li><em>BLI</em>: Alias for BeoLiving Intelligence.</li>
+  <li><em>BLI PRO</em>: Alias for BeoLiving Intelligence PRO.</li>
+  <li><em>BLApp</em>: BeoLiving App.</li>
+  <li><em>NL</em>: Network Link.</li>
+  <li><em>LAN</em>: Local Area Network.</li>
+  <li><em>DHCP</em>: Dynamic Host Configuration Protocol.</li>
+  <li><em>HA</em>: Home Automation.</li>
+</ul>
+
+<h2 id="installation-overview">Installation overview</h2>
+
+<p>TODO: Diagram</p>
+
+<h2 id="set-up-the-beoliving-intelligence-pro">Set up the BeoLiving Intelligence PRO</h2>
+
+<p>Setup interface is the most important tool for configuration/programming of your <em>BLI PRO</em>. The following sections will guide you through the entire web interface configuration tool.</p>
+
+<p>In <em>BLI PRO</em> exists a special user <em>admin</em> meant for installer/technician usage. By default, <em>admin</em> password is unknown due to security purposes. To make use of the Setup interface, password for <em>admin</em> user must be resetted by activating the Setup button function (2). After a successfully button function input, <em>admin</em> password will be <em>“admin”</em> during the next 5 mintues (also for security purposes) and after logging in you will be asked to change it.</p>
+
+<h3 id="project-info">Project info</h3>
+
+<p>The Project page is used to state information regarding the project BeoLiving Intelligence is part of. This information could be useful in any later service situation.</p>
+
+<ul>
+  <li><strong>Project name</strong>: Name for the project.</li>
+  <li><strong>Display name</strong>: Name of the <em>BLI PRO</em> that will be shown in all interfaces (e.g.: BeoLiving App, Webpanel, etc.). Examples of display name are: the family name or the street address of the house.</li>
+  <li><strong>Installer name</strong>: Name of installer/company in charge of this project for reference.</li>
+  <li><strong>Installer contact</strong>: Any type of contact information to reach the installer/company in charge of this project for further questions/comments.</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+
+<h4 id="date--time">Date &amp; Time</h4>
+
+<p>Correct time setting is important for the monitoring of events, astronomic clock events and for time stamping at error log. The system will 
+work even if the time setting is not correct. The date and time settings can be synchronized with universal time servers (recommended) if the 
+<em>BLI PRO</em> has access to the Internet. Else date and time can be set manually.</p>
+
+<p><img src="pictures/pro-guide/setup-date-time.png" class="img-fluid" alt="Date and Time page" /></p>
+
+<h5 id="date--time-settings">Date &amp; Time settings</h5>
+
+<ul>
+  <li><strong>Date</strong>: Settings for year, month and day are entered and then press Set.</li>
+  <li><strong>Time</strong>: Settings for hours, minutes and seconds are entered and then press Set.</li>
+  <li><strong>Synchronize from internet</strong>: Synchronizing with an external time server by setting the check mark. Remove the check mark to disable the synchronization with the time server.</li>
+  <li><strong>Time zone</strong>: Setting for the time zone is chosen from the drop down list. Choices are made based on an appropriate match of ‘Continent’/’City’.</li>
+</ul>
+
+<h5 id="location-settings-astronomical-clock-and-location-events">Location settings (Astronomical Clock and Location events)</h5>
+
+<p>The Location settings are used by the <em>BLI PRO</em> to calculate, e.g. sunrise and sunset. Events can then be set relative to this. Latitude and 
+longitude are the settings for the astronomic clock. The settings are in decimal degrees. Values are entered in format ‘degrees.minutes’. 
+Seconds are only used to round the minute-value.
+Positive values are for North and East.
+Negative values are for South and West.</p>
+
+<h4 id="integration-protocols">Integration Protocols</h4>
+
+<p>Home Integration protocol allow other devices to interact with <em>BLI</em>. This protocol is used by mobile applications or by other 
+home automation controllers.</p>
+
+<p>Home Integration protocol provides two-way control of all resource types. This protocol can be enabled on the local network, with mandatory 
+authentication. You should provide a TCP port, which defaults to 9100. Port numbers below 1024 are reserved for standard TCP services, so use 
+values above this range.</p>
+
+<h4 id="network">Network</h4>
+
+<p>Network page contains network connectivity configuration of <em>BLI</em>.</p>
+
+<p><img src="pictures/pro-guide/network.png" class="img-fluid" alt="Network page" /></p>
+
+<p>The following options are:</p>
+
+<ul>
+  <li><strong>Hostname</strong>: Name of <em>BLI</em> as it is found in the LAN.</li>
+  <li><strong>DHCP</strong>: Enable/Disable <em>DHCP</em> mode. Per factory default, <em>DHCP</em> mode is enabled.</li>
+  <li><strong>Address</strong>: If <em>DHCP</em> is disabled, the static <em>BLI</em> network address could be setted in <em>Address</em>.</li>
+  <li><strong>Mask</strong>: Mask related to <em>BLI</em> LAN.</li>
+  <li><strong>DNS Server</strong>: <em>DNS Server</em> network address in LAN.</li>
+  <li><strong>Gateway</strong>: Gateway address in LAN.</li>
+</ul>
+
+<p>The settings must be applied by pressing the <em>Apply</em> button.</p>
+
+<h4 id="system-modes">System modes</h4>
+
+<p><em>BLI PRO</em> can have any number of System modes, which can be used to enable or disable the execution of macros, as follows:</p>
+
+<ul>
+  <li>System modes can be activated by the <em>BLI PRO</em> command SET MODE.</li>
+  <li>Any number of modes can exist, but at most one can be active any given time.</li>
+  <li>A macro can have any number of modes, and a mode can be set to any number of macros.</li>
+  <li>A macro with no mode set will behave normally.</li>
+  <li>If a macro has one or more modes set, then it will be triggered by events only if one of those modes is active.</li>
+  <li>Typical example of system modes: Vacation and Normal. You can set up a button to toggle between normal and vacation modes. Macros for setting thermostats, or for controlling lighting and shades may be assigned individually to each mode.</li>
+</ul>
+
+<h4 id="units">Units</h4>
+
+<p>The system temperature units can be configured to be Fahrenheit or Celsius, affecting all the clients connected to the <em>BLI PRO</em>. For example, if the current temperature unit is Fahrenheit, then all the thermostats will report the temperature in these units to all connected clients.</p>
+
+<p>This setting only affects what is displayed on <em>BLI PRO</em> user interfaces. It does not affect the units displayed on the actual thermostats.</p>
+
+<h3 id="zones">Zones</h3>
+
+<p><img src="pictures/pro-guide/zones.png" class="img-fluid" alt="Zones page" /></p>
+
+<p>Everything in <em>BLI</em> is organized into zones. Zones represent rooms or other locations in the home such as kitchen, hallway, garden, garage, etc.
+In order to accomodate for big installations, zones themselves are organized into areas. Examples of areas are: upstairs and downstairs, guest house, barbecue.</p>
+
+<h4 id="areas--zones">Areas &amp; Zones</h4>
+
+<p>Areas are indicated by text on a grey background in the left column. Zones that are subdividing the areas are indicated by text on a white 
+background in the left column.</p>
+
+<h4 id="adding-areas-and-zones">Adding areas and zones</h4>
+
+<p>Areas are added using the “<em>Add new area</em>” button. When adding an area, a name for this can be stated. An area can be deleted by activating the 
+“<strong>x</strong>” sign in the greyed area-boxes and renamed by activating the edition-sign next to “<strong>x</strong>” sign. Zones are added to the areas by activating the “<strong>+</strong>” sign in the greyed area-boxes.</p>
+
+<h4 id="zone-settings">Zone settings</h4>
+
+<ul>
+  <li><strong>Name</strong>: Name of zone. In <em>BLI</em> a zone can be one or more rooms in the house or even part of a room, e.g. : living room, kitchen, bedroom. The 
+Name is stated as desired.</li>
+  <li><strong>Area</strong>: Drop down list of all existent <em>Area</em>´s in the configuration to select where to place the <em>Zone</em>.</li>
+  <li><strong>Icon</strong>: An icon can be assigned that will be visible in the user interfaces, for easy recognition.</li>
+  <li><strong>Delete</strong>: <em>Zone</em> selected from the structure can be deleted by activating the <em>Delete</em> button. Systems and resources in a zone that shall be 
+deleted must be rearranged or removed.</li>
+</ul>
+
+<h4 id="main-area">Main area</h4>
+
+<p><em>Main</em> area has two special zones:</p>
+
+<ul>
+  <li><strong>global</strong>: placeholder zone for systems and their resources that apply to the entire house (recommended; although systems may be placed in 
+areas/zones as desired. Likewise macros that act on several zones at a time such as ‘Party mode’, ‘Welcome’ and ‘Good Night’ may all be added 
+to the ‘Global’ zone. The <em>global</em> zone cannot be deleted and cannot be assigned an icon).</li>
+  <li><strong>unassigned resources</strong>: placeholder zone for automatically discovered B&amp;O products. <em>BLI</em> discover and adds all products found in its network.
+Is up to the installer to move those products into their respective <em>Area/Zone</em>.</li>
+</ul>
+
+<h3 id="systems">Systems</h3>
+
+<p>The systems settings is for setting-up systems connected to <em>BLI PRO</em>. BeoLink system and <em>HA</em> systems are ‘systems’. Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check <a href="/bli-help-files/drivers/main.html">Systems Drivers PRO</a> page to know all <em>HA</em> systems that <em>BLI PRO</em> supports.</p>
+
+<p>Each system has in <em>BLI PRO</em> a correspondant driver. There are two driver types:</p>
+
+<ul>
+  <li>Native driver that is included in <em>BLI PRO</em> firmware and is ready to be added in your <em>BLI</em>.</li>
+  <li>External driver located in our cloud. <em>BLI PRO</em> will download and install the external driver if desired.</li>
+</ul>
+
+<p>In this section, only <em>Native drivers</em> will be included. Go to <a href="#external-drivers">External drivers</a> section for more information.</p>
+
+<p><img src="pictures/pro-guide/systems.png" class="img-fluid" alt="Systems page" /></p>
+
+<h4 id="system-settings">System settings</h4>
+
+<p>Select “<strong>+</strong>” sign to add a new <em>HA</em> system from the drop down list and press <em>Add system</em> button. A System may be added in a specific <em>Area/Zone</em> if only serves functions there, else if a system serves more zones it may be added to the <em>Main/global</em> zone. Any of the supported 
+systems can be added, except internal systems, which only appear once in the installation, such as <em>BeoLink</em> and <em>Virtual Resources</em> that are 
+added by default. When selecting a system added to one zone, it is possible to select another zone in the Zone drop down list, by which the system is moved to that zone. A system can be renamed and also the configuration and connection settings can be changed. Systems are assigned to 
+zones by the installer, but they are invisible in the user interfaces. For example, assigning a System to a specific zone could be used by the installer to locate system hardware at the installation.</p>
+
+<h4 id="connection-settings">Connection settings</h4>
+
+<p>Connection settings depend on each system. Examples of Connection settings are: Connection type, Login, Password, Host, Port, Check server 
+certificate, etc. For specific details on different systems please refer to the online help. The default values must be changed according to the settings used in the installation. Press <em>Apply</em> button to confirm settings.</p>
+
+<h4 id="system-status-icons">System status icons</h4>
+
+<p>For each system installed, a text string icon is shown in the bottom of the screen. The status of each system is indicated by a colour of the 
+background of the text string icon.</p>
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Color</th>
+      <th scope="col">State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Green</td>
+      <td>Online</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>Connecting</td>
+    </tr>
+    <tr>
+      <td>Red</td>
+      <td>Error</td>
+    </tr>
+    <tr>
+      <td>Grey</td>
+      <td>Synchronizing</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This gives a quick status indication on each system. Moving the mouse pointer to each icon displays a pop-up that displays specific logs for that system. If a system cannot connect, the system logs should be checked for information about the problem.</p>
+
+<h3 id="resources">Resources</h3>
+
+<p>Resources are provided from the systems installed:</p>
+
+<ul>
+  <li>BeoLink system (<em>NL</em> A/V products and its connected sources)</li>
+  <li>Home Automation system(s) (e.g. buttons, sensors)</li>
+  <li>Virtual resources (programmed resources e.g. related to a button on a user interface or based on an event)</li>
+</ul>
+
+<p>In the <em>Resources</em> page the resources related to the installed <em>HA</em> system and related buttons (i.e. the components it comprises) can
+be fetched by using the <em>Capture</em> function or made manually. The <em>Import resources</em> function imports preprogrammed resources in the <em>HA</em> system.</p>
+
+<h4 id="beolink-resources">BeoLink resources</h4>
+
+<p><img src="pictures/pro-guide/resources-beolink.png" class="img-fluid" alt="BeoLink resources page" /></p>
+
+<p>The resources have the following parameters:</p>
+
+<ul>
+  <li><strong>Zone</strong>: The zone to which the resource belongs.</li>
+  <li><strong>Name</strong>: Enter a name to ease identification of the resources.</li>
+  <li><strong>Type</strong>: Select type from the drop down list. The only available resource type is <em>NL</em> product.</li>
+  <li><strong>Address</strong>: Unique identification of a resource. The format depends on the system. For <em>NL</em> products is the serial number.</li>
+  <li><strong>Force Discovery</strong>: Forces the product discovery in case it could not be done automatically.</li>
+</ul>
+
+<h4 id="home-automation-system-resources">Home Automation system resources</h4>
+
+<p><img src="pictures/pro-guide/resources-other.png" class="img-fluid" alt="Resources page" /></p>
+
+<p>The resources have the following parameters:</p>
+
+<ul>
+  <li><strong>Zone</strong>: The zone to which the resource belongs.</li>
+  <li><strong>Name</strong>: Name to ease identification of the resources.</li>
+  <li><strong>Type</strong>: Resource type. The type of available resources depends on the actual system, for instance: button, dimmer, shade 
+etc. E.g. a standard button supports PRESS, HOLD and RELEASE actions plus a status indication (e.g. an LED that can be On or Off). Some systems 
+can extend the standard button to provide extra features (see this in the drop down list). The purpose of having standard resource types is that 
+such common set of features are shared by the most supported systems.</li>
+  <li><strong>Address</strong>: Unique identification of a resource. The format depends on the <em>HA</em> system - using various number scheme.</li>
+  <li><strong>Capture</strong>: Same as <a href="#beolink-resources"><em>BeoLink resources</em></a>.</li>
+  <li><strong>Import resources</strong>: Used to import <em>HA</em> system resources into <em>BLI</em> uploading an specific <em>HA</em> system file or just requesting them directly. 
+This feature depends on each <em>HA</em> system driver.</li>
+</ul>
+
+<h4 id="virtual-resources">Virtual resources</h4>
+
+<p>An example of a <em>Virtual Resource</em> is a button on the user interface (<em>BLApp</em>, TV overlay menu, <em>WEBPANEL</em>) e.g. a virtual button for cinema 
+scene, or a boolean variable to indicate that a specific condition has been reached. <em>Virtual Resources</em> makes possible to define buttons and 
+variables of String, Integer and Boolean types for systems, without implementing these directly. The <em>BLApp</em> currently uses virtual buttons for 
+displaying scene buttons. <em>Virtual Resources</em> have no functionality by themselves. <em><a href="#macros">Macros</a></em> must be defined to link user actions on a 
+virtual resource, with events and commands in the systems.</p>
+
+<p><img src="pictures/pro-guide/resources-virtual.png" class="img-fluid" alt="Virtual resources page" /></p>
+
+<p>The address of a <em>Virtual Resource</em> is a unique number and if isn’t setted manually, <em>BLI PRO</em> generates automatically an un-used address for that
+ resource.</p>
+
+<h3 id="macros">Macros</h3>
+
+<p>The interaction between the devices connected to the <em>BLI</em> is defined by means of <em>Macros</em>. A <em>Macro</em> consists in a set of events and commands. 
+When any of the events that are defined in a <em>Macro</em> occur (e.g. a key press on a keypad; a Control Command on a Bang &amp; Olufsen remote control etc
+.), the macro will be triggered. This means that the commands in the macro will be executed in order.</p>
+
+<p><img src="pictures/pro-guide/macros.png" class="img-fluid" alt="Macros page" /></p>
+
+<p>A <em>Macro</em> is also assigned to an <em>Area/Zone</em> to which it belongs even if it handles activity outside the zone. Having <em>Macros</em> assigned to zones 
+helps when setting up user interfaces. The left column shows all <em>Macros</em> contained in each <em>Area/Zone</em>. To add a <em>Macro</em> in a specific <em>Area/Zone</em> press “<strong>+</strong>” sign button in the column entry.</p>
+
+<p>For each macro, the next buttons are available:</p>
+
+<ul>
+  <li><strong>Add event</strong>: used to add an <em>Event</em> to a <em>Macro</em>. The two buttons (see above) that can be used to set the cinema scene. See 
+<em><a href="#resource-event">Resource Event</a></em> section.</li>
+  <li><strong>Capture</strong>: when the <em>Capture</em> button is pressed, all system/resource events fired from that moment will be displayed so that they can be added.
+Example of events captured could be: the press of a virtual or phisical button, the source selection in a A/V renderer device.</li>
+  <li><strong>Add command</strong>: used to define the commands of a <em>Macro</em>. See <em><a href="#resource-command">Resource Command</a></em> section.</li>
+  <li><strong>Clone</strong>: creates an exact copy of the <em>Macro</em> adding “<em>- Clone n</em>” as subfix to the cloned <em>Macro</em> name, where <em>n</em> is the number of clones made.</li>
+  <li><strong>Remove</strong>: deletes <em>Macro</em>.</li>
+  <li><strong>Fire</strong>: fires/triggers <em>Macro</em>.</li>
+  <li><strong>Convert to code</strong>: switches <em>Macro</em> commands configuration into a <em>Lua</em> editor, turning existant <em>Macro</em> commands into <em>Lua</em> code. <em>Lua</em> 
+commands help is showed after pressing <em>Show Help</em> button. Pressing <em>Convert to table</em> will convert <em>Lua</em> commands into table format.</li>
+  <li><strong>Cut/Copy/Paste</strong>: when selecting an event/command (pressing left side of event/command), <em>Cut/Copy/Paste</em> buttons become available to use. The
+purpose, as the meaning of their names illustrate, are for <em>Cut/Copy/Paste</em> <em>Events</em> or <em>Commands</em> on the same <em>Macro</em> or between <em>Macros</em>.</li>
+</ul>
+
+<h4 id="resource-event">Resource Event</h4>
+
+<p>When pressing the <em>Add event</em> button, the window expands, fields for the <em>Resource Event</em> are shown and are filled in by making selections 
+from the drop down lists with each entry field. The illustration is an example only and the drop down list may vary depending on the choices made.</p>
+
+<h5 id="defining-events">Defining Events</h5>
+
+<p>The list of events (for triggering a macro) can be filled in manually or selected from captured events.</p>
+
+<p>There are three types of events:</p>
+
+<ul>
+  <li><strong>Generic</strong>: Generic events apply to a number similar events throughout the house. See <a href="#generic-programming">Generic Programming</a> section for
+more information.</li>
+  <li><strong>Resource</strong>: Resource events match a specific event on a specific resource.</li>
+  <li><strong>System</strong>: System events include calendar and astronomical clock events and system connectivity events.</li>
+</ul>
+
+<h4 id="resource-command">Resource command</h4>
+
+<p>When pressing the <em>Add command</em> button, the window expands, fields for the resource command are shown and are filled in by making selections 
+from the drop down lists with each entry field. The illustration is an example only, and drop down lists may vary depending on the choices made.</p>
+
+<p>Commands are the actions executed when a <em>Macro</em> is triggered. The list of commands are executed in order, and a delay can be set before each 
+command as a combination of seconds and milliseconds. The list can be reordered by dragging the handles at the left of each row, or by clicking on
+ the arrows on the far right of each row.</p>
+
+<p>There are four types of commands:</p>
+
+<ul>
+  <li><strong>Generic</strong>: applies to any area or zone, with the possibility of selecting the same area or zone where the event was generated.</li>
+  <li><strong>Resource</strong>: applies to a specific resource.</li>
+  <li><strong>System</strong>: acts directly on the systems, which support them.</li>
+  <li><strong>Macro</strong>: calls other macros, or act on other macros.</li>
+</ul>
+
+<h4 id="actions-on-macros">Actions on macros</h4>
+
+<p>A macro can contain delays between commands and therefore take some time to complete. What happens if during the macro execution another related 
+macro is called? Several commands act on macros:</p>
+
+<ul>
+  <li><strong>FIRE</strong>: Call the macro, as if an event for that macro had happened. This is the default action.</li>
+  <li><strong>CANCEL</strong>: Will stop executing an ongoing macro.</li>
+  <li><strong>COLLAPSE</strong>: Will execute remaining commands in an ongoing macro, but with no delays between commands.</li>
+</ul>
+
+<p>Firing another macro makes it possibly to take advantage of existing functionality without having to maintain several copies inside different
+macros. Although not recommended, it is possible to make a loop where a macro calls itself as the last command, e.g. switching Off growth light
+for plants; night and day temperature control etc. It is required to make a macro that stops such loops.</p>
+
+<h4 id="macro-considerations">Macro-considerations</h4>
+
+<p>As a macro execution can take some time due to delays between commands, it is important to take care of what could happen if another macro is
+triggered during the execution.</p>
+
+<p>For instance if a macro called “<em>THEATER ON</em>” (for setting- up a home theater) takes more than one minute to execute, what will happen if this 
+macro is called repeatedly? Will all commands start to overlap each other? What will happen if the “<em>THEATER OFF</em>” macro is called to switch the 
+home theater off during the set-up? It is important to understand that a possible messy overlap of command executions from different macros may 
+occur. The possibility to cancel or collapse a macro being executed ensures that the ongoing macro will end immediately.</p>
+
+<p>In the above mentioned example, the macro to switch the home theater Off should first cancel the macro for setting-up the home theater:</p>
+
+<p>“<em>THEATER OFF</em>” macro commands:</p>
+
+<ol>
+  <li>Cancel “<em>THEATER ON</em>” macro.</li>
+  <li>Raise screen.</li>
+  <li>Shut down projector.</li>
+  <li>Switch Avant to <em>STAND BY.</em></li>
+  <li>Etc.</li>
+</ol>
+
+<h4 id="orphan-commands-and-events">Orphan commands and events</h4>
+
+<p>If commands and events are defined for a resource and the resource is deleted or modified to another address, events and commands will become
+orphan (without an associated resource). Orphan events and commands will still be available and refer to the original addressing of the resource.
+The macro screen will signal the presence of orphan commands or events by colour coding and text in the macro header.</p>
+
+<h4 id="generic-programming">Generic programming</h4>
+
+<p>Standard events and commands apply to a single specific resource. <em>Generic programming</em> makes it possible to refer to a whole set of resources at 
+once. E.g.: it is possible to specify:</p>
+
+<ul>
+  <li>A single command to mute all products called “<em>BeoPlay V1</em>”.</li>
+  <li>An event specification that matches any button pressed that is called “<em>Light On</em>”.</li>
+</ul>
+
+<p>This has the following advantages:</p>
+
+<ul>
+  <li>A single macro can now substitute a lot of macros previously tailored for individual resources and the list of events and commands on a macro 
+can be reduced.</li>
+  <li>It encourages a consistent setup throughout the installation.</li>
+</ul>
+
+<p><em>NOTE</em>: Generic events and commands are matched against all possible resources every time an event occurs or a command is executed. If the name of
+ a resource is changed on a working configuration, the resource will no longer match an existing generic event or command. Therefore, it is 
+important to be consistent when naming resources. It is also important to avoid to spoil functionality by renaming resources.</p>
+
+<h4 id="command-coding">Command coding</h4>
+
+<p>Commands are also represented by a code. The main difference is that there is a new type of selector for matching the same area or
+zone as of the generating event. A command code starting with <em>$area/$zone/AV renderer/TV</em> will act on all audio and video renderers named “<em>TV</em>” 
+on the same area where the event generated and a command code starting with “<em>*/*/AV renderer/TV</em>” can be used to work with all TVs in the house.</p>
+
+<h3 id="interfaces">Interfaces</h3>
+
+<p>This menu is for setting up users, their rights and interfaces generated by <em>BLI PRO</em>. It is possible to configure 
+the following features:</p>
+
+<ul>
+  <li>Users that can access the system and access restrictions.</li>
+  <li>Sources and features of A/V products.</li>
+  <li>Access to IP cameras in the house.</li>
+  <li>Resources and macros that appear in a zone.</li>
+  <li>Virtual resources that provide a friendly way of interacting with some systems.</li>
+  <li>Lists with favourite TV channels and radio stations.</li>
+</ul>
+
+<p>The resources to be accessed via the user interfaces are configured in this page. The user interfaces are:</p>
+
+<ul>
+  <li><em>BLApp</em></li>
+  <li>Overlay menus in the TVs and the Webpanel accessed from a browser.</li>
+</ul>
+
+<p>Configurations are synchronized in real time towards the Webpanel and the TV overlay menu. Synchronization with the <em>BLApp</em> is done periodically 
+and could be forced activating <strong>Configuration &gt; Quick save revision</strong>.</p>
+
+<p><img src="pictures/pro-guide/interfaces.png" class="img-fluid" alt="Interfaces page" /></p>
+
+<h4 id="users---admin">Users - admin</h4>
+
+<p>The user named <em>admin</em> is a user that exists per default and is meant for the technician/installer, who has access for setting-up <em>BLI PRO</em>
+and is allowed to access all zones via browser or <em>BLApp</em>.</p>
+
+<h5 id="change-password-for-admin-user">Change password for admin user</h5>
+
+<p>As said before per default, <em>admin</em> password is unknown and could be setted to “<em>admin</em>” by activating the Setup button function (2). This 
+password will last 5 minutes (just for security purposes) for being possible to set a new one. Press the <em>admin</em> entry in the left column to 
+change password (see figure above).</p>
+
+<h4 id="users---new-user">Users - new user</h4>
+
+<p>To add a new user press “<strong>+</strong>” sign in header <strong>Users</strong> of left column.</p>
+
+<p><img src="pictures/pro-guide/interfaces-users.png" class="img-fluid" alt="User creation page" /></p>
+
+<h5 id="user-properties">User properties</h5>
+
+<p>Configure User properties by entering a name in the <em>Name</em> field and password in the <em>Password</em> field. 
+Then select options according to the following:</p>
+
+<ul>
+  <li><strong>User management access</strong>: when selected, the user is allowed to administer users and user-rights. This option should be set for the owner of 
+the installation or a ‘superuser’ who is responsible for managing user access.</li>
+  <li><strong>Edition of user macros</strong>: when selected, the user is allowed to create and edit macros from <em>BLApp</em>.</li>
+  <li><strong>Controller</strong>: should normally be selected. Allows the user to access <em>BLI</em> via <em>BLApp</em>. When disabled, the only access is via the <em>Webpanel</em>.</li>
+</ul>
+
+<h5 id="select-zone-access-for-user">Select zone access for user</h5>
+
+<p>Finally, choices should be made for <em>Select zone access for user</em>. There can be selected <em>All zone access</em> or individual zones from the list 
+presented.</p>
+
+<h4 id="bo-products">B&amp;O products</h4>
+
+<p>For A/V products there are some basic options and a source list that can be presented to the user.</p>
+
+<p>When selecting any product, the next sections are displayed.</p>
+
+<h5 id="networklink-product-areazoneproduct">NetworkLink product: area/zone/product</h5>
+
+<ul>
+  <li><strong>Name</strong>: Possible to rename the product.</li>
+  <li><strong>Address</strong>: The serial number of the product.</li>
+  <li><strong>Force IP address</strong>: Define a fixed IP address to connect to the product. This is not recommended and should only be used as a workaround in 
+situations where product discovery has shown not to be reliable.</li>
+  <li><strong>Beo4 navigation</strong>: Whether the product is set up for the old Beo4 navigation or the new navigation with cursor keys and SELECT.</li>
+</ul>
+
+<h4 id="product-sources">Product sources</h4>
+
+<p>For each product all local and distributed sources are showed in <em>Sources in product</em> table. They are synchronized automatically from the product 
+configuration if it’s online. In case of any problem with automatic source synchronization, <em>Force synchronization with product</em> button will get 
+the current sources of the product.</p>
+
+<p>The information provided in the <em>Sources in product</em>  section for each source is the following:</p>
+
+<ul>
+  <li><strong>Source</strong>: Type of source.</li>
+  <li><strong>Name</strong>: Label to show with the source in all user interfaces.</li>
+  <li><strong>UI Type</strong>: Reference for the mobile application about what type of user interface is needed for operating the product.</li>
+  <li><strong>Favourites list</strong>: This makes it possible to select a favourite list defined in the <a href="#favourites">Favourites</a> section.</li>
+  <li><strong>Hidden</strong>: Selects if source must be hidden in all user interfaces or not.</li>
+</ul>
+
+<h4 id="cameras">Cameras</h4>
+
+<p>In this section the configuration for several network cameras can be added. To add a camera, press the “<strong>+</strong>” sign in the <strong>Cameras</strong> entry of 
+the left column.</p>
+
+<h5 id="remove-a-camera">Remove a camera</h5>
+
+<p>If a camera must be removed from the list, choose the camera in the left column and press the <strong>Remove</strong> button.</p>
+
+<h5 id="camera-access">Camera access</h5>
+
+<p><em>BLI PRO</em> has a simple and strong capability integration with most CCTV systems or IP Cameras found in the market.</p>
+
+<p>To add a camera you must fill the next form:</p>
+
+<ul>
+  <li><strong>Name</strong>: Name that identifies the camera. The name will be shown in the user interfaces.</li>
+  <li><strong>Zone</strong>: Drop down list to select the zone in which the camera is placed.</li>
+  <li><strong>Base URL</strong>: A Base URL (<em>URL</em>: <em>Port number</em>) to which all commands will be appended must be provided. The format may vary, e.g. 
+http://192.168.1.37:80.</li>
+  <li><strong>Base RTSP URL</strong>: If your camera supports <em>RTSP</em> protocol with <em>H264</em> encoded stream format, base URL of RTSP server could be specified 
+(rtsp://<em>URL</em>: <em>Server Port</em> e.g. rtsp://bigserver.com:8001) and <em>Base URL</em> must be left empty.</li>
+  <li><strong>Username</strong> and <strong>Password</strong>: The optional <em>Username</em> and <em>Password</em> fields may be used for basic HTTP authentication to access the camera from
+ the user interfaces.</li>
+</ul>
+
+<h5 id="camera-resources-path">Camera resources path</h5>
+
+<h6 id="video--images">Video &amp; Images</h6>
+
+<p>At least one of resources paths for obtaining <em>Video &amp; Images</em> both in high and low resolution or RTSP stream must be provided, e.g. 
+mjpg/video.cgi for high resolution video. All the commands will be appended to the correspondent base URL.</p>
+
+<h6 id="pan-tilt-and-zoom-commands">Pan, Tilt and Zoom commands</h6>
+
+<p>If your camera is able to control lens direction and zoom, <em>Pan</em>, <em>Tilt</em> and <em>Zoom</em> paths could be specified and controlled through all user 
+interfaces.</p>
+
+<p>By pressing the <em>Raw edit</em> button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to copy and paste the text when setting up other similar cameras and for each of 
+these to adapt to the actual camera, e.g. adjust to the correct IP-address.</p>
+
+<h4 id="zone-setup">Zone setup</h4>
+
+<p>In this section of the <em>Interfaces</em> page, for each zone it is possible to reorder, hide/show and rename the resources as they will be shown in 
+the user interfaces.</p>
+
+<h5 id="resources-for-areazone">Resources for area/zone</h5>
+
+<p>For the resource to be moved in the list, place the cursor over the left button (three horizontal lines), then click and hold the left-mouse 
+button and then drag the resource until the line-marking is where the resource should be placed in order and release the mouse button.</p>
+
+<ul>
+  <li><strong>Name</strong>: Possibility to rename the resource.</li>
+  <li><strong>Type</strong>: The type of the resource is stated.</li>
+  <li><strong>Hidden</strong>: Set if the resource must be shown in user interface.</li>
+  <li><strong>Options/Hints</strong>: For macros and buttons that are visible on the user interfaces the following options are available:
+    <ul>
+      <li><strong>Confirm</strong>: If this option is enabled, after a button press or after a macro is triggered the action will need confirmation on a
+hand held device, e.g. pressing a Yes button to avoid unintended activation before the desired function is executed. This could be when an
+action should not take place unintended, e.g. activating ‘Vacation mode’.</li>
+      <li><strong>Compact</strong>: When enabled the button in the user interface will be shown in a half-width button. e.g. there is room for two buttons per line.</li>
+      <li><strong>On camera view</strong>: With ‘On camera’ enabled, when using <em>WebPanel</em> the half-width button will be shown next to the IP camera images in that zone on the user. When <em>BLApp</em> is used, the button will be shown in the <em>Cameras</em> section of <em>BLApp</em>.</li>
+      <li><strong>On scenes view</strong>: When enabled, the button will be shown in the <em>Scenes</em> section of <em>BLApp</em></li>
+      <li><strong>On dimmer view</strong>: When enabled, the button will be shown in the <em>Lights</em> section of <em>BLApp</em>.</li>
+      <li><strong>On shade view</strong>: When enabled, the button will be shown in the <em>Shade</em> section of <em>BLApp</em>.</li>
+      <li><strong>On thermostat view</strong>: When enabled, the button will be shown in the <em>Thermostat</em> section of <em>BLApp</em>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="favourite-lists">Favourite Lists</h4>
+
+<p>In this section of the <em>Interfaces</em> page favourite lists, for TV channels as well as radio stations can be added. In the hand held devices the 
+favourite channels/stations are listed by name and logo if such is selected.</p>
+
+<p>Adding a new favourite list, press the “<strong>+</strong>” sign in the <em>Favourites Lists</em> column entry. In the field on the top left of the display, enter the 
+name of the source provider. The <strong>Clone</strong> button (top right) is used to clone an existing source provider of favourites. A new one will show in 
+the left column list, adding ‘Clone of’ to the name. The <strong>Remove</strong> button is used to remove a source provider of favourites chosen in the left 
+column.</p>
+
+<h5 id="commands-global-options">Commands global options</h5>
+
+<p>For each favourite list a global <em>End command</em>, a global <em>Delay</em> and a global <em>Delay on source selection</em> that will affect each favourite command 
+can be set.</p>
+
+<ul>
+  <li><strong>End command</strong>: The end command is added at the end of each favourite command sequence and can be either <em>NONE</em>, <em>PLAY</em> or <em>SELECT</em>.</li>
+  <li><strong>Delay</strong>: The global delay is a delay value added between all digits and between digits and the end command for each favourite command.</li>
+  <li><strong>Delay on source selection</strong>: Delay that will be added previous to the first digit for each favourite command sequence, if source was 
+effectively selected (i.e.: if the source was already selected, this delay will not be set).</li>
+</ul>
+
+<h5 id="list-of-favourites">List of favourites</h5>
+
+<p>For each listed TV channel/radio station the following information should be provided:</p>
+
+<ul>
+  <li><strong>Caption</strong>: A short description for the favourite. The caption will be filled in automatically when the logo picker is used. If edited it will 
+remain unmodified. The caption will appear in the user interface.</li>
+  <li><strong>Command</strong>: The command that is executed when a logo is selected in the <em>BLApp</em>. See in Help for full explanation of combining elements in
+the command string. The command must be filled in manually.</li>
+  <li><strong>Logo</strong>: A logo can be fetched using the logopicker, see below, or by entering sufficient information in the URL field for the favourite. The 
+logo will be shown in the user interfaces.</li>
+  <li><strong>URL</strong>: The full URL of the logo image to show. The URL must point out the valid image as it will be used periodically by <em>BLApp</em> to retrieve 
+the logo. The URL will be filled in automatically when the logo picker is used. The URL can be entered manually.</li>
+</ul>
+
+<h5 id="logo-picker">Logo picker</h5>
+
+<p>The logo picker shows a pop-up window for selecting logos from the B&amp;O repository and shows up by clicking the logo. Available logos are
+shown in groups of 50. It is possible to search for a channel using the filter. A search string will immediately restrict the channels displayed 
+to only the matching entries. When a logo has been chosen the picker window will close and complete the URL path and command fields, and show the 
+selected logo. The caption will also be updated, but not if it has been edited explicitly.</p>
+
+<p><em>Note</em>: The logo picker only works when Internet connection is available.</p>
+
+<h2 id="tools">Tools</h2>
+
+<p><em>Tools</em> menu contains a set of tools for different purposes as debug, error reporting, firmware update, access to advanced features, direct 
+access to <em>Webpanel</em> and Logout option.</p>
+
+<p>Below, the sub-menus showed after pressing <em>Tools</em> menu option are described.</p>
+
+<h3 id="monitor">Monitor</h3>
+
+<p><em>Monitor</em> shows a list of the latest actions which have occurred - events, macros and commands.
+The menu can be used for the following:</p>
+
+<ul>
+  <li>To find the precise addressing of a specific component. If a keypad, a sensor, etc. is pressed on the <em>HA</em> system, the event generated will be 
+monitored by the tool.</li>
+  <li>To check whether macros and the belonging commands are working as intended.</li>
+</ul>
+
+<p><img src="pictures/pro-guide/monitor.png" class="img-fluid" alt="Monitor page" /></p>
+
+<p>On the upper-right side of <em>Monitor</em>’s page, it’s located a filter tool to facilitate the processing of <em>Monitor</em> information.</p>
+
+<h3 id="resource-states">Resource states</h3>
+
+<p><em>Resource states</em> shows a table of all resources in the installation and their current states. For each row, you could find the resource name at 
+first column and all states in the second one.</p>
+
+<p><img src="pictures/pro-guide/resource-states.png" class="img-fluid" alt="Resource states page" /></p>
+
+<p>In the upper-right you could find a <em>Filter</em> tool where you could filter by resource name or state.</p>
+
+<h3 id="log">Log</h3>
+
+<p><em>Log</em> shows system messages concerning the interaction between the <em>BLI PRO</em> and external devices connected, such as application errors and 
+critical system errors.</p>
+
+<p><img src="pictures/pro-guide/log.png" class="img-fluid" alt="Log page" /></p>
+
+<p>The log menu can be used to:</p>
+
+<ul>
+  <li>Verify the connection to external devices. Errors will be shown.</li>
+  <li>Check of incoming <em>HIP</em> connections.</li>
+</ul>
+
+<p>The size of the system log is limited, which means that old messages will be deleted when new messages appear.</p>
+
+<h3 id="service-report">Service report</h3>
+
+<p>When any hardware or software error is experienced it is possible to create a service report containing the necessary information about your <em>BLI</em>
+ for solving any potential issue.</p>
+
+<p>You must fill the form showed in that page. This information is essential to reproduce and fix any issue you are experiencing.</p>
+
+<p><img src="pictures/pro-guide/service-report.png" class="img-fluid" alt="Service report page" /></p>
+
+<p>Service reports are created and downloaded when the <em>Save</em> button is clicked.</p>
+
+<h3 id="firmware">Firmware</h3>
+
+<p>The Firmware page allows to check and apply updates for the <em>BLI</em> Firmware. There are two ways to perform such updates:</p>
+
+<ul>
+  <li>Manually uploading a <em>BLI</em> firmware file.</li>
+  <li>Online update via Internet.</li>
+</ul>
+
+<h4 id="manual-update">Manual update</h4>
+
+<p>Press the <em>Choose File</em> button to select your local <em>BLI</em> firmware file. Automatically will be uploaded to <em>BLI</em> and the update should begin 
+immediately.</p>
+
+<h4 id="online-update">Online update</h4>
+
+<p>To perform an online update of <em>BLI</em>’s firmware you must ensure that LAN network has Internet connection.</p>
+
+<p><img src="pictures/pro-guide/firmware.png" class="img-fluid" alt="Firmware page" /></p>
+
+<p>In this page you will find:</p>
+
+<ul>
+  <li><strong>Check for the latest version</strong>: After pressed, the lastest official Firmware version will be displayed, if available.</li>
+  <li><strong>Start online update</strong>: If a new Firmware version is available for download, pressing this button will start the Firmware download and installation process.</li>
+  <li><strong>Automatic updates</strong>: Enable/Disable automatic <em>BLI</em> Firmware updates. If this option is selected, then the <em>BLI</em> firmware will be automatically kept up to date.</li>
+</ul>
+
+<h3 id="go-to-webpanel">Go to Webpanel</h3>
+
+<p>Direct access to <em>Webpanel</em>.</p>
+
+<h3 id="logout">Logout</h3>
+
+<p>Logout of the current logged in user.</p>
+
+<h3 id="advanced">Advanced</h3>
+
+<h4 id="programming-report">Programming report</h4>
+
+<p><em>Programming report</em> is an effective tool to find which <em>Macro</em> interacts with a specific <em>Resource</em> or <em>System</em>, really useful when <em>BLI PRO</em> 
+contains many of them in his configuration.</p>
+
+<p><img src="pictures/pro-guide/programming-report.png" class="img-fluid" alt="Programming report page" /></p>
+
+<p>Left column contains each pair of <em>Area/Zone</em> that contains at least one resource or system. For each resource or system in a column, the next 
+information will be displayed:</p>
+
+<h5 id="macros-being-fired-by-this-resourcesystem">Macros being fired by this resource/system</h5>
+
+<p>The table contains a row for each Macro where an event of resource/system is involved.</p>
+
+<ul>
+  <li><strong>Macros</strong>: Name of all macros that have this resource/system as an event.</li>
+  <li><strong>Events on area/zone/name</strong>: Events of resource/system in this macro.</li>
+  <li><strong>Commands</strong>: Commands of this macro.</li>
+</ul>
+
+<h5 id="macros-that-execute-commands-by-this-resourcesystem">Macros that execute commands by this resource/system</h5>
+
+<p>The table contains a row for each <em>Macro</em> where a command on resource/system is involved.</p>
+
+<ul>
+  <li><strong>Macros</strong>: Name of all <em>Macros</em> that executes a command on resource/system.</li>
+  <li><strong>Events</strong>: Events in this <em>Macro</em>.</li>
+  <li><strong>Commands on area/zone/name</strong>: Commands on resource/system in this <em>Macro</em>.</li>
+</ul>
+
+<h4 id="driver-editor">Custom driver editor</h4>
+
+<p><em>BLI PRO</em> offers the option to load your own driver into your configuration. Drivers must have a specific format and must be programmed in <em>Lua</em> 
+language. For more information regarding development of <em>BLI PRO</em> custom drivers refer to <em>Driver Development Guide</em>.</p>
+
+<h4 id="external-drivers">Install external drivers</h4>
+
+<p>As explained in <a href="#systems">Systems</a> section, external drivers are located in our own repository from where they could be installed in your <em>BLI 
+PRO</em> if internet connection is available.</p>
+
+<p><img src="pictures/pro-guide/external-drivers.png" class="img-fluid" alt="External drivers page" /></p>
+
+<p>The list of all available external drivers could be obtained by pressing <em>Update drivers list from remote repository</em> button and <em>Show only 
+installed drivers</em> button will display external drivers currently installed. Also, next to the mentioned buttons, a <em>Filter</em> tool is placed for 
+filter by driver name.</p>
+
+<p>The table showing external drivers available/installed displays:</p>
+
+<ul>
+  <li><strong>Name</strong>: External driver name.</li>
+  <li><strong>Description</strong>: Short description of external driver.</li>
+  <li><strong>Available version</strong>: Version of external driver available in repository.</li>
+  <li><strong>Installed version</strong>: Version of external driver currently installed.</li>
+  <li><strong>Action</strong>: <em>Install</em> if external driver installation is desired or <em>Remove</em> to remove it from the current configuration.</li>
+</ul>
+
+<h5 id="install-a-custom-driver-using-file">Install a custom driver using file</h5>
+
+<p>Same functionality offered in <a href="#driver-editor">Custom driver editor</a> page.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p><em>Configuration</em> page contains tools related to <em>BLI</em> configuration, for e.g. download current configuration into a local file, upload <em>BLI</em> 
+configuration from a local file or create snapshot of your current configuration in case a modification will be made and you want the possibility 
+to rollback your configuration. Below, the different tools of <em>Configuration</em> page are described.</p>
+
+<h3 id="save-revision">Save revision</h3>
+
+<p>Saving a revision means saving the current configuration internally in the <em>BLI</em>. In the <em>Description entry</em> field, a tag can be entered which 
+will be added as the revision label with the following syntax: <em>rNN | Jan 25, 2015 08:55:37 PM | &lt;tag&gt;</em>, where <em>NN</em> is a 
+revision number. Such savings are useful when changes have been made to the configuration. The saved revision is available in the 
+<a href="#revision-history">Revision history</a> list where it is placed in the bottom of the list and from where it can be restored. The current 
+configuration is saved internally in the <em>BLI</em> when the <em>Save</em> button is pressed. By this the recent autosaved file (see below) will be discarded.</p>
+
+<p>Up to ten revisions of the configuration can be saved. If a manually <em>Save revision</em> is not made the recent autosaved file will be the recent 
+saved configuration.</p>
+
+<p>When a configuration of the <em>BLI</em> takes place and the operator has not saved it by a manual <em>Save revision</em> action, the
+configuration will be saved every 5 minutes if configuration activities are ongoing - since last time autosave took place. If configurations are 
+made and left unsaved and the <em>BLI</em> is idle for more than 30 seconds, autosave will also take place. These files are added to the 
+<a href="#revision-history">Revision history</a> list and marked with the tag: <em>“Auto save”</em>.</p>
+
+<p>When the autosaved configuration is newer than the manually made <em>Save revision</em> and in case power is failing or any other malfunctioning of the 
+system occurs, the <em>BLI</em> will - when restarted - get use of the autosaved configuration file.</p>
+
+<h3 id="quick-save-revision">Quick save revision</h3>
+
+<p><em>Quick save revision</em> works similar to <em>Save revision</em> but with the difference that in <a href="#revision-history">Revision history</a> there is only one 
+<em>Quick save revision</em> of the configuration and each <em>Quick save revision</em> made will overwrite the previous one. This tool is useful for saving an 
+instant image of <em>BLI</em> configuration when small changes in the programming are being made. Keys shortcut for <em>Quick save revision</em> is 
+<em>Ctrl+Shift+S</em>.</p>
+
+<h3 id="load-from-file">Load from file</h3>
+
+<p>Used to upload a configuration file from your local drive; where the file was saved at an earlier stage (see <a href="#download-to-file">Download to file</a>
+section). By selecting <strong>Configuration &gt; Load from file</strong> a configuration file can be uploaded into the <em>BLI</em>. The uploaded configuration will 
+become active immediately and substitute the current configuration.</p>
+
+<h3 id="download-to-file">Download to file</h3>
+
+<p>Used to download current configuration to your local drive. By selecting <strong>Configuration &gt; Download to file</strong> the current configuration will be 
+downloaded. It is recommended to have such configuration file as a reference or as a back-up if a problem occurs.</p>
+
+<h3 id="revision-history">Revision history</h3>
+
+<p>The <em>BLI</em> keeps a record of the latest ten configuration revisions. A new revision can be saved and marked with relevant tag information by 
+selecting <strong>Configuration &gt; Save revision</strong>. Autosaved and Quick saved revisions are listed in the <em>Revision history</em> and are marked with the tags
+ <em>“Auto save”</em> and <em>“Quick save”</em>.</p>
+
+<h2 id="help">Help</h2>
+
+<p><em>BLI</em> contains an entire <em>Help</em> section that covers every functionality, section and <em>HA</em> system present in <em>BLI</em>. Use this section as 
+a good complement of <em>BeoLiving Intelligence PRO User Guide</em>.</p>
+
+          </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+    <script> 
+      $(function() {
+        var navSelector = '#toc';
+        var $myNav = $(navSelector);
+        Toc.init($myNav);
+        $('body').scrollspy({
+          target: navSelector
+        });
+      });
+    </script> 
+
+  </body>
+
+</html>

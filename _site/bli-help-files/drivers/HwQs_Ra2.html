@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Lutron Homeworks QS and Radio Ra2</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="lutron-homeworks-qs-and-radio-ra2">Lutron Homeworks QS and Radio Ra2</h1>
+
+<p>This driver supports communication with Lutron HomeWorks QS, Lutron
+Radio RA2 and Lutron Grafik QS systems.</p>
+
+<h2 id="connecting-to-a-grafik-qs-system">Connecting to a Grafik QS system</h2>
+
+<p>Connection to a Grafik QS system is done via a QSE-CI-NWK-E interface,
+which allows Ethernet and RS232 connectivity.</p>
+
+<p>For RS232 communications, set the same bit rate on the QSE-CI-NWK-E
+interface and on BeoLiving Intelligence connection settings.</p>
+
+<p>Connection settings for Ethernet are the IP address of the interface
+and the password. The default password is <code class="highlighter-rouge">nwk</code>.</p>
+
+<h2 id="connection-to-a-radio-ra2-system">Connection to a Radio RA2 system</h2>
+
+<p>Communication with Radio RA2 is done via the Radio RA2 Main Repeater,
+which allows interaction with the system via 100 programmable virtual
+buttons (<em>phantom buttons</em>). This device provides both RS232 and
+Ethernet interfaces.</p>
+
+<p>Connection to the RS232 interface can be done directly using a 3-wire
+RS232 cable and it is fixed at 9600 bps, no parity, 1 stop bit, 8 data
+bits, no flow control.</p>
+
+<p>Connection settings for Ethernet consist of: IP address of the Main
+Repeater (default: 192.168.1.50), login (default: lutron), password
+(default: integration) and telnet IP port (default: 23).</p>
+
+<h2 id="connection-to-a-homeworks-qs-system">Connection to a Homeworks QS system</h2>
+
+<p>Communication with the Homeworks QS system is done via the Ethernet
+interface on the Homeworks QS Processor.</p>
+
+<p>Connection settings consist of: IP address of the processor (default:
+192.168.1.50), login (default: lutron), password (default: integration)
+and telnet IP port (default: 23).</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>The supported resource types are:</p>
+
+<ul>
+  <li><strong>Button with LED</strong>: buttons on keypads or control units having a LED
+for status.</li>
+  <li><strong>Button</strong>: a keypad or control unit button with no LED.</li>
+  <li><strong>LED</strong>: a single LED used for status.</li>
+  <li><strong>Dimmer</strong>: a light dimmer.</li>
+  <li><strong>Shade</strong>: a single shade.</li>
+  <li><strong>Shade group</strong>: a group of shades.</li>
+  <li><strong>Thermostat</strong>: a thermostat like Lutron HVAC controller.</li>
+  <li><strong>Lutron QS Scene Button</strong>: a button mapped to a single scene which
+will be selected on press.</li>
+</ul>
+
+<h2 id="resource-address-format">Resource address format</h2>
+
+<p>Most resource addresses use <em>Integration ID</em> which by default is a
+number, but can also be a user defined string. Some resources require
+a sub-address called <em>Component Number</em>.</p>
+
+<p>“<em>Lutron QS Scene Button</em>” resources requires a scene number.</p>
+
+<p>Possible scene numbers range from 0 (OFF) to 32, but depend on the
+scenes actually programmed in the controller.</p>
+
+<p>“<em>Button with LED</em>” resources also require a second component number
+to identify the LED. In many cases, the LED component number is offset
+80 above the button component number (and this is the default LED
+component added during capture).</p>
+
+<p>However, there are many cases in which the LED component number must
+be explicitly edited.</p>
+
+<p>You may find out the LED component number by checking the LED events
+in the capture list. Or, you can check the complete list of component
+numbers for all Lutron keypads and control units in Lutron’s
+Integration Protocol documentation.</p>
+
+<p>All address formats are suggested as tooltips on the address field.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Resource type</td>
+      <td>Address format</td>
+      <td>Examples</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Button with LED</td>
+      <td>Integration ID, Component Number, LED Component Number</td>
+      <td><code class="highlighter-rouge">1,1,81</code> or <code class="highlighter-rouge">myIID,28,108</code></td>
+    </tr>
+    <tr>
+      <td>Button</td>
+      <td>Integration ID, Component Number</td>
+      <td><code class="highlighter-rouge">1,1</code> or <code class="highlighter-rouge">myIID,28</code></td>
+    </tr>
+    <tr>
+      <td>LED</td>
+      <td>Integration ID, Component Number</td>
+      <td><code class="highlighter-rouge">1,1</code> or <code class="highlighter-rouge">myIID,28</code></td>
+    </tr>
+    <tr>
+      <td>Dimmer</td>
+      <td>Integration ID or Int. ID + Component Number</td>
+      <td><code class="highlighter-rouge">1</code> or <code class="highlighter-rouge">1,1</code> or <code class="highlighter-rouge">myIID,28</code></td>
+    </tr>
+    <tr>
+      <td>Shade</td>
+      <td>Integration ID</td>
+      <td><code class="highlighter-rouge">1</code> or <code class="highlighter-rouge">myIID</code></td>
+    </tr>
+    <tr>
+      <td>Shade group</td>
+      <td>Integration ID</td>
+      <td><code class="highlighter-rouge">1</code> or <code class="highlighter-rouge">myIID</code></td>
+    </tr>
+    <tr>
+      <td>Thermostat</td>
+      <td>Integration ID</td>
+      <td><code class="highlighter-rouge">1</code> or <code class="highlighter-rouge">myIID</code></td>
+    </tr>
+    <tr>
+      <td>QS Scene Button</td>
+      <td>Integration ID, Component Number, Scene</td>
+      <td><code class="highlighter-rouge">1,1,1</code> or <code class="highlighter-rouge">myIID,43,1</code></td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 id="availability-of-events-and-commands">Availability of events and commands</h2>
+
+<p>Lutron supports a lot of different hardware models and combinations.</p>
+
+<p>Not all hardware setups support the whole set of events and commands.</p>
+
+<p>Check the Lutron documentation (<em>Lutron Integration Protocol</em>), or use
+the monitoring facilities in BeoLiving Intelligence to verify that the hardware actually
+supports a command or event type.</p>
+
+<p>A typical example is the <code class="highlighter-rouge">_MULTI TAP</code> event, which is available on a
+limited combination of Lutron hardware.</p>
+
+<h2 id="events">Events</h2>
+<ul>
+  <li>Button with LED, Button
+    <ul>
+      <li><strong>PRESS</strong></li>
+      <li><strong>RELEASE</strong></li>
+      <li><strong>HOLD</strong></li>
+      <li><strong>_MULTI TAP</strong>: Pressing on the button repeatedly</li>
+      <li><strong>_HOLD RELEASE</strong>: Releasing a button after a long press (HOLD)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="commands">Commands</h2>
+<ul>
+  <li>Button with LED, Button
+    <ul>
+      <li><strong>PRESS</strong></li>
+      <li><strong>RELEASE</strong></li>
+      <li><strong>HOLD</strong></li>
+      <li><strong>_MULTI TAP</strong>: Pressing on the button repeatedly</li>
+      <li><strong>_HOLD RELEASE</strong>: Releasing a button after a long press (HOLD)</li>
+    </ul>
+  </li>
+  <li>Dimmer
+    <ul>
+      <li><strong>SET</strong>: Set the dimmer level, in percentage.</li>
+    </ul>
+  </li>
+  <li>Shade
+    <ul>
+      <li><strong>RAISE</strong></li>
+      <li><strong>LOWER</strong></li>
+      <li><strong>STOP</strong></li>
+      <li><strong>SET</strong>: Set the shade level, in percentage.</li>
+    </ul>
+  </li>
+  <li>Shade group
+    <ul>
+      <li><strong>RAISE</strong></li>
+      <li><strong>LOWER</strong></li>
+      <li><strong>STOP</strong></li>
+      <li><strong>SET</strong>: Set the shade level, in percentage.</li>
+      <li><strong>PRESET</strong>: Select one of the defined presets for the shade group</li>
+    </ul>
+  </li>
+  <li>Thermostat
+    <ul>
+      <li><strong>SET HEAT SP</strong>: Set the heat setpoint on the thermostat</li>
+      <li><strong>SET COOL SP</strong>: Set the cool setpoint on the thermostat</li>
+      <li><strong>SET MODE</strong>: Select the operation mode to OFF, Heat, Cool, Auto and Em.Heat (emergency heat)</li>
+      <li><strong>SET FAN AUTO</strong>: Turn fan automatic mode ON or OFF</li>
+      <li><strong>SET SCHEDULE</strong>: Turn the schedule ON or OFF</li>
+      <li><strong>SET ECO MODE</strong>: Turn echo mode ON or OFF</li>
+      <li><strong>_SET SP</strong>: Set cool and heat setpoints on the thermostat</li>
+    </ul>
+  </li>
+  <li>Lutron QS Scene Button
+    <ul>
+      <li><strong>PRESS</strong>: Select scene</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="resource-state">Resource State</h2>
+<ul>
+  <li>Button with LED
+    <ul>
+      <li><strong>STATE</strong>: The state of the LED (0 means OFF and 1 ON)</li>
+    </ul>
+  </li>
+  <li>LED
+    <ul>
+      <li><strong>_STATE</strong>: The state of the LED (0 means OFF and 1 ON)</li>
+    </ul>
+  </li>
+  <li>Dimmer
+    <ul>
+      <li><strong>LEVEL</strong>: Level of the dimmer</li>
+    </ul>
+  </li>
+  <li>Shade
+    <ul>
+      <li><strong>LEVEL</strong>: Level of the shade</li>
+    </ul>
+  </li>
+  <li>Shade group
+    <ul>
+      <li><strong>LEVEL</strong>: Level of the shade group</li>
+    </ul>
+  </li>
+  <li>Thermostat
+    <ul>
+      <li><strong>TEMPERATURE</strong>: The current temperature</li>
+      <li><strong>HEAT SP</strong>: The current heat setpoint</li>
+      <li><strong>COOL SP</strong>: The current cool setpoint</li>
+      <li><strong>MODE</strong>: The active mode</li>
+      <li><strong>FAN AUTO</strong>: Whether the fan automatic mode is ON or OFF</li>
+      <li><strong>SCHEDULE</strong>: Whether the schedule is ON or OFF</li>
+      <li><strong>ECO MODE</strong>: Whether the eco mode is ON or OFF</li>
+      <li><strong>_SYSTEM MODE</strong>: The current system mode</li>
+    </ul>
+  </li>
+  <li>Lutron QS Scene Button
+    <ul>
+      <li><strong>STATE</strong>: Whether this scene currently selected or not</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="known-issues-capture-stops-working-for-grafik-controllers">Known issues: Capture stops working for Grafik controllers</h2>
+
+<p>Grafik controllers may stop reporting events in a HomeWorks QS /
+RadioRa 2 installation. This condition will prevent BeoLiving Intelligence
+from detecting events and from showing resource capture information.</p>
+
+<p>We found the following procedure will restore a non-communicating
+Grafik controller:</p>
+
+<ol>
+  <li>Verify that the Grafik unit is listed on the integration report
+(Lutron setup software).</li>
+  <li>If it does not appear in the report, remove it and add it again to
+the project and re-check the report. Then upload the project to
+the HomeWorks / Ra2 controller.</li>
+  <li>If the problem persists, you may try to <strong>reset the Grafik
+controller to factory defaults</strong>: Press and hold scene buttons 1,
+3 and 5, and main control arrow down (next to the display)
+simultaneously, until a message is displayed asking for
+confirmation. Press OK.</li>
+</ol>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

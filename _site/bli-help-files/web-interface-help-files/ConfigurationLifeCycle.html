@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Configuration versioning and backup</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="configuration-versioning-and-backup">Configuration versioning and backup</h1>
+
+<p>During setup of the system, BeoLiving Intelligence has a live configuration:
+every time the installer makes a change in any of the configuration
+screens, this change takes effect immediately. This configuration is
+called the <em>current configuration</em>.</p>
+
+<p>An <em>auto-save</em> version of the configuration is also saved
+automatically whenever changes have been made.</p>
+
+<p>You can save up to 10 revisions of the configuration, so you can
+recall a previous revision if necessary.</p>
+
+<p>You can also download or upload a configuration to your computer for
+backup purposes.</p>
+
+<p>All this functionality is available under the <em>Configuration</em> menu at
+the top right of the screen.</p>
+
+<h2 id="revision-history">Revision history</h2>
+
+<p>BeoLiving Intelligence keeps a record of <em>the last 10 configuration versions</em>.</p>
+
+<p>You can explicitly save a new version by selecting <code class="highlighter-rouge">Configuration -&gt;
+Save revision</code>.</p>
+
+<p>Every time you save your configuration, the following happens:</p>
+
+<ol>
+  <li>You are prompted for a short description of this revision.</li>
+  <li>The current configuration is copied to the head of the revision
+history.</li>
+  <li>If the history already contained 10 revisions, the oldest revision is
+discarded, in order to leave space for the new revision.</li>
+  <li>If there was an <em>auto-save</em> version, it is discarded.</li>
+</ol>
+
+<p>So, if the system has the following revision history:</p>
+
+<table>
+<tr><th> Rev</th><th> Date saved              </th><th> Name                   </th></tr>
+<tr><td> r1 </td><td> Dec 20, 2013 9:31:59 AM </td><td> Basic integration      </td></tr>
+<tr><td> r2 </td><td> Dec 27, 2013 6:41:52 PM </td><td> Macros for cinema mode </td></tr>
+<tr><td>    </td><td> Jan 12, 2014 7:03:17 PM </td><td> Auto save              </td></tr>
+</table>
+
+<p>After pressing <strong>SAVE</strong>, the current configuration will be copied into
+a new revision (rev 3 in this example), and the auto-save
+configuration will be discarded:</p>
+
+<table>
+<tr><th> Rev</th><th> Date saved              </th><th> Name                   </th></tr>
+<tr><td> r1 </td><td> Dec 20, 2013 9:31:59 AM </td><td> Basic integration      </td></tr>
+<tr><td> r2 </td><td> Dec 27, 2013 6:41:52 PM </td><td> Macros for cinema mode </td></tr>
+<tr><td> r3 </td><td> Jan 12, 2014 7:05:25 PM </td><td> Lighting scenes and automation </td></tr>
+</table>
+
+<p>You need not save a revision for every change you make. Auto-save
+takes care of small changes (see below).</p>
+
+<p>Use revisions for major changes that you may wish to revert as a group
+(by recalling a previous revision), or after a day’s work at the
+installation.</p>
+
+<p>Also, saving (or auto saving) revisions serves as synchronization points
+for all the clients connected to the gateway. For example, when you are
+making changes and want to test them immediately on the BeoLiving App, you
+can press [Shift+Ctrl+S] to create an auto-save revision (see below).</p>
+
+<h2 id="auto-save-configuration">Auto-save configuration</h2>
+
+<p>When you are making changes, BeoLiving Intelligence will automatically save a
+revision called <em>auto-save configuration</em> in the following situations:</p>
+
+<ul>
+  <li>If you have made changes and then you’ve been idle for 30 seconds,
+or</li>
+  <li>If you are still working on the configuration but there are unsaved
+changes for more than 5 minutes.</li>
+</ul>
+
+<p>This means that while you are working on the current configuration,
+BeoLiving Intelligence will ensure that your recent changes will be
+periodically saved into the <em>auto-save configuration</em>.</p>
+
+<p>An auto-save configuration can also be generated by selecting 
+<strong>Quick save revision</strong> on the <em>Configuration</em> menu, or by pressing
+[Shift+Ctrl+S] while navigating the administration interface.</p>
+
+<p>Remember that explicitly saving a new revision will remove the
+auto-save configuration, since the saved revision is up to date with
+the current configuration.</p>
+
+<h2 id="restarting-beoliving-intelligence">Restarting BeoLiving Intelligence</h2>
+
+<p>If BeoLiving Intelligence is restarted (for example, after a power
+failure), the configuration will be taken from the auto-save
+configuration if it exists, or else from the newest revision.</p>
+
+<p>Therefore, if you are working on the configuration and there is a
+power cut, the most that you can lose are the latest 5 minutes of
+changes.</p>
+
+<h2 id="recalling-a-saved-revision">Recalling a saved revision</h2>
+
+<p>You can revert to any of the 10 saved revisions, or to the auto-save
+configuration.</p>
+
+<p>Select <code class="highlighter-rouge">Configuration --&gt; Revision history</code> and choose one of the
+revisions.</p>
+
+<p>The selected revision will be copied into the current configuration,
+and become active immediately. It will be also saved as a new
+auto-save configuration, named appropriately.</p>
+
+<h2 id="uploading-a-configuration-from-your-computer">Uploading a configuration from your computer</h2>
+
+<p>By selecting <code class="highlighter-rouge">Configuration -&gt; Load from file</code>, you can upload a
+configuration into BeoLiving Intelligence.</p>
+
+<p>This uploaded configuration will substitute the current configuration
+and become active immediately. It will be also saved as a new
+auto-save configuration named “Upload”.</p>
+
+<h2 id="saving-a-revision-to-your-computer">Saving a revision to your computer</h2>
+
+<p>By selecting <code class="highlighter-rouge">Configuration --&gt; Download to file</code> you can download the
+current configuration to you computer.</p>
+
+<p>It is recommended that you take a copy of the configuration when
+leaving the installation:</p>
+
+<ul>
+  <li>It serves as a reference should the customer report a problem, or
+require help with the actual configuration.</li>
+  <li>It is a backup of your work in case BeoLiving Intelligence is damaged.</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Custom strings driver</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="custom-strings-driver">Custom strings driver</h1>
+
+<p>The Custom strings driver is intended to enable limited communication
+with unsupported home automation systems.</p>
+
+<p>Use of this driver requires knowledge of the protocol for the external
+system.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>This driver is based on matching incoming byte strings from the external
+system, and sending byte strings back to it.</p>
+
+<p>Therefore resources are actual generic strings which can be used used
+for matching against the incoming byte stream, and for sending to the
+external system.</p>
+
+<p>There are 3 parameters to each resource:</p>
+
+<ul>
+  <li>Name of the resource.</li>
+  <li>Whether it should be listed for input matching (INPUT), for
+sending commands (OUTPUT), or for both (BOTH).</li>
+  <li>A generic character string.</li>
+</ul>
+
+<p>In order to allow for arbitrary byte values, the following encoding is
+used:</p>
+
+<ul>
+  <li>Any character except for backslash (<code class="highlighter-rouge">\</code>) will be given it’s
+corresponding value. Non-ASCII (international) characters are
+interpreted as Unicode UTF-8 byte sequences.</li>
+  <li>Backslash is used as an escape character, which gives special
+meaning to the character or characters that follow:
+    <ul>
+      <li><code class="highlighter-rouge">\\</code> (double backslash) is interpreted as a single backslash.</li>
+      <li><code class="highlighter-rouge">\r</code> is interpreted as a carriage return character (0x0D). It
+will be immediately redisplayed as <code class="highlighter-rouge">\0D</code>.</li>
+      <li><code class="highlighter-rouge">\n</code> is interpreted as a newline character (0x0A). It will be
+immediately redisplayed as <code class="highlighter-rouge">\0A</code>.</li>
+      <li><code class="highlighter-rouge">\"</code> is equivalent to a double quote (<code class="highlighter-rouge">"</code>). This notation is
+<code class="highlighter-rouge">required</code> for import/export of resources in text form.</li>
+      <li><code class="highlighter-rouge">\xx</code> (where x is a hexadecimal digit [0-9, a-f, A-F]) is
+interpreted as a hexadecimal byte value. E.g. <code class="highlighter-rouge">\0A</code> is
+equivalent to <code class="highlighter-rouge">\n</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Any non-printable or non ASCII character entered by the user will be
+redisplayed as a hexadecimal sequence. Illegal or truncated escape
+sequences will be marked as errors.</p>
+
+<h2 id="events-and-commands">Events and commands</h2>
+
+<p>Resources marked for input (or both input + output) will be searched for
+in all incoming data. As soon as a match is found, the corresponding
+event will be generated and search will continue <em>after</em> the match.</p>
+
+<p>For example, the input stream <code class="highlighter-rouge">AAAB</code> will match <code class="highlighter-rouge">AA</code> only once.</p>
+
+<p>If the incoming channel becomes idle, then all partial matches will be
+discarded.</p>
+
+<p>For example, the input stream <code class="highlighter-rouge">123</code> (pause) <code class="highlighter-rouge">4</code> <em>will not</em> match <code class="highlighter-rouge">1234</code>.</p>
+
+<p>Commands are all resources marked as output (or both input + output)
+and can be transmitted to the channel.</p>
+
+<h2 id="end-of-line-sequence">End of line sequence</h2>
+<p>Use this setting if the protocol messages are delimited by a fixed
+character sequence. Typical examples are line-oriented
+protocols which end each message with <code class="highlighter-rouge">CR(0x0D)</code> or <code class="highlighter-rouge">LF(0x0A)</code>
+characters.</p>
+
+<p>If an end of line sequence is configured, then BeoLiving Intelligence will
+know how to split incoming data into complete messages, with the
+following effects:</p>
+
+<ol>
+  <li>Matching of incoming messages now applies <em>to the whole message</em>.
+Matching part of a message is not possible.</li>
+  <li>BeoLiving Intelligence now provides <em>capture functionality</em>. Complete
+messages can be captured and added as resources as with other drivers.</li>
+  <li>The end of line sequence is automatically appended to all outgoing
+commands.</li>
+</ol>
+
+<p>To illustrate the different behaviour when defining and end of line
+sequence, consider the following example:</p>
+
+<p>Consider two resources of type “Custom event and command”:</p>
+
+<ul>
+  <li>resource A with address = <code class="highlighter-rouge">12</code></li>
+  <li>resource B with address = <code class="highlighter-rouge">345</code></li>
+</ul>
+
+<p>When an incoming message <code class="highlighter-rouge">12345\n</code> arrives with no end of line
+sequence defined, two events will be generated: one matching
+resource A and another matching resource B.</p>
+
+<p>But, if end of line is set to <code class="highlighter-rouge">\n</code>, and the same incoming message
+arrives, no events will be generated since neither resource matches <em>a
+complete message</em>. Rather, a new resource will be offered on capture
+mode with address <code class="highlighter-rouge">12345</code>.</p>
+
+<h2 id="tcp-connection-maintenance">TCP connection maintenance</h2>
+
+<p>Read this section if you experience <em>periodic TCP reconnections</em>.</p>
+
+<p>In order to rapidly detect broken TCP connections, BeoLiving Intelligence uses the
+standard <em>TCP Keepalive probes</em> mechanism: when a TCP connection is
+idle, probe packets are sent periodically over the connection and an
+acknowledge is expected. The probe is an empty TCP packet with the
+request for acknowledge flag set.</p>
+
+<p>This method for detecting active connections is specified in RFC-1122
+section 4.2.3.6.</p>
+
+<p>There are products with non-compliant TCP implementations which do not
+respond to these acknowledge requests. In such cases, HAGW will detect a
+broken TCP connection and reconnect. This may happen as frequent as
+every 20 seconds if there is no other data on the communication channel.</p>
+
+<p>If you experience this problem, then you must somehow force some data to
+be sent back to HAGW periodically, so as to keep the channel active.</p>
+
+<p>For example, you can use a clock event to send a status request to the 3rd
+party product periodically, or a ping/pong message. On command-line based
+protocols that echo all characters typed, probably sending a carriage
+return character is enough for getting characters back to BeoLiving Intelligence.</p>
+
+<p>What to do strongly depends on the protocol of the external system.</p>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

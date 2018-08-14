@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Lauritz Knudsen, IHC/Schneider, LexControl</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="lauritz-knudsen-ihcschneider-lexcontrol">Lauritz Knudsen, IHC/Schneider, LexControl</h1>
+
+<p>IHC/LexControl programming model consists of physical input and output
+devices plus function blocks. Function blocks implement the programming
+of the system, and the interface between the programming and the actual
+components is done by linking physical input signals to function block
+inputs. Actuators can also be handled directly (dimmers and shades).</p>
+
+<h2 id="importing-resources-from-lk-project-file">Importing resources from LK project file</h2>
+
+<p>The configuration tool for the controller (LK Visual) saves all the
+programming and setup in an XML file with extension .VIS.</p>
+
+<p>Use the <code class="highlighter-rouge">Import Resources</code> feature on BeoLiving Intelligence resources
+screen in order to import the resources from the VIS file into each zone.</p>
+
+<p>The Visual project file is absolutely necessary, since there is no way
+to inspect all of the events occurring on the controller. Therefore,
+monitoring information will only be available for already defined
+resources.</p>
+
+<p>It is also possible to extract the list of resources from the LK
+controller. This works by downloading the Visual project file from the
+LK contoller itself, and is equivalent to loading the project file
+manually.</p>
+
+<p>The supported resource types are:</p>
+
+<ul>
+  <li>Airlink inputs</li>
+  <li>Dataline inputs</li>
+  <li>Function block inputs:</li>
+  <li>Function block output</li>
+  <li>Dataline output</li>
+  <li>Airlink dimmers</li>
+  <li>Wired shutter</li>
+  <li>Wireless shutter</li>
+</ul>
+
+<h2 id="events">Events</h2>
+
+<p>The following list indicates which IHC activities generate a BeoLiving Intelligence event:</p>
+
+<ul>
+  <li>AirLink inputs and Dataline inputs:
+    <ul>
+      <li><strong>PRESS</strong>: Input set to True.</li>
+      <li><strong>RELEASE</strong>: Input set to False.</li>
+    </ul>
+  </li>
+  <li>Airlink dimmers:
+    <ul>
+      <li><strong>_RAISE</strong>: Internal variable airlink_dimmer_increase set to True.</li>
+      <li><strong>_LOWER</strong>: Internal variable airlink_dimmer_decrease set to True.</li>
+      <li><strong>_STOP</strong>: Internal variable airlink_dimmer_increase or
+airlink_dimmer_decrease set to False.</li>
+    </ul>
+  </li>
+  <li>Shutters:
+    <ul>
+      <li><strong>RAISE</strong>: Shutter being raised. On a dataline (wired) shutter,
+this corresponds to the first dataline_output within the shutter
+being set to True. On an Airlink shutter it corresponds to the
+shuttter’s airlink_shutter_up variable being set to True.</li>
+      <li><strong>LOWER</strong>: Shutter being lowered. On a dataline shutter, this
+corresponds to the second dataline_output within the shutter
+being set to True. On an Airlink shutter it corresponds to the
+shutter’s airlink_shutter_down variable being set to True.</li>
+      <li><strong>STOP</strong>: After <strong>RAISE</strong> or <strong>LOWER</strong>, the corresponding ID being set to
+False.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="commands">Commands</h2>
+
+<p>BeoLiving Intelligence commands produce the following IHC activity:</p>
+
+<ul>
+  <li>AirLink inputs and Datline inputs:
+    <ul>
+      <li><strong>PRESS</strong>: Set value to True.</li>
+      <li><strong>RELEASE</strong>: Set value to False.</li>
+      <li><strong>TAP</strong>: logical pulse (True followed by False).</li>
+    </ul>
+  </li>
+  <li>Function block inputs and outputs, Dataline outputs:
+    <ul>
+      <li><strong>SET</strong>: Set value to variable.</li>
+      <li><strong>PULSE</strong>: Logical pulse (True followed by False).</li>
+      <li><strong>TOGGLE</strong>: Set opposite of current value.</li>
+    </ul>
+  </li>
+  <li>Airlink dimmers:
+    <ul>
+      <li><strong>_RAISE</strong>: Set internal variable airlink_dimmer_increase being set to True.</li>
+      <li><strong>_LOWER</strong>: Set internal variable airlink_dimmer_decrease being set to True.</li>
+      <li><strong>_STOP</strong>: after <strong>_RAISE</strong> or <strong>_LOWER</strong>, set the corresponding
+variable to False.</li>
+      <li><strong>SET</strong>: Set dimmer level, in percentage. This corresponds to setting the
+dimmer’s airlink_dimming internal variable to the given value.</li>
+    </ul>
+  </li>
+  <li>Shutters:
+    <ul>
+      <li><strong>RAISE</strong>: Raise shutter. In a dataline shutter, this corresponds to
+setting the first dataline_output within the shutter to True. On an airlink
+shutter it corresponds to setting the shutter’s airlink_shutter_up variable
+to True.</li>
+      <li><strong>LOWER</strong>: Lower shutter. In a dataline shutter, this corresponds to
+setting the second dataline_output within the shutter to True. On an airlink
+shutter it corresponds to setting the shutter’s airlink_shutter_down
+variable to True.</li>
+      <li><strong>STOP</strong>: After <strong>RAISE</strong> or <strong>LOWER</strong>, set the corresponding
+variable to False.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="resource-state">Resource State</h2>
+<ul>
+  <li>Function-block inputs and outputs, Dataline outptus:
+    <ul>
+      <li><strong>STATE</strong>: The state of the variable (True or False).</li>
+    </ul>
+  </li>
+  <li>Airlink dimmers:
+    <ul>
+      <li><strong>LEVEL</strong>: Current dimmer level (value of the dimmer’s airlink_dimming variable).</li>
+    </ul>
+  </li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

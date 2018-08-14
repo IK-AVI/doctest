@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Setup of BeoLiving Intelligence</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="setup-of-beoliving-intelligence">Setup of BeoLiving Intelligence</h1>
+
+<h2 id="network">Network</h2>
+
+<p>The network settings determine how BeoLiving Intelligence connects into the
+local network, and how it accesses the Internet.</p>
+
+<p>The settings available are:</p>
+
+<ul>
+  <li><em>Hostname</em> is the name by which BeoLiving Intelligence will be found in the
+ local network. This must be a single word containing letters <code class="highlighter-rouge">A</code> to
+ <code class="highlighter-rouge">Z</code>, <code class="highlighter-rouge">a</code> to <code class="highlighter-rouge">z</code> or digits <code class="highlighter-rouge">0</code> to <code class="highlighter-rouge">9</code>.</li>
+  <li><em>DHCP enabled</em> may be selected if the local network has a DHCP
+ server, that automatically assigns the rest of the parameters (IP
+ address, mask, name server and gateway).</li>
+  <li>IP address, IP mask, DNS address and gateway are the standard IP
+ settings that must be provided in case of a manual connection (no
+ DHCP).</li>
+</ul>
+
+<h3 id="apply-button">Apply button</h3>
+
+<p>Note that network settings do not apply immediately as you type.</p>
+
+<p>You can safely edit all the fields, check for consistency, and then
+press the <em>Apply</em> button for the changes to take effect.</p>
+
+<p>The <em>Apply</em> button will change colour as a reminder whenever
+modifications are made.</p>
+
+<h3 id="finding-out-manual-settings">Finding out manual settings</h3>
+
+<p>Sometimes it is useful to have a fixed IP address (rather than an
+address dynamically assigned by a DHCP server). For example, if some
+home automation equipment needs to connect to BeoLiving Intelligence,
+normally a fixed IP address is required.</p>
+
+<p>If you don’t have all the manual settings available, you can try
+choosing a DHCP configuration, and apply settings, so that the DHCP
+server in the local network fills in an IP address, IP mask, gateway
+and DNS server addressses. You can now uncheck the DHCP option, and
+edit the last part of the IP address to your value of choice outside
+of the DHCP range, which normally starts at around 100.</p>
+
+<p>For example, if DHCP assigns <code class="highlighter-rouge">192.168.33.125</code>, then a value around
+<code class="highlighter-rouge">192.168.33.20</code> should be OK (first, try pinging that address from
+your computer to make sure no other device is already configured at
+that address). Don’t choose addresses with very low values (below 10)
+since these are normally assigned to the network routers and servers.</p>
+
+<h2 id="date--time">Date &amp; time</h2>
+
+<p>BeoLiving Intelligence needs to keep the date and time for many functions,
+including timestamping of logs and monitoring, clock events, and
+astronomical clock events.</p>
+
+<p>If BeoLiving Intelligence has access to the Internet, then date and time can
+be synchronized to Internet time servers. Select this option and
+choose your timezone.</p>
+
+<p>Otherwise, you can manually set the date and time.</p>
+
+<p>For calculating sunrise and sunset times for your location, not only
+the current date must be set, but also the geographic location of the
+installation.</p>
+
+<p>Set the latitude and longitude accordingly; the format is in decimal
+degrees. Positive values for North and East, negative for West and
+South.</p>
+
+<p>For example, the coordinates for New York City (40.6700° N, 73.9400°
+W) would be entered this way:</p>
+
+<ul>
+  <li>Latitude: <code class="highlighter-rouge">40.67</code></li>
+  <li>Longitude: <code class="highlighter-rouge">-73.94</code></li>
+</ul>
+
+<!-- FIXME If using location events, then make sure to get the coordinates of -->
+<!-- your home with enough precision. 5 decimal digits should be OK. -->
+
+<!--
+#  Radius is used for Location events: if it is bigger than zero, 
+#  BeoLiving Intelligence system driver will generate  `LEAVE` or `ARRIVE` events when
+#  a BeoLiving App user leaves or enters the provided radius of the given location.
+-->
+
+<h2 id="home-integration-protocol">Home Integration Protocol</h2>
+
+<p>Home Integration Protocol allow other devices to interact with BeoLiving Intelligence. This protocol is used by mobile applications, or by other
+home automation controllers and provides two way control of all resource types.</p>
+
+<p>This protocol can be enabled on the local network, with mandatory
+authentication. You should provide a TCP port, which defaults to</p>
+<ol>
+  <li>Port numbers below 1024 are reserved for standard TCP services,
+so use values above this range.</li>
+</ol>
+
+<h2 id="system-modes">System modes</h2>
+
+<p>BeoLiving Intelligence can have any number of <em>System modes</em>, which can be
+used to enable or disable the execution of macros, as follows:</p>
+
+<ul>
+  <li>System modes can be activated by the BeoLiving Intelligence command <em>SET MODE</em>.</li>
+  <li>Any number of modes can exist, but at most one can be active any given time.</li>
+  <li>A macro can have any number of modes, and a mode can be set to any number of macros.</li>
+  <li>A macro with no mode set will behave normally.</li>
+  <li>If a macro has one or more modes set, then it will be triggered by
+events only if one of those modes is active.</li>
+</ul>
+
+<p>Typical example of system modes: <code class="highlighter-rouge">Vacation</code> and <code class="highlighter-rouge">Normal</code>. You can set
+up a button to toggle between normal and vacation modes. Macros for
+setting thermostats, or forcontrolling lighting and shades may be
+assigned individually to each mode.</p>
+
+<h2 id="units">Units</h2>
+
+<p>The system temperature units can be configured to be Fahrenheit or Celsius, affecting
+all the clients connected to the BeoLiving Intelligence. For example, if the
+current temperature unit is <em>Fahrenheit</em>, then all the thermostats will report the 
+temperature in these units to all connected clients.</p>
+
+<p>This setting only affects what is displayed on BeoLiving Intelligence user
+interfaces. It does not affect the units displayed on the actual
+thermostats.</p>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

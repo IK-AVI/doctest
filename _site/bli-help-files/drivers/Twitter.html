@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Twitter</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="twitter">Twitter</h1>
+
+<p>This driver supports communication with Twitter Stream and Public API,
+allowing to post Twitter status messages, fire events and reply a message 
+when the desired word is found in tweets of the Twitter Social Network.</p>
+
+<h2 id="connecting-to-the-system">Connecting to the system</h2>
+
+<p>Connection to the Twitter Stream and Public API is done via a REST connection. The 
+only thing needed for establish a connection with the APIs is the <em>PIN CODE</em>. The 
+steps to get the <em>PIN CODE</em> are:</p>
+
+<ol>
+  <li>Click the link and login with your Twitter account.</li>
+  <li>Copy the PIN code in BeoLiving Intelligence Connection setting</li>
+  <li>Press Apply.</li>
+  <li>Connection Process Finished.</li>
+</ol>
+
+<h2 id="resources">Resources</h2>
+
+<p>The supported resource types are:</p>
+
+<ul>
+  <li>
+    <p><strong>_TRACK_FILTER</strong>: Search for Tweets containing specific words.</p>
+  </li>
+  <li>
+    <p><strong>_TWEET</strong>: Post a status message on Twitter.</p>
+  </li>
+</ul>
+
+<h2 id="events">Events</h2>
+<ul>
+  <li><em>_TRACK_FILTER</em>:
+    <ul>
+      <li><em>_MATCH</em>: Fired when the resource address is matched on the Twitter Stream.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="commands">Commands</h2>
+<ul>
+  <li><em>_TRACK_FILTER</em>:
+    <ul>
+      <li><strong>_REPLY</strong>: Used for reply to a Tweet. The command fields are:
+        <ul>
+          <li><em>_Message</em>: Message string to reply.</li>
+          <li><em>_User</em>: The user to reply.</li>
+          <li><em>_Id</em>: id of the tweet of _User to reply.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><em>_TWEET</em>
+    <ul>
+      <li><strong>_SEND_STATUS</strong>: Used for Tweet. The command field is:
+        <ul>
+          <li><em>_Message</em>: Message string to Tweet.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="usage-of-resources">Usage of resources:</h2>
+<ul>
+  <li><em>_TRACK_FILTER</em>:
+    <ul>
+      <li>Add <em>_TRACK_FILTER</em> resources with the words to search in their respective addresses. The driver 
+will search for tweets that contain any resource address of the system. The address value of the 
+resource corresponds to the <strong>phrase</strong> definition of the <a href="https://dev.twitter.com/streaming/overview/request-parameters#track">Track Filter</a>. 
+Each phrase must be between 1 and 60 bytes inclusive and should not contain commas. When the driver 
+matches a resource address in the tweet stream, it fires an event <em>_MATCH</em> type specifying the text 
+of the Tweet, the respective Tweet id and the User related.</li>
+      <li><em>_MATCH</em> as Event Macro:
+To fire a Macro when a <em>_MATCH</em> Event is fired its necessary that the Event contains the next fields:
+        <ul>
+          <li><em>_User</em>: Equal to “<em>$user</em>”</li>
+          <li><em>_Id</em>: Equal to “<em>$id</em>”
+Not doing the below steps on the <em>_MATCH</em> Event will not fire Macros.</li>
+        </ul>
+      </li>
+      <li>Usage of <em>_REPLY</em> command: 
+To configure BeoLiving Intelligence for reply to an specific status message of any User, its necessary to:
+        <ol>
+          <li>Create a _TRACK_FILTER resource with the message to answer in the resource address.</li>
+          <li>Create a Macro with a <em>_MATCH</em> Event with the next fields:
+            <ul>
+              <li><em>_User</em>: Equal to “<em>$user</em>”</li>
+              <li><em>_Id</em>: Equal to “<em>$id</em>”</li>
+            </ul>
+          </li>
+          <li>In the same Macro create a <em>_REPLY</em> Command with the next fields:
+            <ul>
+              <li><em>_Message</em>: The Message to respond.</li>
+              <li><em>_User</em>: Equal to “<em>$user</em>”</li>
+              <li><em>_Id</em>: Equal to “<em>$id</em>”</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li><em>_TWEET</em>: Add a <em>“_TWEET”</em> resource to be able to post status messages on Twitter. The address in 
+this resource has no meaning.</li>
+</ul>
+
+<h2 id="notes"><strong>NOTES</strong>:</h2>
+
+<ul>
+  <li>Its <strong>MANDATORY</strong> to have the BeoLiving Intelligence time synchronised from the Internet for the usage of Twitter Driver.</li>
+  <li>After add/erase/modify resources, to apply the changes in the
+search its necessary to click in the <em>Force Resource Synchronization</em> in
+the Connection Settings of BeoLiving Intelligence Twitter Driver. Also, when a
+match is fired, the driver checks if has been any modification in the
+resources and if its so, upgrades the search parameters.</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>BTicino My Home</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="bticino-my-home">BTicino My Home</h1>
+
+<h2 id="connection">Connection</h2>
+
+<p>Connection to a BTicino My Home system is made via an Ethernet connection to a <em>My Home Gateway</em> interface. 
+The available interfaces are the <strong>MH200N</strong> (that acts as a scenario programmer and SCS/LAN Gateway) and <strong>F454</strong> 
+(Audio/Video Web Server that also acts as an integration Gateway) BTcino products. It’s worth mentioning that:</p>
+<ul>
+  <li>The <strong>MH202</strong> scenario programmer doesn’t work as a SCS/LAN Gateway.</li>
+  <li>BTicino presents his own Gateway as the <strong>F455</strong> product, but as explained in his technical sheet <em>it cannot be 
+used as a development Gateway (SDK) for third-party Apps or as an integration Gateway (Vantage drivers, etc.); the Gateway F454 must be used)</em>. 				
+Both the IP address and the TCP port must be configured on BeoLiving Intelligence. Note
+that in order to establish a communication, BeoLiving Intelligence must reside in an
+allowed IP range defined in the <em>My Home</em> project.</li>
+</ul>
+
+<h2 id="defining-resources">Defining Resources</h2>
+
+<p>Integration between BeoLiving Intelligence and BTicino consist in interaction implemented via
+button presses and scenario selection, and two types of dimmer control. Therefore, <em>New Bticino scene
+button</em>, <em>Bticino button</em>, <em>Bticino dimmer 100 level</em> and <em>Bticino dimmer 10 steps</em> can be defined as resources.</p>
+
+<p><em>Bticino dimmer 100 level</em> support intensity sets between [0-100]. <em>Bticino dimmer 10 steps</em> only support intensity
+set between [0-100] by 10 steps level. In this case, a round is implemented in the <code class="highlighter-rouge">LEVEL</code> command. Selection between
+this two types of dimmer resource depends on the capabilites of the BTicino dimmer product to integrate with BeoLiving Intelligence.</p>
+
+<p>There is also <em>Bticino scene button</em> which is deprecated and kept only
+for backward compatibility.</p>
+
+<p>The address of a button resource is composed of the <code class="highlighter-rouge">where</code> part and the
+<code class="highlighter-rouge">what</code> part, separated by a comma.<code class="highlighter-rouge">Where</code> is the address of a module or group of devices, and <code class="highlighter-rouge">what</code>
+indicates a scenario or push button identification.</p>
+
+<p>The address of a dimmer resource is the <code class="highlighter-rouge">where</code> based in point-to-point interaction, as <code class="highlighter-rouge">area</code> part and <code class="highlighter-rouge">point of light</code> part (<code class="highlighter-rouge">&lt;A&gt;&lt;PL&gt;</code>).</p>
+
+<h2 id="events-and-commands">Events and commands</h2>
+
+<p>Events and commands can be either scenario selection, CEN or dimmer <code class="highlighter-rouge">LEVEL</code> changes/sets.</p>
+
+<p>For scenario selection <em>New Bticino scene button</em> resources must be
+defined (<em>Bticino scene button</em> which is now deprecated and only
+present for backward compatibility).</p>
+
+<p><em>New Bticino scene button</em> has <code class="highlighter-rouge">PRESS</code> event and command for scene
+selection.</p>
+
+<p><em>Bticino button</em> has <code class="highlighter-rouge">PRESS</code>, <code class="highlighter-rouge">RELEASE</code>, <code class="highlighter-rouge">HOLD</code> and <code class="highlighter-rouge">HOLD
+RELEASE</code> events and commands.</p>
+
+<p><em>Bticino dimmer 10 steps</em> and <em>Bticino dimmer 100 level</em> has <code class="highlighter-rouge">LEVEL</code> events and commands.</p>
+
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

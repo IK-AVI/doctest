@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Macro programming</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="macro-programming">Macro programming</h1>
+
+<p>The interaction between the different devices connected to BeoLiving Intelligence is defined by means of <em>macros</em>.</p>
+
+<p>A macro consists of a set of events and a list of commands.</p>
+
+<p>Whenever any of the events defined in a macro occurs, the macro is
+triggered. Examples of events are a key press on a keypad, or a
+Control command on a remote control.</p>
+
+<p>When a macro is triggered, the list of commands is executed in order.</p>
+
+<p>Macros are organized to zones in the same way as systems or
+resources. Having macros assigned to zones helps when setting up user
+interfaces.</p>
+
+<h2 id="defining-events">Defining events</h2>
+
+<p>The list of events that will trigger a macro can be filled out
+manually, or by selecting from a set of recent events.</p>
+
+<p>Events may be of 3 types:</p>
+
+<ul>
+  <li><em>Resource events</em> match a specific event on a specific resource.
+For example, <em>LIGHT 3 was pressed on the TV in the dining room</em>.</li>
+  <li><em>Generic events</em> apply to a set of similar events throughout the
+house. For example, <em>a button named PARTY was pressed on any zone,
+any area</em>. See the help on <a href="#/Help/Generic programming">Generic Programming</a>.</li>
+  <li><em>System events</em> include calendar and astronomical clock events,
+front-panel button events and system connectivity events.
+<!-- FIXME: it should also mention location events if they are enable! --></li>
+</ul>
+
+<h3 id="event-encoding">Event encoding</h3>
+
+<p>Note that each event is shown on each row of the events list in an
+encoded format. All event codes start with
+<code class="highlighter-rouge">area/zone/type/name</code>. Generic events have an asterisk wherever a
+field is generic.</p>
+
+<p>For example, buttons named “Off” in any zone in the guest house will
+start as <code class="highlighter-rouge">Guest House/*/BUTTON/Off</code>.</p>
+
+<h2 id="commands">Commands</h2>
+
+<p>Commands are the actions executed whenever a macro is triggered.</p>
+
+<p>The list of commands is executed in order, and a delay before each
+command can be set by giving a combination of seconds and
+milliseconds.</p>
+
+<p>The command list can be reordered by dragging the handles at the left
+of each row, or by clicking on the arrows on the far right of each
+row.</p>
+
+<p>Commands may be of 4 types:</p>
+
+<ul>
+  <li><em>Generic commands</em> apply to any area or zone, with the option to
+select the same area or zone where the event was generated. For
+example, the generic event of pressing the “Off” button in any room
+can call the generic command of setting all dimmers to 0% intensity
+on that same zone.  See the help on <a href="#/Help/Generic programming">Generic Programming</a>.</li>
+  <li><em>Resource commands</em> apply to a specific resource.</li>
+  <li><em>System commands</em> act directly on the systems that support them.</li>
+  <li><em>Macro commands</em> trigger other macros, or act on other macros (see
+section below).</li>
+</ul>
+
+<h3 id="command-encoding">Command encoding</h3>
+
+<p>As with events, commands are also represented in encoded format.</p>
+
+<p>The main difference is that there is a new type of selector for
+matching the same area or zone as that of the generating event.</p>
+
+<p>For example, a command code starting with <code class="highlighter-rouge">$area/$zone/AV renderer/TV</code>
+will act on all audio and video renderers named “TV” on the same area
+where the event generated.</p>
+
+<p>In constrast, a command code starting with <code class="highlighter-rouge">*/*/AV renderer/TV</code> can be
+used to act on all TVs in the house.</p>
+
+<h3 id="actions-on-macros">Actions on macros</h3>
+
+<p>Macros can contain delays between commands, and therefore take some
+time to complete.</p>
+
+<p>What happens if, during macro execution, another related macro is
+called?</p>
+
+<p>There are several commands to act on macros:</p>
+
+<ul>
+  <li><em>FIRE</em>: just call the macro, as if an event for that macro had
+happened. This is the default action.</li>
+  <li><em>CANCEL</em> will stop executing a (possibly) ongoing macro.</li>
+  <li><em>COLLAPSE</em> will execute all remaining commands in a (possibly)
+ ongoing macro, but with no delays between commands.</li>
+</ul>
+
+<p>Firing another macro allows to take advantage of existing
+functionality without having to maintain several copies inside
+different macros (just like calling a subroutine). Or you can even try
+a loop where a macro calls itself as the last command (be careful to
+provide some way of terminating this loop).</p>
+
+<p>Since a macro execution can take some time due to delays between
+commands, it is important to take care of what could happen if another
+macro is triggered during execution.</p>
+
+<p>For example, a macro called <code class="highlighter-rouge">THEATER ON</code> for setting up a home theater
+(screen, curtains, lighting, projector, etc.) may take more than 1
+minute to execute.</p>
+
+<ul>
+  <li>What should happen if the user calls this macro repeatedly? Should
+all commands start to overlap with each other?</li>
+  <li>What should happen if the user decides to call the <code class="highlighter-rouge">THEATER OFF</code>
+macro to put the home theater off while it is still being set up?</li>
+</ul>
+
+<p>In these cases, it is important to understand that there is a possible
+messy overlap of command executions from different macros.</p>
+
+<p>The possibility to cancel or collapse a macro being executed ensures
+that the ongoing macro will end immediately.</p>
+
+<p>So in our example, the macro to put the home theater off should first
+cancel the macro for setting up the home theater. Something like this:</p>
+
+<p><code class="highlighter-rouge">THEATER OFF</code> macro commands:</p>
+<ol>
+  <li>Cancel <code class="highlighter-rouge">THEATER ON</code> macro.</li>
+  <li>Raise screen.</li>
+  <li>Shut down projector.</li>
+  <li>Put BeoVision on STANDBY.</li>
+  <li>etc.</li>
+</ol>
+
+<p>Even the <code class="highlighter-rouge">THEATER ON</code> macro should start by cancelling itself in order
+to avoid several instances of the same macro running one on top of the
+other if the user is impatient and calls it repeatedly.</p>
+
+<h2 id="orphan-commands-and-events">Orphan commands and events</h2>
+
+<p>If commands and events are already defined for a resource, and then
+that resource is deleted or modified to another address, then the
+events and commands will become orphan (without an associated
+resource).</p>
+
+<p>Orphan events or commands will still be functional, and will refer to
+the original addressing of the resource.</p>
+
+<p>The macro screen will signal the presence of orphan commands or
+events.</p>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

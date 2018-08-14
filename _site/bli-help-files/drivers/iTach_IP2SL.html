@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Global Cache iTach IP2SL</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="global-cache-itach-ip2sl">Global Cache iTach IP2SL</h1>
+
+<p>This driver supports communication with a Global Cache iTach IP2SL,
+allowing to control RS232 serial devices.</p>
+
+<h2 id="connecting-to-the-system">Connecting to the system</h2>
+
+<p>Connection to the system is done via Ethernet. The following
+parameters should be provided:</p>
+
+<ol>
+  <li><em>Host</em>: The IP address or host name of the device.</li>
+  <li><em>Port</em>: The port number where the device is waiting for
+connections (the suggested default will probably be correct).</li>
+</ol>
+
+<p>There are two types of TCP connections:</p>
+
+<ol>
+  <li><em>Direct Ethernet connection for communication</em>: should be used
+for normal communication.</li>
+  <li><em>Direct Ethernet connection for configuration</em>: should be used
+if RS232 port configuration is not known or needs to be changed.
+RS232 settings will be sent to the device after pressing “Apply” button.
+After <code class="highlighter-rouge">Apply</code> button is pressed, change TCP connection to
+<em>Direct Ethernet connection for communication</em>.</li>
+</ol>
+
+<h2 id="available-resources">Available resources</h2>
+
+<p>This driver is based on matching incoming byte strings from the external
+system, and sending back byte strings to it.</p>
+
+<p>Therefore resources are generic strings used for matching from, and for
+sending to the external system.</p>
+
+<p>There are 3 parameters to each resource:</p>
+
+<ul>
+  <li>Name for the resource.</li>
+  <li>Whether it should be available for matching (INPUT), for sending
+(OUTPUT), or for both input and output (BOTH).</li>
+  <li>A generic character string.</li>
+</ul>
+
+<p>In order to allow arbitrary byte values, the following encoding is
+used:</p>
+
+<ul>
+  <li>Any character except for backslash (<code class="highlighter-rouge">\</code>) will be given it’s
+corresponding value. Non-ASCII (international) characters are
+interpreted as Unicode UTF-8 byte sequences.</li>
+  <li>Backslash is used as an escape character, which gives special
+meaning to the character or characters that follow:
+    <ul>
+      <li><code class="highlighter-rouge">\\</code> (double backslash) is interpreted as a single backslash.</li>
+      <li><code class="highlighter-rouge">\r</code> is interpreted as a carriage return character (0x0D).</li>
+      <li><code class="highlighter-rouge">\n</code> is interpreted as a newline character (0x0A).</li>
+      <li><code class="highlighter-rouge">\xx</code> (where x is a hexadecimal digit [0-9, a-f, A-F]) is
+interpreted as a hexadecimal byte value. E.g. <code class="highlighter-rouge">\0A</code> is
+equivalent to <code class="highlighter-rouge">\n</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Any non-printable or non-ASCII character entered by the user will be
+shown as hexadecimal sequences. Illegal or truncated escape sequences
+will be marked as errors.</p>
+
+<h2 id="events-and-commands">Events and commands</h2>
+
+<p>Resources marked for input (or both input + output) will be searched for
+in all incoming data. As soon as a match is found, the corresponding
+event will be generated and search will continue <em>after</em> the match.</p>
+
+<p>If the incoming channel becomes idle, then all partial matches will be
+discarded.</p>
+
+<p>Commands are all resources marked as output (or both input + output)
+that can be transmitted to the channel.</p>
+
+<h2 id="end-of-line-sequence">End of line sequence</h2>
+<p>An end of line sequence can be defined at the channel configuration.</p>
+
+<p>Being non empty implies a working mode in which events are delimited by it,
+matching only when the complete message is equal to a defined event.</p>
+
+<p>Defining end of line allows discovery of resources by using the “capture”
+button on the resources page, for each received string ending with the end
+of line sequence, an unknown resource will show up using it as address.</p>
+
+<p>Also the end of line is appended to commands before sending them to the
+external system.</p>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

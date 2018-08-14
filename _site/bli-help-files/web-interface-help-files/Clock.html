@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Astronomical Clock</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="astronomical-clock">Astronomical Clock</h1>
+
+<p>BeoLiving Intelligence can generate events relative to the time of sunrise or sunset.</p>
+
+<p>When setting up a macro, create an event and choose <code class="highlighter-rouge">System events</code>,
+and for setting the time, select <code class="highlighter-rouge">Relative to sunrise</code> or <code class="highlighter-rouge">Relative to
+sunset</code>.</p>
+
+<p>In each case, an integer value ranging from -720 to +720 minutes must
+be given (720 minutes corresponds to 12 hours).</p>
+
+<p>For example, to turn on the front lights 30 minutes before sunset,
+select <code class="highlighter-rouge">Relative to sunset</code>, with value <code class="highlighter-rouge">-30</code>.</p>
+
+<p>Note that usual values are no larger than a few tens of minutes
+relative to sunrise or sunset.</p>
+
+<p>If using greater values, be careful not to cause event overlaps at
+certain times of year that could result in an undesired behaviour for
+the customer. For example, an event set for sunset plus 420 minutes in
+Denmark will occur after sunrise during the summer.</p>
+
+<h2 id="setting-up-the-astronomical-clock">Setting up the astronomical clock</h2>
+
+<p>The astronomical clock needs to know your geographic location in order
+to calculate sunrise and sunset times.</p>
+
+<p>This is configured in <code class="highlighter-rouge">Settings / Date &amp; Time / Astronomical Clock</code>,
+where values for latitude an longitude must be provided.</p>
+
+<p>These values must be entered as a number. Positive latitude indicates
+North, positive longitude indicates East. Similarly, negative values
+indicate South latitude or West longitude.</p>
+
+<p>For example, the coordinates for New York City (40.6700° N, 73.9400°
+W) would be entered this way:</p>
+
+<ul>
+  <li>Latitude: <code class="highlighter-rouge">40.67</code></li>
+  <li>Longitude: <code class="highlighter-rouge">-73.94</code></li>
+</ul>
+
+<h2 id="precautions-with-high-latitudes">Precautions with high latitudes</h2>
+
+<p>Be aware that cities with latitudes at or beyond the polar circles
+will have several days per year without a proper sunrise or sunset
+event.</p>
+
+<p>In this situation, be careful that these naturally missing events are
+taken into account when setting up the system.</p>
+
+<p>For example, avoid things like leaving all lights on during weeks or
+months until the next sunrise occurs.</p>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>

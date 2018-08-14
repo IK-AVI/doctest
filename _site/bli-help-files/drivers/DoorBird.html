@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khimo | BeoLiving</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target="#toc">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="/#page-top">BeoLiving</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#Basic">Basic</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#PRO">PRO</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/bli-guides/bli-faq.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <header class="text-center text-white d-flex bg-primary" style="min-height:50%; background-image: none;">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>DoorBird</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="" id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 id="doorbird">DoorBird</h1>
+
+<p>BeoLiving Intelligence can interact with DoorBird and BirdGuard units, being capable of opening door lock, turning unit light and fire an event when motion sensor detect activity or doorbell button is pressed on the camera.
+In order to get video image on the BeoLiving Intelligence from the DoorBird unit, it’s necessary to add the camera on Interfaces Tab and fill the respective fields.</p>
+
+<p><em>Note</em>: SIP communication with DoorBird units are not yet supported.</p>
+
+<h2 id="supported-doorbird-devices">Supported DoorBird Devices</h2>
+
+<ul>
+  <li>DoorBird Video Door Station D10x
+    <ul>
+      <li>Hardware version 1.00 and above</li>
+      <li>Firmware Version 000098 and above</li>
+    </ul>
+  </li>
+  <li>DoorBird Video Door Station D20x
+    <ul>
+      <li>Hardware version 1.00 and above</li>
+      <li>Firmware Version 000098 and above</li>
+    </ul>
+  </li>
+  <li>BirdGuard B10x
+    <ul>
+      <li>Hardware version 1.00 and above</li>
+      <li>Firmware Version 000098 and above</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="connection-to-doorbird-unit">Connection to DoorBird Unit</h2>
+
+<p>BeoLiving Intelligence can connect and interact with a DoorBird/BirdGuard unit through the DoorBird LAN-2-LAN API connection.</p>
+
+<p>The Connection Settings parameters are:</p>
+
+<ul>
+  <li><em>Host Ip</em>: IP address of DoorBird unit.</li>
+  <li><em>Login</em>: Username of DoorBird unit.</li>
+  <li><em>Password</em>: Password corresponded with the username used of DoorBird unit.</li>
+</ul>
+
+<h2 id="available-resources">Available Resources</h2>
+
+<p>The available resources are:</p>
+
+<ul>
+  <li><em>OPEN_DOOR</em>: Resource for open door lock. On BeoLiving Intelligence, this resource is mapped as <em>BUTTON</em> resource type. Has a <em>PRESS</em> command for open door lock.</li>
+  <li><em>LIGHT_ON</em>: Resource for turn the light on of DoorBird unit.</li>
+  <li><em>MOTION_SENSOR</em>: Resource that fire event when motion sensor on DoorBird unit detects activity.</li>
+  <li><em>DOORBELL</em>: Resource that fire event when door bell button is pressed on DoorBird unit.</li>
+</ul>
+
+<p><em>MONTION_SENSOR</em> and <em>DOORBELL</em> are mapped as <em>GPIO</em> resource type on BeoLiving Intelligence. They have two state values {0,1}. Default state value is 0 (no motion detected or door bell pressed). When activity is notified in one of these resources, state changes to 1 and the to 0 (as a pulse). On these resources there is no command execution.</p>
+
+<p><em>OPEN_DOOR</em> and <em>LIGHT_ON</em> are mapped as <em>BUTTON</em> resource type on BeoLiving Intelligence. The unique command available is the <em>PRESS</em> command, which executes the corresponded action depending on the resource (opens the door or turn the light on).</p>
+
+<p><strong>Resource address doesn’t apply</strong> to any resource type. <strong>Leave resource address empty</strong>.</p>
+
+<h2 id="get-live-image">Get Live Image</h2>
+
+<p>In order to get live images from DoorBird unit, it’s necessary to add the camera in Interfaces Tab and set the next fields as below:</p>
+
+<ul>
+  <li>
+    <p><strong>Camera access:</strong></p>
+
+    <ul>
+      <li><em>Base URL</em> : Equal to <code class="highlighter-rouge">http://&lt;doorbird-ip&gt;</code>.</li>
+      <li><em>Username</em> : Same username used on Connection Settings of DoorBird system in Systems Tab.</li>
+      <li><em>Password</em> : Same password used on Connection Settings of DoorBird system in Systems Tab.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Camera resources path/Video &amp; Images:</strong></p>
+
+    <ul>
+      <li><em>Low resolution mjpeg</em> : Equal to <code class="highlighter-rouge">/bha-api/video.cgi</code> to get mpjpeg stream from DoorBird unit.</li>
+      <li><em>Low resolution image</em> : Equal to <code class="highlighter-rouge">/bha-api/image.cgi</code> to get snapshots from DoorBird unit.</li>
+    </ul>
+  </li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+  </body>
+
+</html>
